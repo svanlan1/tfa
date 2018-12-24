@@ -18,9 +18,30 @@
           <div class="sectionContent" style="flex-flow: column;">
             <div class="headshotWrap">
               <div class="tfa_profile_headshot"></div>
-              <div class="headshotName"></div>
+              <div class="headshotName">
+                <span></span>
+                <div></div>
+              </div>
+            </div>
+            <div class="sidePhotoGallery">
+                <div class="none">
+                  <img tabindex="0" role="button" src="" alt="" />
+                </div>
+              </div>
             </div>
             <div class="profile">
+
+              <h3 class="abs" style="margin-top: -20px;">Basic information</h3>
+              <div class="memberInformation" style="margin-bottom: 40px;">
+                <ul>
+                  <li><strong>Location</strong><span id="location"></span></li>
+                  <li><strong>Primary role</strong><span id="primaryRole"></span></li>
+                  <li><strong>Secondary role</strong><span id="secondaryRole"></span></li>
+                  <li><strong>Number of films</strong><span id="noOfFilms">16</span></li>
+                  <li><strong>Biography</strong><span id="bio"></span></li>
+                </ul>
+              </div>              
+
               <h3 class="abs">Best known for</h3>
               <div class="topRoles">
                 <div>
@@ -39,27 +60,15 @@
                   <img src="https://m.media-amazon.com/images/M/MV5BMjIwNzIzNDI1Ml5BMl5BanBnXkFtZTcwMTExMjU5Mg@@._V1_.jpg" alt="Hermetica" />
                 </div>
               </div>
-              <h3 class="abs" style="margin-top: 6px;">Headshots</h3>
+
+              <h3 class="abs none" style="margin-top: 10px;">Headshots</h3>
               <div class="photoGallery">
                 <div class="none">
                   <img src="" alt="" />
                 </div>
               </div>
-              <ul>
-                <li><strong>Location</strong><span>Tacoma, WA</span></li>
-                <li><strong>Primary role</strong><span>Directing</span></li>
-                <li><strong>Secondary role</strong><span>Editing</span></li>
-                <li><strong>Number of films</strong><span>13</span></li>
-                <li><strong>Biography</strong><span>Lorem ipsum some other bullshit will go in here.  I am hackerman.</span></li>
-                <li class="links">
-                  <span>
-                    <a href="javascript:;" class="imdb">
-                      <img src="/sandbox/images/imdb.svg" alt="IMDB" />
-                    </a>
-                  </span>
-                </li>
-              </ul>
-              <h3 class="abs" style="margin-top: 6px;">Filmography</h3>
+
+              <h3 class="abs" style="margin-top: 20px">Filmography</h3>
               <div class="filmography">
                 <ul>
                   <li>
@@ -100,7 +109,8 @@
                   </li>                                   
                 </ul>
               </div>
-              <h3 class="abs" style="margin-top: 35px;">Video reel</h3>
+
+              <h3 class="abs" style="margin-top: 15px;">Video reel</h3>
               <div class="films">
                 <div>
                   <iframe src="https://www.youtube.com/embed/OkGn5tyG2u8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -112,6 +122,7 @@
                   <iframe src="https://www.youtube.com/embed/VfCIb2Hvb90" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
+
             </div>
           </div>
         </section>

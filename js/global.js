@@ -493,6 +493,66 @@ var global = {
 				return month + ' ' + date + ', ' + year + ' at ' + time + ampm;
 			}
 			
+		},
+
+		_addBadgesToUser: function(meminfo, member, element) {
+			
+			if(member.isAdmin === 'Y') {
+				$('<img />').attr({
+					'src': '/sandbox/images/exec.svg',
+					'alt': 'Film Alliance Executive',
+					'title': 'Film Alliance Executive'
+				}).appendTo(element);
+			}
+
+			if(meminfo.role === "director" || meminfo.secondaryrole === "director") {
+				$('<img />').attr({
+					'src': '/sandbox/images/director.svg',
+					'alt': 'Director',
+					'title': 'Director'
+				}).appendTo(element);
+			}
+
+			if(meminfo.role === 'actor' || meminfo.secondaryrole === 'actor' || meminfo.role === 'actress' || meminfo.secondaryrole === 'actress') {
+				$('<img />').attr({
+					'src': '/sandbox/images/theatre.svg',
+					'alt': 'Thespian',
+					'title': 'Thespian'
+				}).appendTo(element);		    					
+			}
+
+			if(meminfo.role === "writer" || meminfo.secondaryrole === "writer") {
+				$('<img />').attr({
+					'src': '/sandbox/images/writer.svg',
+					'alt': 'Writer',
+					'title': 'Writer'
+				}).appendTo(element);		    					
+			}
+
+			if(meminfo.role === "editor" || meminfo.secondaryrole === "editor") {
+				$('<img />').attr({
+					'src': '/sandbox/images/editor.svg',
+					'alt': 'Editor',
+					'title': 'Editor'
+				}).appendTo(element);		    					
+			}	
+
+			if(meminfo.role === "sound" || meminfo.secondaryrole === "sound" || meminfo.role === "music" || meminfo.secondaryrole === "music") {
+				$('<img />').attr({
+					'src': '/sandbox/images/sound.svg',
+					'alt': 'Musician',
+					'title': 'Musician'
+				}).appendTo(element);		    					
+			}	
+
+			if(meminfo.role === "producer" || meminfo.secondaryrole === "producer") {
+				$('<img />').attr({
+					'src': '/sandbox/images/producer.svg',
+					'alt': 'Producer',
+					'title': 'Producer'
+				}).appendTo(element);		    					
+			}
+
 		}
 	}
 }

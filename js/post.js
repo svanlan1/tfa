@@ -52,38 +52,9 @@ var post = {
 	    					'plainname': v.firstname + ' ' + v.lastname
 	    				};
 	    				if(id === script.currentUser) {
-		    				if(k.isAdmin === 'Y') {
-		    					$('<img />').attr({
-		    						'src': '/sandbox/images/exec.svg',
-		    						'alt': 'Executive member',
-		    						'title': 'Executive member'
-		    					}).appendTo($('#article_user h3').eq(0));
-		    				}
-
-		    				if(v.role === "director" || v.secondaryrole === "director") {
-		    					$('<img />').attr({
-		    						'src': '/sandbox/images/director.svg',
-		    						'alt': 'Director',
-		    						'title': 'Director'
-		    					}).appendTo($('#article_user h3').eq(0));
-		    				}
-
-		    				if(v.role === 'actor' || v.secondaryrole === 'actor' || v.role === 'actress' || v.secondaryrole === 'actress') {
-		    					$('<img />').attr({
-		    						'src': '/sandbox/images/theatre.svg',
-		    						'alt': 'Thespian',
-		    						'title': 'Thespian'
-		    					}).appendTo($('#article_user h3').eq(0));		    					
-		    				}
-
-		    				if(v.role === "writer" || v.secondaryrole === "writer") {
-		    					$('<img />').attr({
-		    						'src': '/sandbox/images/writer.svg',
-		    						'alt': 'Writer',
-		    						'title': 'Writer'
-		    					}).appendTo($('#article_user h3').eq(0));		    					
-		    				}
+	    					global.util._addBadgesToUser(v,k,$('#article_user h3').eq(1));
 	    				}
+
 	    			}
 	    			if(found) {
 	    				script.found = true;
@@ -119,7 +90,7 @@ var post = {
 				script.comments = script.data.comments;
     			if(script.found) {
 					$('.publicProfile').show();
-					$('.publicProfile a').attr('href', '/sandbox/p/profiles/?user=' + script.userData[script.currentUser].id);
+					$('.publicProfile a').attr('href', '/sandbox/profiles/?id=' + script.userData[script.currentUser].id);
     			}
 	        	$('#article_user .loader').hide();
 	        	$('#article_user .showHide').fadeIn();

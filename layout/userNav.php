@@ -30,7 +30,7 @@
                 <a href="../account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Your information</a>
               </li>
               <li class="none publicProfile">
-                <a href="/sandbox/p/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Your profile</a>
+                <a href="/sandbox/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Your profile</a>
               </li>
               </li>
             </ul>
