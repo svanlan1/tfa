@@ -1,0 +1,76 @@
+[17-Dec-2018 15:22:06 UTC] PHP Warning:  require(../../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 15:22:06 UTC] PHP Warning:  require(../../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 15:22:06 UTC] PHP Fatal error:  require(): Failed opening required '../../core/config.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 16:00:56 UTC] PHP Warning:  require(../../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 16:00:56 UTC] PHP Warning:  require(../../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 16:00:56 UTC] PHP Fatal error:  require(): Failed opening required '../../core/config.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 1
+[17-Dec-2018 08:02:18 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:02:18 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:02:18 America/Los_Angeles] PHP Warning:  require(../../layout/postNav.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:02:18 America/Los_Angeles] PHP Warning:  require(../../layout/postNav.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:02:18 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../../layout/postNav.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:03:08 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:03:08 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:04:26 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:04:26 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:04:26 America/Los_Angeles] PHP Warning:  require(../layout/adminNav.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:04:26 America/Los_Angeles] PHP Warning:  require(../layout/adminNav.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:04:26 America/Los_Angeles] PHP Fatal error:  require(): Failed opening required '../layout/adminNav.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/a/index.php on line 8
+[17-Dec-2018 08:04:54 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:04:54 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:08:00 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:08:00 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:09:28 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:09:28 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:11:25 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:11:25 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:13:24 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:13:24 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:14:08 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:14:08 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:15:35 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:15:35 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:16:25 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:16:25 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:16:51 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:16:51 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:17:21 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:17:21 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:17:50 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:17:50 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:19:00 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:19:00 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:19:42 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:19:42 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:22:28 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:22:28 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:22:48 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:22:48 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:24:46 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:24:46 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:26:21 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:26:21 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:28:32 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:28:32 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 08:29:42 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 08:29:42 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 09:16:53 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 09:16:53 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 09:38:59 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 09:38:59 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 09:39:30 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 09:39:30 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 09:57:38 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 09:57:38 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 10:00:58 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 10:00:58 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 10:02:07 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 10:02:07 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 12:24:50 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 12:24:50 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 15:03:51 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 15:03:51 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 16:17:33 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 16:17:33 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11
+[17-Dec-2018 16:58:41 America/Los_Angeles] PHP Notice:  Undefined index: memberID in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 2
+[17-Dec-2018 16:58:41 America/Los_Angeles] PHP Notice:  Undefined variable: echo in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/getMember.php on line 11

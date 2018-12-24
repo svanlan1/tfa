@@ -1,0 +1,9 @@
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  A session had already been started - ignoring session_start() in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 3
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant DBHOST already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 9
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant DBUSER already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 10
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant DBPASS already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 11
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant DBNAME already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 12
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant DIR already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 15
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant SITEEMAIL already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 16
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Notice:  Constant SITETITLE already defined in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/new/core/config.php on line 17
+[16-Dec-2018 17:50:37 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class User in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/classes/user.php on line 106

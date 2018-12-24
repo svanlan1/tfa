@@ -1,0 +1,214 @@
+#whyRegister {
+    display: block;
+    border-radius: 3px;   
+    border: solid 2px rgba(107, 159, 231, 0.2);
+}
+
+#whyRegister h3 {
+    background: rgba(107, 159, 231, 0.2);
+    padding: 5px;
+    margin: 0;    
+}
+
+#whyRegister h3 i {
+    vertical-align: middle;
+}
+
+#whyRegister p {
+    font-size: .9rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#whyRegister img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.whyJoin {
+    list-style: circle;
+    padding: 0 10px 5px 10px;
+    margin: 0 10px 5px 10px;
+    width: 90%;
+    font-size: .88rem;
+}
+
+.whyJoin li {
+    border-bottom: dotted 1px #e9e9e9;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.headshotWrap {
+    padding: 15px 7px 15px 7px;
+    background-color: #fff;
+    box-shadow: #333 0 0 11px 2px;
+    position: absolute;
+    margin: 3px 0 5px 15px;
+}
+
+.tfa_profile_headshot {
+    height: 200px;
+    width: 200px;
+    /* margin: 3px 0 5px 15px; */
+    background-color: #fff;
+    border: solid 1px #555;
+}
+
+.headshotName {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.profile {
+    padding: 10px 5px 10px 240px;
+    font-size: .9rem;
+    min-height: 210px;
+}
+
+h3.abs {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: -20px;
+    font-weight: 700;
+    border: solid 1px #c9c9c9;
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: #ffa600 0 0 6px 1px;
+    font-family: 'Limelight', cursive;
+}
+
+.profile ul {
+
+}
+
+.profile ul li {
+
+}
+
+.profile ul li.links {
+    padding-left: 10%;
+}
+
+.profile ul li strong {
+    display: inline-block;
+    width: 13%;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.profile ul li span {
+    display: inline-block;
+}
+
+.profile ul li strong.block {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 0 0 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: solid 1px #e9e9e9;
+}
+
+.profile ul li span.block {
+    padding-left: 15%;
+}
+
+.profile a img {
+    width: 60px;
+}
+
+.topRoles {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 20px;
+    border: solid 1px #e9e9e9;
+    margin: 0 10px 10px 10px;
+    border-radius: 3px;
+    box-shadow: #c9c9c9 0 0 2px 1px;
+}
+
+.topRoles div {
+    flex-basis: 19%;
+    text-align:center;
+}
+
+.topRoles div img {
+    max-height: 200px;
+}
+
+div.filmography {
+    border: solid 1px #c9c9c9;
+    margin-top: 35px;
+}
+
+div.filmography ul {
+
+}
+
+div.filmography ul li {
+    border-bottom: solid 2px #c9c9c9;
+}
+
+div.filmography .poster {
+    text-align: center;
+}
+
+div.filmography .poster img {
+    height: 150px;
+    width: 100px;
+    box-shadow: #444 0 0 2px 1px;
+}
+
+div.filmography .filmDetails {
+    width: 87%;
+    vertical-align: top;
+}
+
+div.filmography .filmDetails strong {
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+div.filmography .filmDetails span {
+    width: 83%;
+    margin-bottom: 10px;
+}
+
+.filmDetails a {
+    color: #000;
+    text-decoration: none;
+}
+
+.filmDetails a:hover, .filmDetails a:focus {
+    outline: dotted 1px #000;
+    outline-offset: 2px;
+    text-decoration: underline;
+}
+
+.films {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 60px;
+    border: solid 2px #444;
+    padding: 20px 0;
+    background: #222;
+    border-radius: 4px;
+    box-shadow: #222 0 0 2px 1px;
+}
+
+.films div {
+    flex-basis: 32%;
+}
+
+.films div iframe {
+    /*width: 300px;*/
+    height: 198px;
+}

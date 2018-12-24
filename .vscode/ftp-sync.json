@@ -1,0 +1,27 @@
+{
+    "remotePath": "hooliganstreet.com/public_html/tacomafilmalliance.com/sandbox",
+    "host": "host",
+    "username": "hooligan13",
+    "password": "Maxdog12165365",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}

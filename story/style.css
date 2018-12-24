@@ -1,0 +1,175 @@
+section h2 {
+    font-weight: 300;
+}
+
+.storyBanner {
+    display: block;
+    height: 300px;
+    background-position: cover
+    background-
+}
+
+.storySetup {
+    padding: 10px;
+}
+
+.storySetup .byline {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.lede {
+    margin-top: 10px;
+    font-weight: 500;
+    /* font-style: italic; */
+    font-size: .9rem;
+    border-bottom: solid 1px #c9c9c9;
+}
+
+.storyContent p {
+    padding: 5px 10px 0 10px;
+    margin-top: 0;
+}
+
+#whyRegister {
+    display: block;
+    border-radius: 3px;   
+    border: solid 2px rgba(107, 159, 231, 0.2);
+}
+
+#whyRegister h3 {
+    background: rgba(107, 159, 231, 0.2);
+    padding: 5px;
+    margin: 0;    
+}
+
+#whyRegister h3 i {
+    vertical-align: middle;
+}
+
+#whyRegister p {
+    font-size: .9rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#whyRegister img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.whyJoin {
+    list-style: circle;
+    padding: 0 10px 5px 10px;
+    margin: 0 10px 5px 10px;
+    width: 90%;
+    font-size: .88rem;
+}
+
+.whyJoin li {
+    border-bottom: dotted 1px #e9e9e9;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.storyComments {
+    padding: 10px;
+}
+
+.storyComments h3 {
+    border-bottom: solid 1px #e9e9e9;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+div.addComment {
+    padding-left: 5px;
+    font-size: .8rem;
+}
+
+button.addComments {
+    padding: 5px;
+    font-size: .8rem;
+}
+
+.previousComments {
+    margin-top: 25px;
+}
+
+.userAddComment, .noUserComment {
+    display: block;
+    box-shadow: none;
+    border: 0;
+    border: solid 1px #e7e7e7;
+    padding: 0;
+}
+
+.userAddComment h3, .noUserComment h3 {
+    padding: 5px 0 5px 5px;
+    margin: 0;
+    background: rgba(107, 159, 231, 0.2);
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.userAddComment h3 i, .noUserComment h3 i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.alert a {
+    color: #000080;
+    text-decoration: none;
+}
+
+.alert a:hover, .alert a:focus {
+    outline: dotted 1px #000;
+    text-decoration: none;
+}
+
+textarea {
+    height: 75px;
+}
+
+.commentsActions {
+    padding-left: 5px;
+}
+
+.commentActionsToggle {
+    font-size: .7rem;
+    padding-left: 65px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.commentsToggle {
+    display:none;
+}
+
+.storyContent {
+    padding: 10px;
+    font-size: .9rem;
+}
+
+.storyContent h3 {
+    font-weight: 400;
+    border-bottom: solid 1px #e9e9e9;
+}
+
+.storyContent ul{
+    list-style: disc;
+    padding: 5px 0 5px 10px;
+    margin: 0;
+}
+
+.storyContent ul li {
+    margin: 8px;
+}
+
+.storyContent ul li strong {
+    font-style: italic;
+    font-weight: 500;
+    font-size: .85rem;
+}
