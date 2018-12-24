@@ -18,7 +18,7 @@
           <div class="sectionContent" style="flex-flow: column;">
             <div class="headshotWrap">
               <div class="tfa_profile_headshot"></div>
-              <div class="headshotName">Shea VanLaningham</div>
+              <div class="headshotName"></div>
             </div>
             <div class="profile">
               <h3 class="abs">Best known for</h3>
@@ -37,6 +37,12 @@
                 </div>
                 <div>
                   <img src="https://m.media-amazon.com/images/M/MV5BMjIwNzIzNDI1Ml5BMl5BanBnXkFtZTcwMTExMjU5Mg@@._V1_.jpg" alt="Hermetica" />
+                </div>
+              </div>
+              <h3 class="abs" style="margin-top: 6px;">Headshots</h3>
+              <div class="photoGallery">
+                <div class="none">
+                  <img src="" alt="" />
                 </div>
               </div>
               <ul>

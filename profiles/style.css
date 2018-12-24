@@ -82,6 +82,34 @@ h3.abs {
     font-family: 'Limelight', cursive;
 }
 
+.profile .photoGallery {
+    min-height: 135px;
+    display: flex;
+    width: 97%;
+    border: solid 1px #c9c9c9;
+    border-radius: 3px;
+    padding: 10px 0 2px 0;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile .photoGallery div {
+    flex-basis: 10%;
+    text-align: center;
+    margin: 0 5px;
+    padding: 5px 0 15px 0;
+}
+
+.profile .photoGallery img {
+    max-height: 125px;
+    box-shadow: #111 0 0 5px 1px;
+    border-radius: 5px
+}
+
 .profile ul {
 
 }
@@ -141,6 +169,8 @@ h3.abs {
 
 .topRoles div img {
     max-height: 200px;
+    border-radius: 3px;
+    box-shadow: #333 0 0 2px 1px;
 }
 
 div.filmography {

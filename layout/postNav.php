@@ -20,7 +20,7 @@
 	        	<ul class="submenu">
 	        		<li><a href="/sandbox/p/feed/">Newsfeed</a></li>
 	        		<li><a href="/sandbox/p/films/">Films</a></li>
-	        		<li><a href="/sandbox/profiles/">Profiles</a></li>
+	        		<li><a href="/sandbox/profiles/?id=16">Profiles</a></li>
 	        	</ul>
 	    	</li>
 	        <li class="hasSubmenu">
