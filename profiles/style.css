@@ -261,7 +261,7 @@ div.filmography .filmDetails span {
 
 .films div {
     flex-basis: 32%;
-    box-shadow: rgba(255, 243, 112, 0.3) 0 0 30px 5px;
+    box-shadow: rgba(255, 254, 201, 0.4) 0 0 30px 5px;
 }
 
 .films div iframe {

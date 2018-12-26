@@ -16,64 +16,7 @@ var post = {
 
 	getAll: function() {
 	    function getUserData() {
-	    	var members = script.data.members,
-	    		memInfo = script.data.meminfo,
-	    		memberObj = {},
-	    		found = false;
-	    	$(memInfo).each(function(i,v) {
-	    		var id = v.memberID;
-	    		if(id === script.currentUser) {
-	    			found = true;
-	    			if(v.headshot !== "") {
-	    				localStorage.setItem('tfa_headshot', v.headshot);
-	    			}
-					$('#article_user h3').eq(1).text(v.firstname + ' ' + v.lastname);
-	    		}
-	    		$(members).each(function(j,k) {
-	    			if(k.memberID === id) {
-	    				memberObj[id] = {
-	    					'id': v.memberID,
-	    					'firstname': v.firstname,
-	    					'lastname': v.lastname,
-	    					'bio': v.bio,
-	    					'email': k.email,
-	    					'username': k.username,
-	    					'headshot': v.headshot,
-	    					'city': v.city,
-	    					'isAdmin': k.isAdmin,
-	    					'role': v.role,
-	    					'prirolebio': v.prirolebio,
-	    					'secondaryrole': v.secondaryrole,
-	    					'secrolebio': v.secrolebio,
-	    					'personalsite': v.personalsite,
-	    					'reel': v['reel'],
-	    					'phone': v.phone,
-	    					'exec_profile': v.exec_profile,
-	    					'plainname': v.firstname + ' ' + v.lastname
-	    				};
-	    				if(id === script.currentUser) {
-	    					global.util._addBadgesToUser(v,k,$('#article_user h3').eq(1));
-	    				}
-
-	    			}
-	    			if(found) {
-	    				script.found = true;
-	    			}
-	    		});
-	    	});
-    		if(!script.found) {
-    			$('#notification').fadeIn('slow');
-    			script.found = false;
-    		} else {
-    			$('#notification').hide();
-    			script.found = true;
-    		}	    	
-	    	/** User Navigation Fillings **/
-	    	post.headshot();
-	    	if($('#article_user h3').eq(0).text() === "") {
-	    		$('#article_user h3').eq(0).text('Guest');
-	    	}
-	    	return memberObj;
+	    	return global.util._buildCompleteUserObject(script.data);
 	    }
 	    $.ajax({
 	        url: '/sandbox/services/get/getAll.php',
@@ -94,7 +37,8 @@ var post = {
     			}
 	        	$('#article_user .loader').hide();
 	        	$('#article_user .showHide').fadeIn();
-	        	console.log(script.data);
+				//console.log(script.data);
+				console.log(script.userData);
 	        },
 	        error: function(e) {
 	        	console.log(e);

@@ -1,3 +1,4 @@
+var thisUser;
 var script = {
 	run: function() {
 		console.log('loaded.');
@@ -13,11 +14,8 @@ var script = {
 			method: 'GET',
 			success: function(msg) {
 				script.profile = $.parseJSON(msg);
-				console.log(script.profile);
-				script.thisProfileInfo = {
-					'member': script.profile.members[0],
-					'meminfo': script.profile.meminfo[0]
-				}
+				thisUser = global.util._buildOneUserObject(script.profile.members[0], script.profile.meminfo[0]);
+				console.log(thisUser);
 				script.drawProfilePics();
 				script.drawOtherProfileThings();
 
@@ -26,13 +24,12 @@ var script = {
 	},
 
 	drawProfilePics: function() {
-		var headshot = script.thisProfileInfo.meminfo.headshot;
+		var headshot = thisUser.headshot;
 		$('.tfa_profile_headshot').css({
 			'background': 'url("/sandbox/uploads/' + headshot + '") no-repeat',
 			'background-size': 'cover'
 		});
 
-		console.log(script.profile.meminfo[0]);
 		$(script.profile.uploads).each(function(i,v) {
 			var cat = $.parseJSON(v.category);
 			if(cat.category === "headshot" && v.filename !== headshot) {
@@ -59,12 +56,12 @@ var script = {
 	},
 
 	drawOtherProfileThings: function() {
-		$('.headshotName span').text(script.profile.meminfo[0].firstname + " " + script.profile.meminfo[0].lastname);
-		global.util._addBadgesToUser(script.thisProfileInfo.meminfo, script.thisProfileInfo.member, $('.headshotName div'));
-		$('#location').text(script.thisProfileInfo.meminfo.city);
-		$('#primaryRole').text(script.thisProfileInfo.meminfo.role);
-		$('#secondaryRole').text(script.thisProfileInfo.meminfo.secondaryrole);
-		$('#bio').text(script.thisProfileInfo.meminfo.bio);
+		$('.headshotName span').text(thisUser.firstname + " " + thisUser.lastname);
+		global.util._addBadgesToUser(script.profile.meminfo[0], script.profile.members[0], $('.headshotName div'));
+		$('#location').text(thisUser.city);
+		$('#primaryRole').text(thisUser.role);
+		$('#secondaryRole').text(thisUser.secondaryrole);
+		$('#bio').text(thisUser.bio);
 	}
 }
 $(document).ready(function(e){

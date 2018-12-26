@@ -35,9 +35,9 @@
               <div class="memberInformation" style="margin-bottom: 40px;">
                 <ul>
                   <li><strong>Location</strong><span id="location"></span></li>
-                  <li><strong>Primary role</strong><span id="primaryRole"></span></li>
-                  <li><strong>Secondary role</strong><span id="secondaryRole"></span></li>
+                  <li><strong>Primary focus</strong><span id="primaryRole"></span></li>
                   <li><strong>Number of films</strong><span id="noOfFilms">16</span></li>
+                  <li><strong>Secondary role</strong><span id="secondaryRole"></span></li>
                   <li><strong>Biography</strong><span id="bio"></span></li>
                 </ul>
               </div>              

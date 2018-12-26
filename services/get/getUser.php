@@ -14,7 +14,7 @@
 	$meminfolist->execute(array(':memberID' => $memberID));
 	$meminfo = array();
 	while ( $rows = $meminfolist->fetch(PDO::FETCH_ASSOC) ) {
-		$meminfo[] = array('firstname'=>$rows['firstname'], 'lastname'=>$rows['lastname'], 'city'=>$rows['city'], 'state'=>$rows['state'], 'reel'=>$rows['reel'], 'headshot'=>$rows['headshot'], 'role'=>$rows['role'], 'gender'=>$rows['gender'], 'secondaryrole'=>$rows['secondaryrole'], 'bio'=>$rows['bio'], 'phone'=>$rows['phone'], 'exec_profile'=>$rows['exec_profile']);
+		$meminfo[] = array('memberID'=>$rows['memberID'], 'firstname'=>$rows['firstname'], 'lastname'=>$rows['lastname'], 'city'=>$rows['city'], 'state'=>$rows['state'], 'reel'=>$rows['reel'], 'headshot'=>$rows['headshot'], 'role'=>$rows['role'], 'gender'=>$rows['gender'], 'secondaryrole'=>$rows['secondaryrole'], 'bio'=>$rows['bio'], 'exec_profile'=>$rows['exec_profile'], 'prirolebio'=>$rows['prirolebio'], 'secrolebio'=>$rows['secrolebio'], 'personalsite'=>$rows['personalsite'], 'phone'=>$rows['phone']);
 	}
 
 	$postlist = $db->prepare('SELECT * FROM posts WHERE memberID = :memberID');
