@@ -1393,14 +1393,15 @@ div.binderIcon img {
     flex-wrap: wrap;
     background-color: #222;
     border-radius: 3px;
-    padding: 10px
+    padding: 10px;
+    justify-content: center;
 }
 
 .myPhotoGallery div {
-    flex-basis: 10%;
+    flex-basis: 20%;
     text-align: center;
     background: #222;
-    margin: 0 5px;
+    margin: 0;
     padding: 5px 0 15px 0;
 }
 
