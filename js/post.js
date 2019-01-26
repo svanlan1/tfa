@@ -1,7 +1,7 @@
 var post = {
 	headshot: function() {
 		if(localStorage.getItem('tfa_headshot') && localStorage.getItem('tfa_headshot') !== "") {
-			$('.tfa_headshot').css({
+			$('#article_user .tfa_headshot, .addComment .tfa_headshot').css({
 				'background': 'url("/sandbox/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
 				'background-size': 'cover'
 			});

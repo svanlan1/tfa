@@ -98,13 +98,21 @@
         	<input type="text" id="ssTitle" name="ssTitle" style="width: 50%;" />
         </div>
         <div class="full" style="display: block; text-align: center; margin: 15px 0 15px 0;">
-        	<label for="ssProject">Associated project</label>
+        	<label for="ssProject">Project month</label>
         	<select id="ssProject" style="width: 50%;">
         		<option value=""></option>
-        		<option value="december">December</option>
         		<option value="january">January</option>
         		<option value="february">February</option>
         		<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
         	</select>
         </div>
 		<div class="full" style="text-align: center;">

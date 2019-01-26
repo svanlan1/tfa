@@ -9,12 +9,16 @@ date_default_timezone_set('America/Los_Angeles');
 define('DBHOST','localhost');
 define('DBUSER','tfa_admin');
 define('DBPASS','Hardcore1@');
+// define('DBUSER', 'root');
+// define('DBPASS', 'S#gOi)W*A8ES');
 define('DBNAME','tacomafilmalliance');
 
 //application address
 define('DIR','tacomafilmalliance.com/sandbox/');
 define('SITEEMAIL','registration@tacomafilmalliance.com');
 define('SITETITLE', 'Tacoma Film Alliance');
+// define('FOLDERPATH', '/sandbox');
+define('FOLDERPATH', '/');
 
 try {
 
