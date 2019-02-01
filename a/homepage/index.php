@@ -7,22 +7,33 @@
   <body>
     <?php require('../../layout/adminNav.php'); ?>
     <main>
-      <div class="r75">
+      <div class="r80">
         <section class="homepage" id="filmSpotlight">
-          <h2><img src="../../images/live.svg" alt="" /> Updates</h2>
+          <h2><img src="../../images/content.svg" alt="" /> Homepage posts</h2>
           <div class="sectionContent">
-            Lorem ipsum bullshit
+            <div class="clone_me">
+              <div class="post_title">
+                <h3></h3>
+              </div>
+              <div class="post_info">
+                <div class="byline"></div>
+                <div class="postinfostuff">
+                <span></span>  
+                <div></div>
+                </div>
+              </div>
+              <div class="post_actions">
+                <button class="button view">View</button>
+                <button class="button cancel">Remove</button>
+              </div>
+              <div class="background_banner"></div>
+            </div>
           </div>
         </section>
 
       </div>
-      <div class="r25">
-        <article>
-          <h2><img src="../../images/notepad.svg" alt="" /> To do list</h2>
-          <ol class="eventList">
-            <li><a href="add.php">Add homepage post</a></li>
-          </ol>
-        </article>
+      <div class="r20">
+        <?php require('../../layout/adminUserNav.php'); ?>
       </div>
     </main>
 
@@ -36,6 +47,5 @@
         require('../../layout/commonFooter.php');
         require('../../includes/commonScripts.php');
     ?>
-    <script src="script.js"></script>
   </body>
 </html>

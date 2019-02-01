@@ -1,6 +1,6 @@
 var script = {
 	count: 0,
-	run: function() {
+	runStart: function() {
 		console.log('script loaded.');
 	script.current = script.userData[script.currentUser];
 	var href = window.location.href,
@@ -13,9 +13,24 @@ var script = {
 	},
 
 	draw: function() {
-		console.log("HOMEPAGE POSTS: ", script.data[6]);
-	},
+		console.log("HOMEPAGE POSTS: ", script.data.homepage);
+		$(script.data.homepage).each(function(i,v) {
+			var clone = $('.clone_me').eq(0).clone();
+			$(clone).find('.background_banner').css({
+				'background': 'url("/sandbox/uploads/' + v.banner + '") no-repeat',
+				'background-size': 'cover',
+				'opacity': '.3',
+				'background-position': '0 -160px'
+			});
+			$(clone).find('h3').text(v.title);
+			$(clone).find('.post_info .postinfostuff span').text(v.lead.substring(0,115) + '...');
+			$(clone).find('.byline').text(v.byline + ' on ' + global.util._formatJSDate(v.posted, true));
 
+			$(clone).appendTo('.sectionContent');
+		});
+		$('.clone_me').eq(0).remove();
+	},
+	
 	buildForm: function() {
 		 $('.editor').each(function() {
 		 	var $this = $(this),
@@ -159,7 +174,7 @@ $(document).ready(function(e){
 	function check() {
 		if(script.data) {
 			clearInterval(int);
-			script.run();
+			script.runStart();
 		}
 	}
 	var int = setInterval(check, 10);

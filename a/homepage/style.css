@@ -1,3 +1,74 @@
 body {
 	
 }
+
+main section div.sectionContent {
+    flex-flow: column !important;
+}
+
+.clone_me {
+    margin-bottom: 10px;
+    border-bottom: solid 2px #999;
+    border-top: solid 1px #888;
+}
+
+.background_banner {
+    display: block;
+    height: 150px;
+    z-index: 1;
+}
+
+.post_title {
+    position: absolute;
+    width: 75%;
+    z-index: 31;
+}
+
+.post_info {
+    position: absolute;
+    margin-top: 30px;
+    padding: 15px;
+    width: 75%;
+    z-index: 31;
+}
+
+.postinfostuff div {
+    position: absolute;
+    top: 0;
+    width: 94%;
+    height: 100%;
+    /* background-color: #000; */
+    opacity: .8;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.postinfostuff span {
+    z-index: 41;
+    padding: 5px;
+    color: #000;
+}
+
+.post_actions {
+    z-index: 31;
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 25px;
+}
+
+ h3 {
+    margin-top: 10px;
+    font-weight: 500;
+    /* font-style: italic; */
+    font-size: .9rem;
+    border-bottom: solid 1px #c9c9c9;
+    display: block;
+    padding-left: 15px;
+ }
+
+ .byline {
+    text-align: left;
+    z-index: 35;
+    color: #000;
+    padding-left: 5px;
+ }

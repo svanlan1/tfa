@@ -10,14 +10,13 @@
         require ('../../layout/preNav.php');
       } 
     ?>
-    <link rel="stylesheet" href="aboutus.css" />
     <main>
       <div class="r80">
 
         <section class="homepage" id="ourMission">
-          <h2><img src="../../images/alarm.svg" alt="" /> [MAIN HEAD]</h2>
+          <h2><img src="../../images/gavel.svg" alt="" /> Film Court <span class="instructions">Fiat justitia ruat caelum</span></h2>
           <div class="sectionContent">
-            To Support and Promote Greater Puget Sound Motion Picture Artists via Resources, Networking, and Education in a Mutually Supportive Alliance.
+            <h3>Most recent reviews</h3>
           </div>
         </section>
       </div>
@@ -25,18 +24,7 @@
       <div class="r20">
         <?php
           require('../../layout/userNav.php');
-        ?>         
-<!--         <section>
-          <h2><img src="../../images/notepad.svg" alt="" /> [ARTICLE HEAD]</h2>
-          <div class="sectionContent">
-            <ul class="eventList">
-              <li>
-                <h3>[LI HEAD]</h3>
-                <a href="javascript:;">[LINK TEXT]</a>
-              </li>
-            </ul>
-          </div>
-        </section> -->
+        ?>
       </div>
 
     </main>

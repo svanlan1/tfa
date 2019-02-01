@@ -8,7 +8,8 @@
     <main>
       <div class="r75">
       <section class="homepage" id="filmSpotlight">
-          <h2><img src="/sandbox/images/spotlight.svg" alt="" /> Spotlight</h2>
+          <!-- <h2><img src="/sandbox/images/spotlight.svg" alt="" /> Spotlight</h2> -->
+          <h2 class="header"><img src="../../images/spotlight_header.png" alt="Spotlight" /></h2>
           <div class="loader"></div>
           <div class="showHide">
             <div class="sectionContent">
@@ -41,7 +42,8 @@
 
 
         <section class="homepage" id="latestNews">
-          <h2><img src="/sandbox/images/alarm.svg" alt="" /> Latest news</h2>
+          <!-- <h2><img src="/sandbox/images/alarm.svg" alt="" /> Latest news</h2> -->
+          <h2 class="header"><img src="../../images/latest_news_header.png" alt="Latest news" /></h2>
           <div class="loader"></div>
           <div class="showHide">
             <div class="sectionContent" style="display:none;">
