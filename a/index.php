@@ -33,14 +33,13 @@
                 </span>
               </div>
               <p>
-                So as you've noticed, the website is going through a bit of a redesign.  Joe came up with this awesome new design over the weekend and I'm (Shea) working through converting everything over.  In the coming weeks, this site should really start to take shape.  On this page, you'll be able to:
+                Hey everyone!  Welcome to the new and improved Tacoma Film Alliance website.  From this panel, you will all be able to manage key pieces of functionality on the site.  This includes, but is not limited to:
                 <ul>
-                  <li>Edit, remove posts that violate our rules</li>
-                  <li>Manage members</li>
-                  <li>Add new film jury reviews</li>
-                  <li>Add content to the public and post-login homepages</li>
-                  <li>Manage the WAM pages</li>
-                  <li>Manage the Slingshot pages</li>
+                  <li>Removing inappropriate member posts (racist, sexist, attacks, etc.)  We won't be removing any posts that aren't in some way ugly, period.  We're not censors.</li>
+                  <li>Adding/editing homepage posts that all members/potential members will see.  I'll show you how this works.</li>
+                  <li>Adding a Film Court review</li>
+                  <li>Checking and replying to messages.</li>
+                  <li>Member group management (WAM, Slingshot, Execs)</li>
                 </ul>
               </p>
             </div>
@@ -50,18 +49,20 @@
       </div>
       <div class="r25">
         <article>
-          <h2><img src="../../images/notepad.svg" alt="" /> To do list</h2>
-          <ol class="eventList">
-            <li>Build account page</li>
-            <li>Build post-login homepage</li>
-            <li>Build new post-login films page</li>
-            <li>Build film jury page</li>
-            <li>Newsfeed</li>
-            <li>Search</li>
-            <li>Profile pages</li>
-            <li>Resources
-              <ul><li>- Locations</li><li>- Equipment</li></ul>
+          <h2><img src="../images/notepad.svg" alt="" /> Next steps</h2>
+          <ol class="eventList" style="font-weight: 700; font-size: .9rem;">
+            <li>
+              Film Court
+              <ul style="font-size: .75rem; font-weight: 400;">
+                <li>Add a review, Mike has designed</li>
+                <li>Allow creator to edit/delete review</li>
+                <li>Allow users to comment</li>
+                <li>All reviews will be public facing, so no login required to view.</li>
+              </ul>
             </li>
+            <li>Wire up Newsfeed</li>
+            <li>Member profile pages</li>
+            <li>Forgot password?</li>
           </ol>
         </article>
       </div>

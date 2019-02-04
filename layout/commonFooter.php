@@ -8,7 +8,8 @@
 		<ul>
 			<li><a href="https://whitehorse-et.com/">White Horse Entertainment</a></li>
 			<li><a href="https://gobbumproductions.com/">Go Bump Productions</a></li>
-			<li><a href="http://www.hooliganstreet.com/">Hooligan Pictures</a></li>			
+			<li><a href="http://www.hooliganstreet.com/">Hooligan Pictures</a></li>		
+			<li><a href="http://www.endoflineproductions.com/">End of Line Productions</a></li>	
 		</ul>    	
     </div>
     <div>

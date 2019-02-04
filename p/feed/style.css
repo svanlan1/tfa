@@ -25,3 +25,7 @@ body {
 h4.user_comment_name {
     padding: 5px 0 0 55px;
 }
+
+.sectionContent {
+    flex-flow: column !important;
+}

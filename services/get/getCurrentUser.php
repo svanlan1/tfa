@@ -32,11 +32,11 @@
 		$messages[] = array('id'=>$rows['id'], 'message'=>$rows['message'], 'senton'=>$rows['senton'], 'mread'=>$rows['mread'], 'page'=>$rows['page']);
 	}
 
-	$filmslist = $db->prepare('SELECT * FROM films WHERE user = :memberID');
+	$filmslist = $db->prepare('SELECT * FROM films WHERE owner = :memberID');
 	$filmslist->execute(array(':memberID' => $_SESSION['memberID']));
 	$films = array();
 	while ( $rows = $filmslist->fetch(PDO::FETCH_ASSOC) ) {
-		$films[] = array("name"=>$rows['name'], "descrip"=>$rows['descrip'], "director"=>$rows['director'], "writer"=>$rows['writer'], "id"=>$rows['id'], "user"=>$rows['user'], "link"=>$rows["link"], "poster"=>$rows["poster"], "studio"=>$rows["studio"], "subdate"=>$rows["subdate"], "tfa_category"=>$rows["tfa_category"], "year"=>$rows["year"], "budget"=>$rows["budget"], "releaseDate"=>$rows["releaseDate"], "cast"=>$rows["cast"], "crew"=>$rows["crew"], "platform"=>$rows["platform"], "wam_prize"=>$rows["wam_prize"]);
+		$films[] = array("name"=>$rows['name'], "descrip"=>$rows['descrip'], "director"=>$rows['director'], "writer"=>$rows['writer'], "id"=>$rows['id'], "user"=>$rows['user'], "link"=>$rows["link"], "poster"=>$rows["poster"], "studio"=>$rows["studio"], "subdate"=>$rows["subdate"], "tfa_category"=>$rows["tfa_category"], "year"=>$rows["year"], "budget"=>$rows["budget"], "releaseDate"=>$rows["releaseDate"], "cast"=>$rows["cast"], "crew"=>$rows["crew"], "platform"=>$rows["platform"], "wam_prize"=>$rows["wam_prize"], "owner"=>$rows['owner']);
 	}
 
 	$projectlist = $db->prepare('SELECT * FROM projects WHERE memberID = :memberID');

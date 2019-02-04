@@ -10,6 +10,7 @@ main section div.sectionContent {
     margin-bottom: 10px;
     border-bottom: solid 2px #999;
     border-top: solid 1px #888;
+    background-color: #222;
 }
 
 .background_banner {
@@ -46,7 +47,7 @@ main section div.sectionContent {
 .postinfostuff span {
     z-index: 41;
     padding: 5px;
-    color: #000;
+    color: #fff;
 }
 
 .post_actions {
@@ -56,7 +57,7 @@ main section div.sectionContent {
     margin-left: 25px;
 }
 
- h3 {
+ .clone_me h3 {
     margin-top: 10px;
     font-weight: 500;
     /* font-style: italic; */
@@ -64,11 +65,17 @@ main section div.sectionContent {
     border-bottom: solid 1px #c9c9c9;
     display: block;
     padding-left: 15px;
+    color: #fff;
  }
 
  .byline {
     text-align: left;
     z-index: 35;
-    color: #000;
+    color: #fff;
     padding-left: 5px;
+ }
+
+ .post_actions button {
+    box-shadow: #fff 0 0 10px 2px;
+    margin-left: 15px;
  }

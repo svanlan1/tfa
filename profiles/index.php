@@ -11,7 +11,7 @@
       } 
     ?>
     <main>
-      <div class="r80">
+      <div class="r75">
 
         <section class="homepage" id="ourMission">
           <h2><img src="/sandbox/images/user.svg" alt="" /> Tacoma Film Alliance</h2>
@@ -128,7 +128,7 @@
         </section>
       </div>
 
-      <div class="r20">
+      <div class="r25">
         <?php if($user->is_logged_in()) { 
             require('../layout/userNav.php');
           } else {

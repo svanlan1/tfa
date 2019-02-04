@@ -19,18 +19,18 @@
               <div class="previousComments">
                   <div class="user_comment">
                     <div class="tfa_headshot" style="background: url(&quot;/sandbox/uploads/1545688437.jpg&quot;) 0% 0% / cover no-repeat;"></div>
-                    <h4 class="user_comment_name">Shea VanLaningham <span class="byline">on Dec 23, 2018 at 11:26pm</span></h4>
-                    <p class="user_comment_text">Do you wanna go ahead and shut your fuckin pie hole before I shut it for you?  I will scissor kick you in the dick and then shove your wounded little pecker down your throat!</p>
+                    <h4 class="user_comment_name">Shea VanLaningham <span class="byline">on Feb 2, 2019 at 11:26pm</span></h4>
+                    <p class="user_comment_text">Hey, this is a new site!</p>
                   </div>
                   <div class="user_comment">
                     <div class="tfa_headshot" style="background: url(&quot;/sandbox/uploads/1545613775.jpg&quot;) 0% 0% / cover no-repeat;"></div>
-                    <h4 class="user_comment_name">Tester Man <span class="byline">on Dec 23, 2018 at 7:48pm</span></h4>
-                    <p class="user_comment_text">Don't pat yourself on the back too quickly, dingus.</p>
+                    <h4 class="user_comment_name">Tester Man <span class="byline">on Jan 30, 2019 at 7:48pm</span></h4>
+                    <p class="user_comment_text">Don't pat yourself on the back too quickly...</p>
                   </div>
                   <div class="user_comment">
                     <div class="tfa_headshot" style="background: url(&quot;/sandbox/uploads/1545333073.jpeg&quot;) 0% 0% / cover no-repeat;"></div>
                     <h4 class="user_comment_name">Mr. Administrator <span class="byline">on Dec 24, 2018 at 07:43am</span></h4>
-                    <p class="user_comment_text">http://tacomafilmalliance.com/sandbox/profiles/?id=31</p>
+                    <p class="user_comment_text">Use it.  Click on it.  The new site still arrives.</p>
                   </div>
                 </div>
             </div>
@@ -42,17 +42,6 @@
         <?php
           require('../../layout/userNav.php');
         ?>        
-        <article>
-          <h2><img src="/sandbox/images/calendar.svg" alt="" /> Links</h2>
-          <ul class="postLinks">
-            <li>
-              <a href="../help/"><img src="/sandbox/images/help.svg" alt="" /> Help</a>
-            </li> 
-            <li>
-              <a href="../feedback/"><img src="/sandbox/images/write-letter.svg" alt="" /> Send feedback</a>
-            </li> 
-          </ul>
-        </article>
       </div>
 
     </main>

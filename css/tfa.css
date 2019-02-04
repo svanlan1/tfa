@@ -654,6 +654,7 @@ div.film {
     flex-basis: 19%;
     margin: 0 5px 0 5px;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 div.film .filmTitle {
@@ -969,6 +970,7 @@ li.spacer {
     display: flex;
     justify-content: center;
     padding: 30px 0;
+    flex-wrap: wrap;
 }
 
 .submenu {
@@ -1498,4 +1500,56 @@ h4.user_comment_name {
     height: 1px;
     width: 1px;
     overflow: hidden;
+}
+
+#whyRegister {
+    display: block;
+    border-radius: 3px;   
+    border: solid 2px rgba(107, 159, 231, 0.2);
+}
+
+#whyRegister h3 {
+    background: rgba(107, 159, 231, 0.2);
+    padding: 5px;
+    margin: 0;    
+}
+
+#whyRegister h3 i {
+    vertical-align: middle;
+}
+
+#whyRegister p {
+    font-size: .9rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+#whyRegister img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.whyJoin {
+    list-style: circle;
+    padding: 0 10px 5px 10px;
+    margin: 0 10px 5px 10px;
+    width: 90%;
+    font-size: .88rem;
+}
+
+.whyJoin li {
+    border-bottom: dotted 1px #e9e9e9;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.storyComments {
+    padding: 10px;
+}
+
+.storyComments h3 {
+    border-bottom: solid 1px #e9e9e9;
+    margin-left: 10px;
+    font-weight: 400;
 }

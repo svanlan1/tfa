@@ -7,8 +7,10 @@ var global = {
 			case 'aboutus':
 				break;
 			case 'films':
-				global.films._events();
-				global.films._get();
+				if(window.location.href.indexOf('/p/films') === -1) {
+					global.films._events();
+					global.films._get();
+				}
 				break;
 			case 'wam':
 				break;

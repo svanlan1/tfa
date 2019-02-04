@@ -1,6 +1,6 @@
 <?php require('../core/config.php'); 
 	//if($user->is_logged_in()){ header('Location: home.php'); exit(); }
-	$title = 'Tacoma Film Alliance - [PAGENAME]';
+	$title = 'Tacoma Film Alliance - Help & Feedback';
 	require('../layout/commonHead.php');
 ?>
   <body>
@@ -10,12 +10,11 @@
         require ('../layout/preNav.php');
       } 
     ?>
-    <link rel="stylesheet" href="aboutus.css" />
     <main>
       <div class="r80">
 
         <section class="columns" id="generalHelp">
-          <h2><img src="/sandbox/images/help.svg" alt="" /> General</h2>
+          <h2><img src="../images/help.svg" alt="" /> General</h2>
           <div class="sectionContent" style="flex-flow: column;">
             <div class="row">
               <h3>Why use the Tacoma Film Alliance website?</h3>
@@ -39,16 +38,16 @@
         </section>
 
         <section class="columns" id="siteUsage">
-          <h2><img src="/sandbox/images/help.svg" alt="" /> Usage</h2>
+          <h2><img src="../images/help.svg" alt="" /> Usage</h2>
           <div class="sectionContent" style="flex-flow: column;">  
             <div class="row">
               <h3>How do I update my profile?</h3>
               <p>
-                In the top level navigation, click on 'My Account'<br /><br />
-                <img src="images/help_myacct.png" alt="" /><br /><br />
+                In the top level navigation, click on 'Account'<br /><br />
+                <img src="../images/help_myacct.jpg" alt="" /><br /><br />
                 Once that page loads, in the sub-level tabs, find "My Info", and you'll see a form that will allow you to change all of your personal information.  <br /><br />
-                <img src="images/help_myinfo.png" alt="" /><br /><br />
-                <strong>None of your information will ever leave this site.  None of it is required (though we suggest you enter your name, role, headshot, and biography).</strong><br />  The information will <strong>only</strong> ever be used within the confines of this website.
+                <img src="../images/help_myinfo.jpg" alt="" /><br /><br />
+                <strong>None of your information will ever leave this site.  Only the most basic information is required.</strong><br />  The information will <strong>only</strong> ever be used within the confines of this website.
               </p>
             </div>
             <div class="row">
@@ -61,9 +60,9 @@
               <h3>How do I change my profile picture</h3>
               <p>
                 Your profile picture is displayed to you on all of the TFA website pages.  In order to change it, click on the circular avatar that displays.<br /><br />
-                <img src="images/help_profile_pic.png" alt="" style="width: 350px;"/><br /><br />
+                <img src="../images/help_profile_pic.jpg" alt="" /><br /><br />
                 Once you've clicked the avatar, a dialog will display asking you to select the photo that you want to upload.<br /><br />
-                <img src="images/help_profile_pic_dialog.png" alt="" style="width: 350px;" />
+                <img src="../images/help_profile_pic_dialog.png" alt="" style="width: 350px;" />
               </p>
             </div>
             <div class="row">
@@ -73,27 +72,26 @@
               </p>
             </div>
             <div class="row">
-              <h3>What is the "Project creator"?</h3>
-              <p></p>
-            </div>  
-            <div class="row">
               <h3>What's the "Slingshot" and how do I join?</h3>
               <p></p>
             </div>
             <div class="row">
               <h3>What's the WAM?</h3>
-              <p></p>
-            </div>  
-            <div class="row">
-              <h3>How do I find cast/crew for my next project?</h3>
-              <p></p>
+              <p>
+                "WAM" stands for "Wait A Minute".  "The WAM" is a yearly film festival that is held by the TFA, typically in October/November.  The criteria for the films change, but the premise is that each film can only be 1 minute long.  This creates a unique challenge for filmmakers to try and tell their best story in 60 seconds.
+              </p>
             </div>
           </div>
         </section>      
       </div>
 
       <div class="r20">
-        <?php if($user->is_logged_in()){ require('../layout/userNav.php'); } ?>
+        <?php if($user->is_logged_in()) { 
+            require('../layout/userNav.php');
+          } else {
+            require('../layout/genericArticle.php');
+          }
+        ?>
       </div>
 
     </main>

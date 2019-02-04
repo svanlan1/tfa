@@ -15,25 +15,22 @@
       <div class="r80">
 
         <section class="homepage" id="ourMission">
-          <h2><img src="../../images/alarm.svg" alt="" /> [MAIN HEAD]</h2>
+          <h2 class="header"><img src="../../images/wam_winners_header.png" alt="" /></h2>
           <div class="sectionContent">
-            To Support and Promote Greater Puget Sound Motion Picture Artists via Resources, Networking, and Education in a Mutually Supportive Alliance.
+            <div class="half">
+              Judges Award
+            </div>
+            <div class="half">
+              Audience Award
+            </div>
           </div>
         </section>
       </div>
 
       <div class="r20">
-        <section>
-          <h2><img src="../../images/notepad.svg" alt="" /> [ARTICLE HEAD]</h2>
-          <div class="sectionContent">
-            <ul class="eventList">
-              <li>
-                <h3>[LI HEAD]</h3>
-                <a href="javascript:;">[LINK TEXT]</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <?php
+          require('../../layout/userNav.php');
+        ?> 
       </div>
 
     </main>
