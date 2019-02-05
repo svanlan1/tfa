@@ -18,8 +18,11 @@
       </div>
       <div class="r25">
         <?php
-          require('../../layout/userNav.php');
+          require('../../layout/adminUserNav.php');
         ?>
+        <!-- <article>
+          <a href="add.php">Add a review</a>
+        </article> -->
       </div>
     </main>
 

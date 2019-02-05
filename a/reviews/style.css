@@ -1,3 +1,37 @@
 body {
 	
 }
+
+.addCharge {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    height: 35px;
+    font-size: .8rem;
+    position: absolute;
+    margin-top: -56px;
+    margin-left: 190px;
+    border-radius: 3px;
+    line-height: 35px;
+    padding: 2px 5px 2px 5px;
+    font-weight: 600;
+}
+
+ol {
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+ol li label {
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+ol:nth-child(2) {
+
+}
+
+div.half {
+    width: 42% !important;
+}

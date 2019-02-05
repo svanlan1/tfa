@@ -204,7 +204,7 @@ label {
     /*font-size: 13px;*/
 }
 
-input[type=text], input[type=password], input[type=search], textarea, select {
+input[type=text], input[type=password], input[type=search], input[type=email], textarea, select {
     border-radius: 3px;
     box-shadow: #ccc 0 0 2px 1px;
     /*font-size: 16px;*/

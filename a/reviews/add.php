@@ -1,7 +1,7 @@
 <?php require('../../core/config.php'); 
   if(!$user->is_logged_in()){ header('Location: index.php'); exit(); }
   if(!$user->isAdmin($_SESSION['admin']) ) { header('Location: ../index.php'); exit(); };
-  $title = 'Tacoma Film Alliance - Administration - Add homepage post';
+  $title = 'Tacoma Film Alliance - Administration - Add a film court review';
   require('../../layout/commonHead.php');
 ?>
   <body>
@@ -9,110 +9,78 @@
     <main>
       <div class="r75">
         <section class="homepage" id="adminAddHomepagePost">
-          <h2><img src="../../images/live.svg" alt="" /> Add homepage post</h2>
+          <h2><img src="../../images/gavel.svg" alt="" /> Film Court - New Review</h2>
           <div class="sectionContent form">
-              <div class="container">
-                <div role="alert" class="alert error" tabindex="-1">
-                  <span class="exclamation">
-                    <i class="material-icons">error_outline</i>
-                  </span>
-                  <span class="errorText"></span>
-                </div>
-                <h3>The basics</h3>
-                <div class="half">
-                  <label for="title">Title</label>
-                  <input type="text" id="title" data-name="title" />
-                </div>
-                <div class="half preUpload">
-                  <label for="banner">Banner image</label>
-                  <input type="file" id="banner" class="screen-reader-only" data-name="banner" />
-                  <button class="fileUpload">
-                    <img src="../../images/upload.svg" alt="" />
-                    Upload a file
-                  </button>
-                  <img class="bannerDisplay" src="" alt="" />
-                </div>
-              </div>   
-              <div class="container">
-                <div class="r100" style="margin-bottom: 20px;">
-                  <label for="lead" style="display: inline-block;">Lead</label><span class="instructions" style="margin-left: 10px;"> this is what will display when many stories are displayed at once</span>
-                  <textarea id="lead" data-name="lead" style="height: 100px;"></textarea>
-                </div>
-                <div class="r100">
-                  <label for="post" style="display: inline-block;">Post text</label><span class="instructions" style="margin-left: 10px;"> everything you want to tell the readers</span>
-                  <textarea id="post" class="editor" data-name="post" name="post" aria-label="Post text" placeholder="Post text"></textarea>
-                </div>  
+            <div class="container">
+              <div role="alert" class="alert error" tabindex="-1">
+                <span class="exclamation">
+                  <i class="material-icons">error_outline</i>
+                </span>
+                <span class="errorText"></span>
               </div>
-              <div class="container">
-                <h3>Media</h3>
-                <div class="clone">
-                  <div class="r20" style="display: inline-block; width: 20%; vertical-align: top;">
-                    <label for="platform-0">Platform</label>
-                    <select id="platform-0" data-name="media">
-                      <option value=""></option>
-                      <option value="youtube">YouTube</option>
-                      <option value="vimeo">Vimeo</option>
-                      <option value="facebook">Facebook</option>
-                    </select>
-                  </div>
-                  <div class="r75" style="width: 70%; display: inline-block; vertical-align: top; margin-left: 20px;">
-                    <div>
-                      <label for="media-0" data-num="0">Link to video</label>
-                      <input type="text" id="media-0" aria-describedby="media_help-0" data-num="0" data-name="media" />
-                      <span id="media_help-0" style="font-size: .8rem;">Only paste the URL, not the entire &lt;iframe /&gt; element.</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="newArea"></div>
-                <div class="r100">
-                  <button class="add_media">
-                    <i class="material-icons">add_circle</i>
-                    Add another
-                  </button>
-                </div>
-              </div>       
+              <h3>The basics</h3>
+              <div class="half">
+                <label for="title">The Film</label>
+                <input type="text" id="title" data-name="title" />
+              </div>
+              <div class="half preUpload">
+                <label for="banner">Banner image</label>
+                <input type="file" id="banner" class="screen-reader-only" data-name="banner" />
+                <button class="fileUpload">
+                <img src="../../images/upload.svg" alt="" />
+                Upload a file
+                </button>
+                <img class="bannerDisplay" src="" alt="" />
+              </div>
+              <div class="half" style="margin-top: 25px;">
+                <label for="trailer">Link to trailer</label>
+                <input type="text" id="trailer" data-name="trailer" />
+              </div>
+              <div class="half" style="margin-top: 25px;">
+                <label for="director">Director</label>
+                <input type="text" id="director" data-name="director" />
+              </div>
+              <div class="full" style="margin-top: 25px;">
+                <h3>Charges</h3>
+                <a class="addCharge" href="javascript:;">Add a charge</a>
+                <ol>
+                  <li>
+                    <label for="charge_1">Charge 1</label>
+                    <!-- <input type="text" id="charge_1" data-count="1" /> -->
+                    <textarea id="charge_1" data-count="1" class="editor" data-name="charge_1" name="charge_1" aria-label="Charge 1" placeholder="Charge 1"></textarea>
+                  </li>
+                </ol>
+              </div>
+              <div class="full" style="margin-top: 25px;">
+                <h3>Defenses</h3>
+                <ol>
+                  <li>
+                    <label for="defense_1">Defense 1</label>
+                    <textarea id="defense_1" data-count="1" class="editor" data-name="defense_1" name="defense_1" aria-label="Defense 1" placeholder="Defense 1"></textarea>
+                  </li>
+                </ol>                
+              </div>
+              <div class="full" style="margin-top: 25px; border-top: solid 1px #c9c9c9; padding-top: 25px;">
+                <h3 id="closingArgumentsHead">Closing Arguments</h3>
+                <textarea id="closingArguments" aria-labelledby="closingArgumentsHead" data-count="1" class="editor" data-name="closingArguments" name="closingArguments" placeholder="Closing Arguments"></textarea>
+              </div>
+              <div class="full" style="margin-top: 25px; border-top: solid 1px #c9c9c9; padding-top: 25px;">
+                <button class="submit">
+                  <i style="vertical-align: baseline" class="material-icons">send</i>
+                  Submit
+                </button>
+                <button class="cancel">
+                  <i style="vertical-align: baseline" class="material-icons">delete</i>
+                  Cancel
+                </button>
+              </div>
+            </div> 
           </div>
         </section>
 
       </div>
       <div class="r25">
-        <article>
-          <h2><img src="../../images/notepad.svg" alt="" /> Actions</h2>
-          <p class="instructions" style="font-size: .8rem; padding: 5px; border-bottom: solid 1px #ccc;">Before submitting, be sure that you've added all pertinent information to your post.  Currently, editing isn't a thing, so until I get that built, CHECK TWICE SUBMIT ONCE :) </p>
-          <div style="padding: 5px; border-bottom: solid 1px #ccc;">
-            <fieldset>
-              <legend>Display on</legend>
-              <div>
-                <input type="checkbox" checked id="dispOnPre" data-name="preLogin" />
-                <label for="dispOnPre">Pre-login homepage</label>
-              </div>
-              <div>
-                <input type="checkbox" checked id="dispOnPost" data-name="postLogin" />
-                <label for="dispOnPost">Post-login homepage</label>
-              </div>
-              <div>
-                <input type="checkbox" id="exFeatured" data-name="featured" />
-                <label for="exFeatured">Featured on pre-login homepage</label>
-                <span class="instructions" id="exFeaturedHelp" style="font-size: .7rem; padding: 3px 10px 10px 10px;"><strong><i style="vertical-align: bottom; font-size: 1rem;" class="material-icons red">error_outline</i> Warning!</strong> Selecting this changes the featured posting on the public facing homepage.  Be very sure that you want to do this.</span>
-              </div>
-              <div>
-                <input type="checkbox" id="inFeatured" data-name="featured" />
-                <label for="inFeatured">Featured on post-login homepage</label>
-              </div>              
-            </fieldset>
-          </div>
-          <div class="sideActionButtons">
-              <button class="cancel">
-                <i class="material-icons">clear</i>
-                Cancel
-              </button>
-
-              <button class="submit">
-                <i class="material-icons">send</i>
-                Save
-              </button>              
-          </div>
-        </article>
+        <?php require('../../layout/adminUserNav.php'); ?>
       </div>
     </main>
 

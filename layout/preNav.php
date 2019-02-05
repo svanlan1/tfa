@@ -19,8 +19,8 @@
 	        	<a aria-expanded="false" href="javascript:;">Films <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">
 	        		<li><a href="/sandbox/films/">Member films</a></li>
-	        		<li><a href="javascript:;">Resources</a></li>
-	        		<li><a href="javascript:;">Our favorites</a></li>
+	        		<!-- <li><a href="javascript:;">Resources</a></li>
+	        		<li><a href="javascript:;">Our favorites</a></li> -->
 
 	        	</ul>
 	        </li>
@@ -35,9 +35,9 @@
 	        <li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">Slingshot <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">
-	        		<li><a href="/sandbox/slingshot/films.php">Films</a></li>
-	        		<li><a href="/sandbox/slingshot/info.php">Information</a></li>
-	        		<li><a href="/sandbox/slingshot/contact.ph">Contact</a></li>
+	        		<!-- <li><a href="/sandbox/slingshot/films.php">Films</a></li> -->
+	        		<li><a href="/sandbox/slingshot/index.php">Information</a></li>
+	        		<li><a href="/sandbox/slingshot/contact.php">Contact</a></li>
 				</ul>	        	
 	        </li>
 	        <li><a href="/sandbox/events/">Events<!--  <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /> --></a></li>
