@@ -4,7 +4,12 @@
     $newfilename = round(microtime(true)) . '.' . end($temp);
     $target_dir = "uploads/";
     $category = $_POST["category"];
-    $title = $_POST["category"];
+    if($_POST["title"]) {
+        $title = $_POST["title"];
+    } else {
+        $title = "No title provided";
+    }
+    
     $target_file = $target_dir . basename($_FILES["file"]["name"] . $newfilename);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));

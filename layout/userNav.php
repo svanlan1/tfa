@@ -17,22 +17,34 @@
               </p>
             </div>          
             <div class="tfa_headshot" style="margin-left: -4px;" tabindex="0" role="button" aria-label="Update your headshot" title="Update your headshot"></div>
-            <h3 style="margin-left: 52px;"></h3>
-            <ul class="postLinks" style="margin: 36px 0 0 0;">
-              <li class="none additionalActions"></li>
-              <li>
+            <h3 style="margin-left: 52px;">
+              <span></span>
+              <span></span>
+            </h3>
+            <ul class="postLinks" style="margin: 10px 0 0 0;">
+              <!-- <li class="none additionalActions"></li> -->
+              <!-- <li>
                 <a class="search" href="javascript:;">
                   <i class="material-icons">search</i>
                 </a>                
                 <input type="search" id="searchSite" placeholder="Search site" style="width: 93%; margin: 5px;" />
+              </li> -->
+              <li>
+                <a href="/sandbox/p/feed/"><img src="/sandbox/images/rss-black.svg" alt="" /> Newsfeed</a>
               </li>
               <li>
-                <a href="/sandbox/p/account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Your information</a>
+                <a href="/sandbox/p/messages/" id="myMessages">
+                  <img src="/sandbox/images/mail.svg" alt="" /> 
+                  <span></span> 
+                  Messages
+                </a>
+              </li>
+              <li>
+                <a href="/sandbox/p/account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Account info</a>
               </li>
               <li class="none publicProfile">
-                <a href="/sandbox/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Your profile</a>
-              </li>
-              </li>
+                <a href="/sandbox/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Profile</a>
+              </li> 
             </ul>
             <h3>
                 <a href="javascript:;" class="expandSection" aria-controls="userLinksList" aria-expanded="false">

@@ -27,9 +27,9 @@
 	        <li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">WAM <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">
+					<li><a href="/sandbox/wam/wam.php?cat=2019wam">2019 WAM</a></li>
 	        		<li><a href="/sandbox/wam/wam.php?cat=2018wam">2018 WAM</a></li>
 	        		<li><a href="/sandbox/wam/wam.php?cat=2017wam">2017 WAM</a></li>
-	        		<li><a href="/sandbox/wam/wam.php?cat=2016wam">2016 WAM</a></li>
 				</ul>
 	        </li>
 	        <li class="hasSubmenu">

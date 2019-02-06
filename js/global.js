@@ -426,6 +426,11 @@ var global = {
 					document.querySelector('input[aria-invalid=true]').focus();
 				}
 			});
+			$('input').bind('keydown', function(e) {
+				if(e.which === 13) {
+					$('.login').click();
+				}
+			})
 		}
 	},
 
@@ -502,6 +507,32 @@ var global = {
 			}
 		},
 
+		_formatPHPDate: function(dateValue, timeBool) {
+			var mons = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+			
+			if(dateValue && dateValue !== "") {
+				var spl = dateValue.split(' '),
+					dt = spl[0],
+					dts = dt.split('-'),
+					tt = spl[1],
+					tts = tt.split(':'),
+					mon = parseFloat(dts[1]) - 1,
+					ampm = "am";
+				if(parseFloat(tts[0]) > 12) {
+					ampm = "pm";
+					tts[0] = parseFloat(tts[0]) - 12;
+				} else if (tts[0] === "12") {
+					ampm = "pm";
+				}
+				if(timeBool) {
+					return 'on ' + mons[mon] + ' ' + dts[2] + ', ' + dts[0] + ' at ' + tts[0] + ':' + tts[1] + ampm;
+				} else {
+					return 'on ' + mons[mon] + ' ' + dts[2] + ', ' + dts[0]
+				}
+				
+			}
+		},
+
 		_addBadgesToUser: function(meminfo, member, element) {
 			
 			if(member.isAdmin === 'Y') {
@@ -509,6 +540,14 @@ var global = {
 					'src': '/sandbox/images/exec.svg',
 					'alt': 'Film Alliance Executive',
 					'title': 'Film Alliance Executive'
+				}).appendTo(element);
+			}
+
+			if(member.isReviewer === 'Y') {
+				$('<img />').attr({
+					'src': '/sandbox/images/law.svg',
+					'alt': 'Film Court Associate',
+					'title': 'Film Court Associate'
 				}).appendTo(element);
 			}
 
@@ -608,7 +647,7 @@ var global = {
 					if(v.headshot !== "") {
 						localStorage.setItem('tfa_headshot', v.headshot);
 					}
-					$('#article_user h3').eq(1).text(v.firstname + ' ' + v.lastname);
+					$('#article_user h3').eq(1).find('span').eq(0).text(v.firstname + ' ' + v.lastname);
 				}
 				$(members).each(function(j,k) {
 					if(k.memberID === id) {
@@ -630,6 +669,7 @@ var global = {
 							'headshot': v.headshot,
 							'city': v.city,
 							'isAdmin': k.isAdmin,
+							'isReviewer': k.isReviewer,
 							'role': v.role,
 							'prirolebio': prb,
 							'secondaryrole': v.secondaryrole,
@@ -641,7 +681,7 @@ var global = {
 							'plainname': v.firstname + ' ' + v.lastname
 						};
 						if(id === script.currentUser) {
-							global.util._addBadgesToUser(v,k,$('#article_user h3').eq(1));
+							global.util._addBadgesToUser(v,k,$('#article_user h3').eq(1).find('span').eq(1));
 						}
 
 					}

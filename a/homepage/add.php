@@ -82,11 +82,11 @@
           <div style="padding: 5px; border-bottom: solid 1px #ccc;">
             <fieldset>
               <legend>Display on</legend>
-              <div>
+              <div class="screen-reader-only">
                 <input type="checkbox" checked id="dispOnPre" data-name="preLogin" />
                 <label for="dispOnPre">Pre-login homepage</label>
               </div>
-              <div>
+              <div class="screen-reader-only">
                 <input type="checkbox" checked id="dispOnPost" data-name="postLogin" />
                 <label for="dispOnPost">Post-login homepage</label>
               </div>

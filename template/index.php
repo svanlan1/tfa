@@ -12,28 +12,26 @@
     ?>
     <link rel="stylesheet" href="aboutus.css" />
     <main>
-      <div class="r80">
+      <div class="r75">
 
         <section class="homepage" id="ourMission">
-          <h2><img src="../../images/alarm.svg" alt="" /> [MAIN HEAD]</h2>
-          <div class="sectionContent">
-            To Support and Promote Greater Puget Sound Motion Picture Artists via Resources, Networking, and Education in a Mutually Supportive Alliance.
+          <h2><img src="../../images/mail.svg" alt="" /> [MAIN HEAD]</h2>
+          <div class="sectionContent" style="flex-flow: column;">
+            <div class="container">
+
+            </div>
           </div>
         </section>
       </div>
 
-      <div class="r20">
-        <section>
-          <h2><img src="../../images/notepad.svg" alt="" /> [ARTICLE HEAD]</h2>
-          <div class="sectionContent">
-            <ul class="eventList">
-              <li>
-                <h3>[LI HEAD]</h3>
-                <a href="javascript:;">[LINK TEXT]</a>
-              </li>
-            </ul>
-          </div>
-        </section>
+      <div class="r25">
+        <?php
+          if($user->is_logged_in()) {
+            require('../layout/userNav.php');
+          } else {
+            require('../layout/genericArticle.php');
+          }
+        ?>
       </div>
 
     </main>

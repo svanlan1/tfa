@@ -127,10 +127,12 @@ var script = {
 		var file_data = document.querySelector('input[type="file"]').files[0];   
 		var form_data = new FormData();                 
 		form_data.append('file', file_data);  
-		var options = {
-			"category": "headshot"
-		}
+		var options = JSON.stringify({
+			"category": "homepage"
+		});
+		var title = $('#title').val();
 		form_data.append('category', options);
+		form_data.append('title', title);
 		$.ajax({
 		    url: '../../services/set/imageUpload.php', // point to server-side PHP script 
 		    dataType: 'text',  // what to expect back from the PHP script, if anything
@@ -145,8 +147,32 @@ var script = {
 		    		console.log(parsed.Error);
 		    		$('.errorText').text(parsed.Error);
 		    	} catch(e) {
-		    		data.banner = msg;
-			        script.addHomepagePost(data);
+					data.banner = msg;
+					var pf = $('#exFeatured').prop('checked'),
+						pof = $('#inFeatured').prop('checked');
+					if(pf) {
+						var dobj = {};
+						dobj['featured'] = JSON.stringify({
+							'pre': false,
+							'post': false
+						});
+						$.ajax({
+							data: dobj,
+							url: '/sandbox/services/set/updateHomepageFeatured.php',
+							method: 'POST',
+							success: function(msg) {
+								if($.parseJSON(msg).msg === "Success") {
+									script.addHomepagePost(data);
+								}
+							},
+							error: function(e) {
+								console.log(e);
+							}
+						});
+					} else {
+						script.addHomepagePost(data);
+					}
+			        
 		    	}
 		    },
 		    error: function(e) {
@@ -156,6 +182,8 @@ var script = {
 	},
 
 	addHomepagePost: function(data) {
+		var f = data.featured;
+		console.log(f);
 		$.ajax({
 		    data: data,
 		    url: '/sandbox/services/set/addHomepagePost.php',

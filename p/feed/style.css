@@ -23,9 +23,52 @@ body {
 }
 
 h4.user_comment_name {
-    padding: 5px 0 0 55px;
+    padding: 5px 0 5px 55px;
+    background: rgba(46, 85, 132, .2);
+}
+
+h4.user_comment_name img {
+    width: 16px;
+    margin-left: 10px;
 }
 
 .sectionContent {
     flex-flow: column !important;
+}
+
+.byline {
+    display: block;
+    margin: 5px 0;
+    text-align: left;
+    font-weight: 500;
+}
+
+button.rounded {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    background-color: #ea5959;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: 28%;
+    margin-top: -27px;
+}
+
+button.rounded i {
+    font-size: 30px !important;
+}
+
+button.rounded:focus {
+    outline: 0 !important;
+    background-color: #842f2f !important;
+}
+
+span.counter {
+    color: #666;
+    font-size: .8rem;
+    font-style: italic;
+    display: block;
+    text-align: left;
+    margin: 0 0 15px 25px;
 }

@@ -1,14 +1,14 @@
 <?php require('../../core/config.php');  
     $memberID = $_SESSION["memberID"];
-    $memlist = $db->prepare('SELECT * FROM members WHERE memberID = :memberID');
-	$memlist->execute(array(':memberID' => $_SESSION['memberID']));
+    $memlist = $db->prepare('SELECT * FROM members');
+	$memlist->execute();
 	$members = array();
 	while ( $rows = $memlist->fetch(PDO::FETCH_ASSOC) ) {
 		$members[] = array('memberID'=>$rows['memberID'], 'isAdmin'=>$rows['admin'], 'username'=>$rows['username'], 'email'=>$rows['email'], 'isActive'=>$rows['active'], 'isBanned'=>$rows['banned'], 'isReviewer'=>$rows['isReviewer']);
 	}
 
-	$meminfolist = $db->prepare('SELECT * FROM member_info WHERE memberID = :memberID');
-	$meminfolist->execute(array(':memberID' => $_SESSION['memberID']));
+	$meminfolist = $db->prepare('SELECT * FROM member_info');
+	$meminfolist->execute();
 	$meminfo = array();
 	while ( $rows = $meminfolist->fetch(PDO::FETCH_ASSOC) ) {
 		$meminfo[] = array('memberID'=>$rows['memberID'], 'firstname'=>$rows['firstname'], 'lastname'=>$rows['lastname'], 'city'=>$rows['city'], 'state'=>$rows['state'], 'reel'=>$rows['reel'], 'headshot'=>$rows['headshot'], 'role'=>$rows['role'], 'gender'=>$rows['gender'], 'secondaryrole'=>$rows['secondaryrole'], 'bio'=>$rows['bio'], 'exec_profile'=>$rows['exec_profile'], 'prirolebio'=>$rows['prirolebio'], 'secrolebio'=>$rows['secrolebio'], 'personalsite'=>$rows['personalsite'], 'phone'=>$rows['phone']);
@@ -72,7 +72,7 @@
 	}	
 
 	$commentslist = $db->prepare('SELECT * FROM comments order by commentTime desc');
-	$commentslist->execute(array(':memberID' => $_SESSION['memberID']));
+	$commentslist->execute();
 	$comments = array();
 	while ( $rows = $commentslist->fetch(PDO::FETCH_ASSOC) ) {
 		$comments[] = array("memberID"=>$rows['memberID'], "postID"=>$rows["postID"], "approved"=>$rows["approved"], "comment"=>$rows["comment"], id=>$rows["id"], "commentTime"=>$rows["commentTime"], "category"=>$rows["category"], "children"=>$rows["children"], "childOf"=>$rows["childOf"]);

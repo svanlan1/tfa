@@ -1,3 +1,56 @@
 body {
 	
 }
+
+.row:focus {
+    outline: 0;
+    box-shadow: #000 0 0 10px 2px;
+}
+
+.row h3 {
+    border-bottom: solid 2px #eee;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Staatliches';
+}
+
+.row p {
+    font-size: .9rem;
+    margin: 0;
+}
+
+.row p img {
+    max-width: 75%;
+    box-shadow: #000 0 0 6px 1px;
+    border-radius: 3px;
+}
+
+.imageContainer {
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0;
+}
+
+ul.toc {
+    font-size: .85rem;
+    padding-left: 10px;
+}
+
+ul.toc li {
+    margin-bottom: 5px;
+    border-bottom: solid 1px #eee;
+    width: 95%;
+}
+
+ul.toc li a, .row a {
+    color: #555;
+    text-decoration: none;
+}
+
+ul.toc li a:hover, ul.toc li a:focus, .row a:hover, .row a:focus {
+    color: #c00;
+    outline: dotted 1px #555;
+    outline-offset: 2px;
+}

@@ -131,3 +131,25 @@
 		Successfully uploaded.
 	</div>
 </div>
+
+<div class="dialog" role="dialog" aria-labelledby="pdialogh2" data-dialog-id="post" style='text-align: center;'>
+	<div class="loader" style="display:none;"></div>
+		<div role="document">
+			<a href="javascript:;" role="button" class="closeDialog">
+				<i class="material-icons">clear</i>
+			</a>		
+			<h2 id="sdialogh2" class="screen-reader-only">Add your post!</h2>
+			<div class="container" style="padding: 25px 5px;">
+				<label for="addPostTextarea" class="screen-reader-only">What do you want to say?</label>
+				<textarea placeholder="What do you want to say?" aria-describedby="postCounter" maxlength="256" id="addPostTextarea"></textarea>
+				<span class="counter" id="postCounter"><span>256</span> characters remaining</span>
+				<div class="row">
+					<button class="add submitPost">
+						<i class="material-icons">send</i>
+						Submit
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

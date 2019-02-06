@@ -84,7 +84,7 @@
           <h2><img src="/sandbox/images/calendar.svg" alt="" /> Links</h2>
           <ul class="postLinks">
             <li>
-              <a href="../help/"><img src="/sandbox/images/help.svg" alt="" /> Help</a>
+              <a href="../../help/"><img src="/sandbox/images/help.svg" alt="" /> Help</a>
             </li> 
             <li>
               <a href="../feedback/"><img src="/sandbox/images/write-letter.svg" alt="" /> Send feedback</a>
