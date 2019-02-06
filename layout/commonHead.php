@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight|Bellefair|Fredericka+the+Great|Telex|Righteous|Dosis:200,300,400,500,600,700,800|Inconsolata:400,700|Bangers|Roboto:300,400,500,600,700,900|Open+Sans:300,400,600,700,800|Staatliches" rel="stylesheet">
     <link href="/sandbox/css/buttons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/sandbox/css/tables.css" type="text/css" rel="stylesheet" media="screen, projections" />
     <link href="/sandbox/css/tfa.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="style.css" />
 

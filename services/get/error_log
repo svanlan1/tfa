@@ -3,3 +3,101 @@ Stack trace:
 #0 /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAllExecInfo.php(6): PDO->prepare('SELECT * FROM m...')
 #1 {main}
   thrown in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAllExecInfo.php on line 6
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:07 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:20 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:24 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:36 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:36:58 America/Los_Angeles] PHP Notice:  Use of undefined constant id - assumed 'id' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getAll.php on line 77
+[05-Feb-2019 08:43:52 America/Los_Angeles] PHP Notice:  Undefined index: id in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getUser.php on line 3
+[05-Feb-2019 08:43:55 America/Los_Angeles] PHP Notice:  Undefined index: id in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getUser.php on line 3
+[05-Feb-2019 08:44:38 America/Los_Angeles] PHP Notice:  Undefined index: id in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getUser.php on line 3
+[05-Feb-2019 08:49:19 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE memberID = ?' at line 1' in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getCurrentUserAll.php:3
+Stack trace:
+#0 /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getCurrentUserAll.php(3): PDO->prepare('SELECT * FROM m...')
+#1 {main}
+  thrown in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/services/get/getCurrentUserAll.php on line 3

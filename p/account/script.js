@@ -233,8 +233,15 @@ var script = {
 			}
 			if(x === "role") {
 				script.roleEvent(cur[x]);
+				console.log(cur[x]);
+				for(var y in cur['prirolebio']) {
+					$('#primaryRoleInfo *[data-label=' + y + ']').val(cur['prirolebio'][y]);
+				}
 			} else if (x === 'secondaryrole') {
 				script.secRoleEvent(cur[x]);
+				for(var y in cur['secrolebio']) {
+					$('#secondaryRoleInfo *[data-label=' + y + ']').val(cur['secrolebio'][y]);
+				}
 			}			
 		}
 	},

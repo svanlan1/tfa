@@ -19,7 +19,7 @@ var post = {
 	    	return global.util._buildCompleteUserObject(script.data);
 	    }
 	    $.ajax({
-	        url: '/sandbox/services/get/getAll.php',
+	        url: '/sandbox/services/get/getCurrentUserAll.php',
 	        method: 'GET',
 	        success: function(msg) {
 	        	localStorage.setItem('tfa_headshot', '');
@@ -38,7 +38,7 @@ var post = {
 	        	$('#article_user .loader').hide();
 	        	$('#article_user .showHide').fadeIn();
 				//console.log(script.data);
-				console.log(script.userData);
+				// console.log(script.userData);
 	        },
 	        error: function(e) {
 	        	console.log(e);

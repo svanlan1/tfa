@@ -39,6 +39,7 @@
                   <li><strong>Number of films</strong><span id="noOfFilms">0</span></li>
                   <li><strong>Secondary role</strong><span id="secondaryRole"></span></li>
                   <li><strong>Biography</strong><span id="bio"></span></li>
+                  <li><strong>Personal website</strong><span id="personalSite"></span></li>
                 </ul>
               </div>              
 

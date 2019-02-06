@@ -20,7 +20,7 @@
 	        	<ul class="submenu">
 	        		<li><a href="/sandbox/p/feed/">Newsfeed</a></li>
 	        		<li><a href="/sandbox/p/films/">Films</a></li>
-	        		<li><a href="/sandbox/profiles/?id=16">Profiles</a></li>
+	        		<li><a href="/sandbox/profiles/search.php">Profiles</a></li>
 	        	</ul>
 	    	</li>
 	        <li class="hasSubmenu">
@@ -33,7 +33,8 @@
 	    	<li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">TFA <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">
-	        		<!-- <li><a href="/sandbox/p/tfa/">Meetings</a></li> -->
+					<!-- <li><a href="/sandbox/p/tfa/">Meetings</a></li> -->
+					<li><a href="/sandbox/aboutus/">About us</a></li>
 	        		<li><a href="/sandbox/p/slingshot/">Slingshot</a></li>
 	        		<li><a href="/sandbox/p/wam/">WAM</a></li>
 					<?php

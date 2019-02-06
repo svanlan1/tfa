@@ -225,10 +225,10 @@
                       <label for="imdb">Link to IMDB page</label>
                       <input type="text" id="imdb" data-label="imdb" />
                     </div>
-                    <div class="row full">
+                    <!-- <div class="row full">
                       <label for="actorbio">Short acting biography</label>
                       <textarea id="actorbio" data-label="bio"></textarea>
-                    </div>
+                    </div> -->
                   </div>
                   <div class="role_info" id="productionInfo">
                     <div class="row">
@@ -239,10 +239,10 @@
                       <label for="dir_imdb">Link to IMDB page</label>
                       <input type="text" id="dir_imdb" data-label="imdb" />
                     </div>
-                    <div class="row full">
-                      <label for="dirbio">Short directing biography</label>
+                    <!-- <div class="row full">
+                      <label for="dirbio">Short biography</label>
                       <textarea id="dirbio" data-label="bio"></textarea>
-                    </div>              
+                    </div>               -->
                   </div>
                   <div class="role_info" id="soundInfo"></div>
                   <div class="role_info" id="otherInfo"></div>          
@@ -295,10 +295,10 @@
                       <label for="sec_imdb">Link to IMDB page</label>
                       <input type="text" id="sec_imdb" data-label="imdb" />
                     </div>
-                    <div class="row full">
+                    <!-- <div class="row full">
                       <label for="sec_actorbio">Short acting biography</label>
                       <textarea id="sec_actorbio" data-label="bio"></textarea>
-                    </div>
+                    </div> -->
                   </div>  
                   <div class="role_info" id="sec_productionInfo">
                     <div class="row">
@@ -309,10 +309,10 @@
                       <label for="sec_dir_imdb">Link to IMDB page</label>
                       <input type="text" id="sec_dir_imdb" data-label="imdb" />
                     </div>
-                    <div class="row full">
-                      <label for="sec_dirbio">Short directing biography</label>
+                    <!-- <div class="row full">
+                      <label for="sec_dirbio">Short biography</label>
                       <textarea id="sec_dirbio" data-label="bio"></textarea>
-                    </div>                
+                    </div>                 -->
                   </div>
                   <div class="role_info" id="sec_soundInfo"></div>
                   <div class="role_info" id="sec_otherInfo"></div>              

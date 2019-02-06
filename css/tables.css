@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    font-size: .9rem;
+}
+
+table thead {
+    font-family: 'Steelface';
+    font-weight: 600;
+}
+
+table thead th {
+    background-color: #f9f9f9;
+    padding: 5px;
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    border-bottom: solid 1px #ccc;
+}
+
+table tbody {
+    font-family: 'Open Sans', sans-serif;
+}
+
+table tbody tr {
+    border-bottom: solid 1px #000;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #c9c9c9;
+    color: #000;
+}

@@ -27,7 +27,7 @@
                 <input type="search" id="searchSite" placeholder="Search site" style="width: 93%; margin: 5px;" />
               </li>
               <li>
-                <a href="../account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Your information</a>
+                <a href="/sandbox/p/account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Your information</a>
               </li>
               <li class="none publicProfile">
                 <a href="/sandbox/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Your profile</a>

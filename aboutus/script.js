@@ -39,13 +39,13 @@ var script = {
 			} else {
 				var $avatar = $('<div />').addClass('avatar').appendTo($div);
 			}
-			var $h3 = $('<h3 />').text(info.meminfo[0].firstname + " " + info.meminfo[0].lastname).appendTo($div),
-				$p = $('<p />').text(info.meminfo[0].exec_profile).appendTo($div),
-				$profileLink = $('<a />').attr({
+			var $profileLink = $('<a />').attr({
 					'href': '../profiles/?id=' + info.meminfo[0].memberID,
 					'target': '_blank',
 					'class': 'profileLink'
-				}).text("View profile").appendTo($div);
+				}).text("View profile").appendTo($div),
+				$h3 = $('<h3 />').text(info.meminfo[0].firstname + " " + info.meminfo[0].lastname).appendTo($div),
+				$p = $('<p />').text(info.meminfo[0].exec_profile).appendTo($div)
 		}
 	}
 }

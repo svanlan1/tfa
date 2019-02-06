@@ -1,0 +1,48 @@
+body {
+	
+}
+
+.storyBanner {
+    display: block;
+    height: 300px;
+}
+
+.storySetup {
+    padding: 10px;
+}
+
+.storySetup .byline {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.storyContent {
+    padding: 10px;
+    font-size: .9rem;
+}
+
+dl {
+    padding: 10px;
+}
+
+dt {
+    font-weight: 600;
+    border-bottom: solid 1px #c9c9c9;
+}
+
+dd {
+    margin: 5px 0 15px 10px;
+}
+
+h3, .lede {
+    margin-top: 10px;
+    font-weight: 500;
+    /* font-style: italic; */
+    font-size: .9rem;
+    border-bottom: solid 1px #c9c9c9;
+}
+
+textarea {
+    min-height: 200px;
+}

@@ -62,6 +62,11 @@ var script = {
 		$('#primaryRole').text(thisUser.role);
 		$('#secondaryRole').text(thisUser.secondaryrole);
 		$('#bio').text(thisUser.bio);
+		var ps = thisUser.personalsite;
+		if(ps.indexOf('http://') === -1 || ps.indexOf('https://') === -1) {
+			ps = "http://" + thisUser.personalsite;
+		}
+		$('#personalSite').append('<a href="' + ps + '" target="_blank">' + ps + '</a>');
 	}
 }
 $(document).ready(function(e){

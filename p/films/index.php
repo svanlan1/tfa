@@ -13,7 +13,8 @@
     <main>
       <div class="r100">
         <section class="homepage" id="filmSpotlight">
-          <h2><img src="../../images/spotlight.svg" alt="" /> December Spotlight</h2>
+          <!-- <h2><img src="../../images/spotlight.svg" alt="" /> February Spotlight</h2> -->
+          <h2 class="header"><img src="../../images/spotlight_header.png" alt="February spotlight" /></h2>
           <div class="sectionContent">
             <div class="banner">
               <iframe src="https://www.youtube.com/embed/D8CQ4Qu0gM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
