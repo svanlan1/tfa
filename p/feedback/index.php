@@ -1,6 +1,6 @@
 <?php require('../../core/config.php'); 
   //if($user->is_logged_in()){ header('Location: home.php'); exit(); }
-  $title = 'Tacoma Film Alliance - Slingshot';
+  $title = 'Tacoma Film Alliance - Submit feedback';
   require('../../layout/commonHead.php');
 ?>
   <body>
@@ -13,7 +13,7 @@
     <main>
       <div class="r80">
         <section class="homepage" id="ourMission">
-          <h2><img src="../../images/slingshot.svg" alt="" /> Submit feedback</h2>
+          <h2><img src="../../images/customer-review.svg" alt="" /> Submit feedback</h2>
           <div class="sectionContent" style="flex-flow: column;">
             <div class="storyBanner" style="background: url('https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/41949913_1571580419654945_2250675713369702400_n.jpg?_nc_cat=101&_nc_ht=scontent-sea1-1.xx&oh=451815318e0d244531c9d7d47a332498&oe=5CB2B545') 0px -200px / cover no-repeat;"></div>
             <div class="storySetup">

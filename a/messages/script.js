@@ -18,7 +18,7 @@ var script = {
 						msgCell = $('<td />').text(v.message).appendTo(tr),
 						sentCell = $('<td />').text(global.util._formatJSDate(v.senton, false)).appendTo(tr);
 					if(v.mread !== "Y") {
-						$(tr).addClass('unread');
+						$(msgCell).addClass('unread');
 					}
 				});
 			},

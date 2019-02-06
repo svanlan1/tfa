@@ -476,25 +476,30 @@ var global = {
 	},
 
 	util: {
-		_formatJSDate: function(dateValue, time) {
-			var splits = dateValue.split(' '),
-				day = splits[0],
-				month = splits[1],
-				date = splits[2],
-				year = splits[3],
-				ts = splits[4].split(':'),
-				time = ts[0] + ":" + ts[1],
-				ampm = "am";
-			if(parseFloat(ts[0] - 12) > 0) {
-				ampm = "pm";
-				time = parseFloat(ts[0]-12) + ":" + ts[1];
+		_generateRandomNumber(number) {
+			return Math.floor((Math.random() * number) + 1);
+		},
+
+		_formatJSDate: function(dateValue, timeBool) {
+			if(dateValue !== "") {
+				var splits = dateValue.split(' '),
+					day = splits[0],
+					month = splits[1],
+					date = splits[2],
+					year = splits[3],
+					ts = splits[4].split(':'),
+					time = ts[0] + ":" + ts[1],
+					ampm = "am";
+				if(parseFloat(ts[0] - 12) > 0) {
+					ampm = "pm";
+					time = parseFloat(ts[0]-12) + ":" + ts[1];
+				}
+				if(!timeBool) {
+					return month + ' ' + date + ', ' + year;
+				} else {
+					return month + ' ' + date + ', ' + year + ' at ' + time + ampm;
+				}
 			}
-			if(!time) {
-				return month + ' ' + date + ', ' + year;
-			} else {
-				return month + ' ' + date + ', ' + year + ' at ' + time + ampm;
-			}
-			
 		},
 
 		_addBadgesToUser: function(meminfo, member, element) {

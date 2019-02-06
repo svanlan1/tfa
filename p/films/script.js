@@ -10,7 +10,12 @@ var script = {
 			success: function(msg) {
 				script.results = $.parseJSON(msg);
 				console.log(script.results);
-				script._draw();
+				var url = window.location.href;
+				if(url.indexOf('all.php') > -1) {
+					script._draw();
+				} else {
+					script._drawList();
+				}
 			},
 			error: function(e) {
 				console.log(e);
@@ -20,6 +25,49 @@ var script = {
 	_set: function() {
 
 	},
+	_drawList: function() {
+		sortArr = function() {
+			script.results.sort(function(a, b){
+				var keyA = new Date(a.subdate),
+					keyB = new Date(b.subdate);
+				// Compare the 2 dates
+				if(keyA < keyB) return -1;
+				if(keyA > keyB) return 1;
+				return 0;
+			});			
+		}		
+		sortArr();
+		var i = 0,
+			rArr = [];
+		while(i < 6) {
+			var rn = global.util._generateRandomNumber(script.results.length-1);
+			
+			if(rArr.indexOf(rn) === -1) {
+				var res = script.results[rn],
+					c = $('.container ul'),
+					li = $('<li />').appendTo(c);
+				var image = $('<div />').addClass('thisPoster').appendTo(li),
+					descDiv = $('<div />').addClass('thisInfo').appendTo(li);
+				
+				if(res.poster === "") {
+					$(image).text('No image');
+				} else {
+					$('<img />').attr('src', res.poster).attr('alt', res.name).appendTo(image);
+				}
+
+				$('<h4 />').text(res.name).appendTo(descDiv);
+				$('<span />').addClass('submittedDate').text("posted on " + global.util._formatJSDate(res.subdate, false)).appendTo(descDiv);
+				$(descDiv).append('<div class="half"><strong>Directed by</strong><span>'+res.director+'</span></div>');
+				$(descDiv).append('<div class="half"><strong>Written by</strong><span>'+res.writer+'</span></div>')
+				$('<div />').addClass('descrip').text(res.descrip).appendTo(descDiv);
+
+				i++;
+				rArr.push(rn);
+			}
+			
+		}
+	},
+
 	_draw: function() {
 		$(script.results).each(function(i,v) {
 			//if(v.tfa_category === "na" || v.tfa_category === "" || v.tfa_category === "slingshot") {
