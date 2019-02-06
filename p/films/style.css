@@ -43,11 +43,14 @@
 div.thisPoster {
     flex-basis: 25%;
     border-right: solid 1px #e9e9e9;
-    line-height: 75px;
     text-align: center;
     font-size: .7rem;
     font-weight: 300;
     color: #666;
+}
+
+div.thisPoster iframe {
+    height: 125px !important;
 }
 
 div.thisInfo {

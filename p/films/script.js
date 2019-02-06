@@ -7,6 +7,7 @@ var script = {
 		$.ajax({
 			url: '/sandbox/services/get/getFilms.php',
 			method: 'GET',
+			async: 'true',
 			success: function(msg) {
 				script.results = $.parseJSON(msg);
 				console.log(script.results);
@@ -39,7 +40,7 @@ var script = {
 		sortArr();
 		var i = 0,
 			rArr = [];
-		while(i < 6) {
+		while(i < 5) {
 			var rn = global.util._generateRandomNumber(script.results.length-1);
 			
 			if(rArr.indexOf(rn) === -1) {
@@ -48,9 +49,22 @@ var script = {
 					li = $('<li />').appendTo(c);
 				var image = $('<div />').addClass('thisPoster').appendTo(li),
 					descDiv = $('<div />').addClass('thisInfo').appendTo(li);
-				
+
+					var src = 'https://www.youtube.com/embed/';
+					if(res.link && res.link.split('=').length > 1) {
+						src += res.link.split('=')[1].split('&')[0];
+					} else if (res.link.split('/').length > 1) {
+						var test = res.link.split('/');
+						$(test).each(function(j,k) {
+							if(k.indexOf('http') < 0 && k !== "" && k.indexOf('youtu') < 0) {
+								src += k;
+							}
+						});
+					}				
 				if(res.poster === "") {
-					$(image).text('No image');
+					var clone = $('.screen-reader-only').find('iframe').eq(0).clone();
+					$(clone).attr('src', src);
+					$(clone).appendTo(image);
 				} else {
 					$('<img />').attr('src', res.poster).attr('alt', res.name).appendTo(image);
 				}
