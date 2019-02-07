@@ -2,7 +2,7 @@
 <header>
 	<div role="presentation" id="socialMedia">
 		<span>
-			February 18th @ The Forum - TFA Monthly Meetup
+			
 		</span>
 	</div>
 	<div role="banner" id="mainBanner" aria-label="Main banner">

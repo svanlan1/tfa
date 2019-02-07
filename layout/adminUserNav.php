@@ -17,10 +17,14 @@
               </p>
             </div>          
             <div class="tfa_headshot" style="margin-left: -4px;" tabindex="0" role="button" aria-label="Update your headshot" title="Update your headshot"></div>
-            <h3 style="margin-left: 52px;"></h3>
+            <h3 style="margin-left: 52px;">
+              <span></span>
+              <span></span>
+            </h3>
             <ul class="postLinks" style="margin: 15px 0 0 0;">
               <li><a href="/sandbox/a/homepage/add.php"><img src="/sandbox/images/write-letter.svg" alt="" /> Add homepage post</a></li>
-              <li><a href="/sandbox/a/reviews/add.php"><img src="/sandbox/images/write-letter.svg" alt="" /> Add film review</a></li>
+              <li><a href="/sandbox/a/reviews/add.php"><img src="/sandbox/images/filmcourt.svg" alt="" /> Add film review</a></li>
+              <li><a href="/sandbox/a/ticker/"><img src="/sandbox/images/ticker-black.svg" alt="" /> Update ticker</a></li>
               <li><a href="/sandbox/p/account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Your information</a></li>
               </li>
             </ul>

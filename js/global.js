@@ -1,5 +1,6 @@
 var global = {
 	run: function() {
+		global.ticker._getTickerData();
 		global.setEvents();
 		var num = parseFloat(window.location.href.split('/').length - 2),
 			page = window.location.href.split('/')[num];
@@ -480,6 +481,22 @@ var global = {
 		}
 	},
 
+	ticker: {
+		_getTickerData: function() {
+			$.ajax({
+				url: '/sandbox/services/get/getTicker.php',
+				method: 'GET',
+				success: function(msg) {
+					global.ticker.text = $.parseJSON(msg)[0]['text'];
+					$('#socialMedia span').text(global.ticker.text);
+				},
+				error: function(e) {
+					console.log(e);
+				}
+			});
+		}
+	},
+
 	util: {
 		_generateRandomNumber(number) {
 			return Math.floor((Math.random() * number) + 1);
@@ -559,6 +576,14 @@ var global = {
 				}).appendTo(element);
 			}
 
+			if(meminfo.slingshot === "Y") {
+				$('<img />').attr({
+					'src': '/sandbox/images/slingshot-badge.svg',
+					'alt': 'Slingshot',
+					'title': 'Slingshot'
+				}).appendTo(element);
+			}
+
 			if(meminfo.role === 'actor' || meminfo.secondaryrole === 'actor' || meminfo.role === 'actress' || meminfo.secondaryrole === 'actress') {
 				$('<img />').attr({
 					'src': '/sandbox/images/theatre.svg',
@@ -622,6 +647,7 @@ var global = {
 				'headshot': v.headshot,
 				'city': v.city,
 				'isAdmin': k.isAdmin,
+				'isReviewer': k.isReviewer,
 				'role': v.role,
 				'prirolebio': prb,
 				'secondaryrole': v.secondaryrole,
@@ -630,7 +656,8 @@ var global = {
 				'reel': v['reel'],
 				'phone': v.phone,
 				'exec_profile': v.exec_profile,
-				'plainname': v.firstname + ' ' + v.lastname
+				'plainname': v.firstname + ' ' + v.lastname,
+				'slingshot': v.slingshot
 			};
 			return memberObj;
 		},
@@ -678,7 +705,8 @@ var global = {
 							'reel': v['reel'],
 							'phone': v.phone,
 							'exec_profile': v.exec_profile,
-							'plainname': v.firstname + ' ' + v.lastname
+							'plainname': v.firstname + ' ' + v.lastname,
+							'slingshot': v.slingshot
 						};
 						if(id === script.currentUser) {
 							global.util._addBadgesToUser(v,k,$('#article_user h3').eq(1).find('span').eq(1));

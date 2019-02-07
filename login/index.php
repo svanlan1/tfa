@@ -14,15 +14,15 @@
             <ul class="benefits">
               <li>
                 <img src="/sandbox/images/computer.svg" alt="" /> Get access to our Talent database and find your cast and crew for your next project!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+                <p class="instructions">There are currently <span id="membersnumber"></span> members in the TFA!</p>
               </li>
               <li>
                 <img src="/sandbox/images/business-meeting.svg" alt="" /> Meet other local artists interested in all aspects of filmmaking and grow your production company!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+                <p class="instructions">We're a great group and want to film with you!</p>
               </li>
               <li>
                 <img src="/sandbox/images/movie-projector.svg" alt="" /> Proudly share your films with other members and get feedback!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+                <p class="instructions">Watch <span id="filmsnumber"></span> films inside of the TFA website!</p>
               </li>
             </ul>
           </div>

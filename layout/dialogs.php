@@ -153,3 +153,24 @@
 		</div>
 	</div>
 </div>
+
+<div class="dialog" role="dialog" aria-labelledby="messdialogh2" data-dialog-id="sendMessage">
+	<div role="document">
+		<h2 id="messdialogh2">Send a message</h2>
+		<div class="container" style="padding: 25px 5px;">
+			<div class="row">
+				<label class="screen-reader-only">Send message to</label>
+				<input type="search" id="sendToMember" placeholder="Who are you sending this to?" />
+			</div>
+			<div class="row">
+				<textarea aria-label="What's your message?" placeholder="Your message"></textarea>
+			</div>
+			<div class="row">
+				<button class="add">
+					<i class="material-icons">send</i>
+					Send
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
