@@ -1,6 +1,12 @@
 var script = {
 	run: function() {
 		script._get();
+		$('.addFilm').bind('click', function(e) {
+			global.dialog._open('addFilm');
+			global.dialog._closeAction = function(e) {
+				console.log('add film dialog closed');
+			}
+		})
 	},
 
 	_get: function() {
@@ -111,6 +117,14 @@ var script = {
 			//}
 		});
 		$('div.film').eq(0).remove();
+	},
+
+	_submitFilm: function() {
+		var data = {};
+		$('div[data-dialog-id=addFilm] input select textarea').each(function(i,v) {
+			data[$(v).attr('data-db-name')] = $(v).val();
+		})
+		data.subdate = new Date();
 	}
 }
 $(document).ready(function(e){

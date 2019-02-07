@@ -90,5 +90,23 @@ button.fileUpload:active {
     background-color: #e9e9e9;
 }
 
+button.rounded {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    background-color: #ea5959;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: 28%;
+    margin-top: -27px;
+}
 
+button.rounded i {
+    font-size: 30px !important;
+}
 
+button.rounded:focus {
+    outline: 0 !important;
+    background-color: #842f2f !important;
+}

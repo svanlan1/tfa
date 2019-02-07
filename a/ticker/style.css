@@ -9,3 +9,22 @@ body {
 .container p {
     font-size: .8rem;
 }
+
+#prevticks li {
+    padding: 5px;
+    border: solid 1px #eee;
+    margin-bottom: 5px;
+}
+
+.textspan {
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.datespan {
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 25px;
+    color: #555;
+}

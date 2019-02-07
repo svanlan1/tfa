@@ -31,10 +31,20 @@ var post = {
 	        	script.homepage = script.data.homepage;
 				script.posts = script.data.posts;
 				script.comments = script.data.comments;
+				script.member_messages = script.data.member_messages;
     			if(script.found) {
 					$('.publicProfile').show();
 					$('.publicProfile a').attr('href', '/sandbox/profiles/?id=' + script.userData[script.currentUser].id);
-    			}
+				}
+				
+				$(script.member_messages).each(function(j,k) {
+					if(k.toread === "N") {
+						$('<span />').text(' - New messages!').addClass('unreadmessages').appendTo('#myMessages');
+						return false;
+					}
+				});
+
+
 	        	$('#article_user .loader').hide();
 	        	$('#article_user .showHide').fadeIn();
 				//console.log(script.data);

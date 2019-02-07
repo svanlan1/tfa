@@ -10,6 +10,7 @@
 	<div role="document" tabindex="-1">
 		<a href="javascript:;" role="button" class="closeDialog">
 			<i class="material-icons">clear</i>
+			<span class="screen-reader-only">Close search dialog</span>
 		</a>
 		<h2 id="sdialogh2">Search results <span class="byline"></span></h2>
 		<div class="loader"></div>
@@ -33,6 +34,7 @@
 	<div role="document" tabindex="-1">
 		<a href="javascript:;" role="button" class="closeDialog">
 			<i class="material-icons">clear</i>
+			<span class="screen-reader-only">Close photos dialog</span>
 		</a>
 		<div class="showHide">
 			<div>
@@ -47,7 +49,8 @@
 	<div role="document">
 		<a href="javascript:;" role="button" class="closeDialog">
 			<i class="material-icons">clear</i>
-		</a>		
+			<span class="screen-reader-only">Close add headshot dialog</span>
+		</a>	
 		<h2 id="hsdialogh2">Change your headshot</h2>
         <div class="full preUpload" style="text-align: center;">
           <label for="banner"><span class="screen-reader-only">Upload a photo to change your headshot</span></label>
@@ -82,7 +85,8 @@
 	<div role="document">
 		<a href="javascript:;" role="button" class="closeDialog">
 			<i class="material-icons">clear</i>
-		</a>		
+			<span class="screen-reader-only">Close upload script dialog</span>
+		</a>	
 		<h2 id="sdialogh2">Upload a script</h2>
         <div class="full preUpload" style="text-align: center;">
           <label for="scriptUpload"><span class="screen-reader-only">Upload a new script</span></label>
@@ -137,6 +141,7 @@
 		<div role="document">
 			<a href="javascript:;" role="button" class="closeDialog">
 				<i class="material-icons">clear</i>
+				<span class="screen-reader-only">Close add post dialog</span>
 			</a>		
 			<h2 id="sdialogh2" class="screen-reader-only">Add your post!</h2>
 			<div class="container" style="padding: 25px 5px;">
@@ -155,21 +160,70 @@
 </div>
 
 <div class="dialog" role="dialog" aria-labelledby="messdialogh2" data-dialog-id="sendMessage">
+	<a href="javascript:;" role="button" class="closeDialog">
+		<i class="material-icons">clear</i>
+		<span class="screen-reader-only">Close send message dialog</span>
+	</a>
 	<div role="document">
 		<h2 id="messdialogh2">Send a message</h2>
-		<div class="container" style="padding: 25px 5px;">
-			<div class="row">
+		<div class="container" style="padding: 0px 5px 25px 5px;">
+			<p class="row instructions">
+				Begin typing to search for the member you want to message
+			</p>
+			<div class="row" style="margin: 10px;">
 				<label class="screen-reader-only">Send message to</label>
-				<input type="search" id="sendToMember" placeholder="Who are you sending this to?" />
+				<input type="search" id="sendToMember" placeholder="Who are you sending this to?" style="width: 97.5%; padding: 20px; text-indent: 5px;" />
 			</div>
-			<div class="row">
-				<textarea aria-label="What's your message?" placeholder="Your message"></textarea>
+			<div class="row msgSearchResults">
+				<ul></ul>
 			</div>
-			<div class="row">
+			<div class="row" style="margin: 10px;">
+				<textarea id="userMessageText" aria-label="What's your message?" placeholder="Your message"></textarea>
+			</div>
+			<div class="row" style="margin: 10px 0 10px 10px; padding: 5px">
 				<button class="add">
 					<i class="material-icons">send</i>
 					Send
 				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="dialog" role="dialog" aria-labelledby="addfilmdialogh2" data-dialog-id="addFilm">
+	<a href="javascript:;" role="button" class="closeDialog">
+		<i class="material-icons">clear</i>
+		<span class="screen-reader-only">Close add film dialog</span>
+	</a>
+	<div role="document">
+		<h2 class="screen-reader-only" id="addfilmdialogh2">
+			Add your film
+		</h2>
+	</div>
+</div>
+
+<div class="dialog" role="dialog" aria-labelledby="readmessageh2" data-dialog-id="readmessage">
+	<a href="javascript:;" role="button" class="closeDialog">
+		<i class="material-icons">clear</i>
+		<span class="screen-reader-only">Close message dialog</span>
+	</a>	
+	<div role="document">
+		<div class="dialogcontainer">
+			<h2 class="screen-reader-only" id="dialogh2">Read message</h2>
+			<div class="fromheadshot"></div>
+			<h3 class="fromname"></h3>
+			<div class="msgdetails"></div>
+			<p>This is some text</p>
+			<div class="row"><a href="javascript:;" class="replyToMsg">Reply</a></div>
+			<div class="row replyDiv">
+				<label class="screen-reader-only" for="replyTextarea">Reply</label>
+				<textarea id="replyTextarea" placeholder="Reply"></textarea>
+				<div class="row">
+					<button class="sendReplyToUser">
+						<i class="material-icons" aria-hidden="true">send</i>
+						Send reply
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>

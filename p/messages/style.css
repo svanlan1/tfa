@@ -2,6 +2,176 @@ body {
 	
 }
 
-.container {
+.ccontainer {
     padding: 10px;
+    flex-basis: 100%;
+}
+
+span.counter {
+    color: #666;
+    font-size: .8rem;
+    font-style: italic;
+    display: block;
+    text-align: left;
+    margin: 0 0 15px 25px;
+}
+
+table tbody tr:hover {
+    background-color: #eff0f2;
+    cursor: pointer;
+}
+
+table tbody tr:active {
+    background-color: #e0e1e2;
+}
+
+button.add {
+    padding: 15px;
+    color: #000;
+    background-color: #fff;
+    width: 96%;
+    border: solid 1px #eee;
+    font-size: 15px;
+}
+
+button.add i {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+p.instructions {
+    font-size: .8rem;
+    padding: 0 5px 0 10px;
+    margin: 0;
+}
+
+.msgSearchResults {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+    box-shadow: #000 0 0 5px 2px;
+    width: 94%;
+    margin: 5px 10px 5px 12px;
+}
+
+.msgSearchResultLi {
+    padding: 15px 0 15px 0;
+    border-bottom: solid 1px #eee;
+}
+
+.msgSearchResultLi span:nth-child(2) {
+    margin-left: 55px;
+}
+
+.msgSearchResultLi span:nth-child(3) {
+    margin-left: 10px;
+}
+
+.msgSearchResultLi span img {
+    width: 16px;
+    margin-left: 5px;
+}
+
+.msgSearchResultLi:hover, .msgSearchResultLi:focus {
+    background-color: #444;
+    color: #fff;
+}
+
+.searchHeadshot {
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: #222 0 0 2px 2px;
+    margin-top: -10px;
+    margin-left: 5px;
+}
+
+tr.unread {
+    font-weight: 700;
+}
+
+div.actionsRow {
+    margin: 10px 0;
+    padding: 10px 10px 0 5px;
+    border-bottom: solid 2px #eee;
+}
+
+div.actionsRow a {
+    color: #444;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 25px;
+    border-bottom: solid 2px #ccc;
+    text-decoration: none;
+}
+
+div.actionsRow a[aria-selected=true] {
+    font-weight: 700;
+    border-bottom: solid 2px #c3a3aa;
+}
+
+#sentMsgsTable {
+    display: none;
+}
+
+div[data-dialog-id=readmessage] p {
+    font-size: .85rem;
+    border: solid 1px #eee;
+    border-radius: 3px;
+}
+
+.dialogcontainer {
+    padding: 5px;
+}
+
+.dialogcontainer p {
+    padding: 10px 3px;
+}
+
+.dialogcontainer textarea {
+    width: 98.5%;
+}
+
+.fromheadshot {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: #000 0 0 2px 1px;
+}
+
+.fromname {
+    border-bottom: solid 1px #eee;
+    font-size: .95rem;
+    padding-left: 50px;
+    margin-bottom: 3px;
+}
+
+.msgdetails {
+    font-style: italic;
+    font-size: .84rem;
+    color: #666;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.replyToMsg {
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    font-size: .8rem;
+    display: block;
+    padding: 5px 0 10px 5px;
+}
+
+.replyToMsg:hover, .replyToMsg:focus {
+    text-decoration: underline;
+}
+
+.replyDiv {
+    display: none;
 }

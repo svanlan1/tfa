@@ -1,6 +1,5 @@
 .actionsRow {
     padding: 5px 10px;
-    border-top: solid 1px #c9c9c9;
     border-bottom: solid 1px #c9c9c9;
 }
 
@@ -100,4 +99,8 @@ div.thisInfo .half span {
     margin-left: 10px;
     margin-top: -3px;
     position: absolute;
+}
+
+button.rounded {
+    margin-top: -27px !important;
 }

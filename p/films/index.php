@@ -16,8 +16,11 @@
           <h2 class="header"><img src="../../images/spotlight_header.png" alt="February spotlight" /></h2>
           <div class="sectionContent" style="flex-flow:column;">
             <div class="container">
-                <div class="actionsRow arBottom">
-                    <button class="addFilm viewAll">Add a film</button>
+                <div class="actionsRow">
+                    <button class="rounded addFilm">
+                      <i class="material-icons" aria-hidden="true">add</i>
+                      <span class="screen-reader-only">Add a new film</span>
+                    </button>
                 </div>
                 <ul> 
                 </ul>

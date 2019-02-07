@@ -31,6 +31,10 @@
                   Update
                 </button>
               </div>
+              <div class="row">
+                <h3>Previous tickers</h3>
+                <ul id="prevticks"></ul>
+              </div>
             </div>
           </div>
         </section>
