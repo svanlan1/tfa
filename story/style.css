@@ -5,8 +5,7 @@ section h2 {
 .storyBanner {
     display: block;
     height: 300px;
-    background-position: cover
-    background-
+    background-position: cover;
 }
 
 .storySetup {
@@ -119,12 +118,12 @@ button.addComments {
     margin-right: 5px;
 }
 
-.alert a {
+.alertt a {
     color: #000080;
     text-decoration: none;
 }
 
-.alert a:hover, .alert a:focus {
+.alertt a:hover, .alert a:focus {
     outline: dotted 1px #000;
     text-decoration: none;
 }

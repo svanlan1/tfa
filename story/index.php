@@ -25,12 +25,12 @@
             <div class="storyComments">
               <h3>Comments</h3>
               <div class="addComment">
-              <?php if($user->is_logged_in()) { 
-                  require('../layout/addComments.php');
-                } else {
-                  require('../layout/sorryNoComment.php');
-                }
-              ?>                
+                <?php if($user->is_logged_in()) { 
+                    require('../layout/addComments.php');
+                  } else {
+                    require('../layout/sorryNoComment.php');
+                  }
+                ?>                
               </div>
               <div class="previousComments"></div>
             </div>

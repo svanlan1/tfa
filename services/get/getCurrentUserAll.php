@@ -71,11 +71,11 @@
 		$uploads[] = array('id'=>$rows['id'], 'filepath'=>$rows['filepath'], 'filename'=>$rows['filename'], 'category'=>$rows['category']);
 	}	
 
-	$commentslist = $db->prepare('SELECT * FROM comments order by commentTime desc');
+	$commentslist = $db->prepare('SELECT * FROM comments order by dbdate desc');
 	$commentslist->execute();
 	$comments = array();
 	while ( $rows = $commentslist->fetch(PDO::FETCH_ASSOC) ) {
-		$comments[] = array("memberID"=>$rows['memberID'], "postID"=>$rows["postID"], "approved"=>$rows["approved"], "comment"=>$rows["comment"], id=>$rows["id"], "commentTime"=>$rows["commentTime"], "category"=>$rows["category"], "children"=>$rows["children"], "childOf"=>$rows["childOf"]);
+		$comments[] = array("memberID"=>$rows['memberID'], "postID"=>$rows["postID"], "approved"=>$rows["approved"], "comment"=>$rows["comment"], id=>$rows["id"], "commentTime"=>$rows["commentTime"], "category"=>$rows["category"], "children"=>$rows["children"], "childOf"=>$rows["childOf"], "dbdate"=>$rows["dbdate"]);
 	}
 
 	$msglist = $db->prepare('SELECT * FROM member_messages WHERE sentTo = :memberID');

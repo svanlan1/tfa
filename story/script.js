@@ -55,7 +55,7 @@ var script = {
 		if(current) {
 			var timestamp = global.util._formatJSDate(new Date().toString(), true);
 		} else {
-			var timestamp = global.util._formatJSDate(options.commentTime);
+			var timestamp = global.util._formatJSDate(options.commentTime, true);
 		}
 		
 

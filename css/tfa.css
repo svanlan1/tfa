@@ -473,7 +473,7 @@ html body header div[role=presentation] {
     flex-flow: row;
     justify-content: flex-end;
     height: 35px;
-    width: 100%:;
+    width: 100%;
 }
 
 html body header div[role=presentation] img {

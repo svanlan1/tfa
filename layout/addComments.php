@@ -1,4 +1,4 @@
-<div role="alert" class="alert userAddComment">
+<div role="alert" class="alertt userAddComment">
     <h3>
         <div class="tfa_headshot"></div>
         <span style="margin-left: 62px;"></span>
