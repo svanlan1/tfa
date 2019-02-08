@@ -1,0 +1,48 @@
+body {
+	
+}
+
+.container {
+    padding: 5px;
+}
+
+.container p {
+    font-size: .8rem;
+}
+
+#prevmins li {
+    padding: 5px;
+    border: solid 1px #eee;
+    margin-bottom: 5px;
+}
+
+.textspan {
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.datespan {
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 25px;
+    color: #555;
+}
+
+.stepped {
+    display: none;
+}
+
+div[data-disp] {
+    border-bottom: solid 2px #eee;
+}
+
+div[data-disp=upload] {
+    padding: 50px 0;
+    text-align: center;
+    background: #efefef;
+}
+
+.fileUpload {
+    width: 200px !important;
+}

@@ -27,6 +27,11 @@ h4.user_comment_name {
     background: rgba(46, 85, 132, .2);
 }
 
+h4.user_comment_name a {
+    color: #000;
+    text-decoration: none;
+}
+
 h4.user_comment_name img {
     width: 16px;
     margin-left: 10px;

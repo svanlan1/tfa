@@ -8,3 +8,11 @@ p ul {
     font-size: .9rem;
     font-weight: 600;
 }
+
+section .container {
+    padding: 0;
+}
+
+section .container .content {
+    
+}

@@ -19,6 +19,10 @@ var script = {
 			})
 		});
 
+		$('#ticker').bind("keyup", function(e) {
+			$('#socialMedia span').text($(this).val());
+		});
+
 		$.ajax({
 			url: '../../services/get/getAllTickers.php',
 			method: 'GET',
@@ -37,6 +41,7 @@ var script = {
 						datespan = $('<span />').addClass('datespan').text(global.util._formatJSDate(v.dateAdded, true)).appendTo(li);
 					$(li).bind('click', function(e) {
 						$('#ticker').val($(this).find('.textspan').text());
+						$('#socialMedia span').text($(this).find('.textspan').text());
 					});
 				})
 			},

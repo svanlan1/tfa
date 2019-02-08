@@ -228,3 +228,14 @@
 		</div>
 	</div>
 </div>
+
+<div class="dialog" role="dialog" aria-labelledby="dialogh2" data-dialog-id="messagesent">
+	<a href="javascript:;" role="button" class="closeDialog">
+		<i class="material-icons">clear</i>
+		<span class="screen-reader-only">Close message sent dialog</span>
+	</a>	
+	<div role="document">
+		<h2 id="dialogh2">Success!</h2>
+		<p>Your message has been sent.  Someone from the TFA will get back to you within 24 hours.</p>
+	</div>
+</div>

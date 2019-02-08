@@ -18,14 +18,18 @@
 	        	<ul class="submenu">
 	        		<li><a href="/sandbox/a/members/">Management</a></li>
 	        	</ul>
-	    	</li> -->
+			</li> -->
+			<li>
+				<a href="/sandbox/a/">Home</a>
+			</li>
 	        <li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">Content <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">
 					<!-- <li><a href="/sandbox/a/ticker/">Manage top ticker</a></li> -->
-					<li><a href="/sandbox/a/ticker/">Manage ticker</a></li>
-	        		<li><a href="/sandbox/a/homepage/">Manage homepage</a></li>
-	        		<li><a href="/sandbox/a/reviews/">Manage film court</a></li>
+					<li><a href="/sandbox/a/ticker/">Ticker</a></li>
+	        		<li><a href="/sandbox/a/homepage/">Homepage</a></li>
+					<li><a href="/sandbox/a/reviews/">Film court</a></li>
+					<li><a href="/sandbox/a/minutes/">Minutes</a></li>
 				</ul>	        	
 	        </li>
 	        <!-- <li class="hasSubmenu">

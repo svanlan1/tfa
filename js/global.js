@@ -217,6 +217,11 @@ var global = {
 				$(this).find('i').text('add_circle_outline');
 			}
 		});
+		$(document).ready(function(e) {
+			setTimeout(function() {
+				//global.counter._addCountInfo();
+			}, 2000);
+		});
 	},
 
 	chooseHeadshotFromUploads: function(fn) {
@@ -497,6 +502,27 @@ var global = {
 		}
 	},
 
+	counter: {
+		_addCountInfo: function() {
+			var counterData = {
+				'pagev': $('title').text(),
+				'urlv': window.location.href,
+				'moreinfo': "{}"
+			};
+			$.ajax({
+				url: '/sandbox/services/set/addCounter.php',
+				method: 'POST',
+				data: counterData,
+				success: function(msg) {
+					console.log(msg);
+				},
+				error: function(e) {
+					console.log(e);
+				}
+			});
+		}
+	},
+
 	util: {
 		_generateRandomNumber(number) {
 			return Math.floor((Math.random() * number) + 1);
@@ -718,19 +744,72 @@ var global = {
 					}
 				});
 			});
-		if(!script.found) {
-			$('#notification').fadeIn('slow');
-			script.found = false;
-		} else {
-			$('#notification').hide();
-			script.found = true;
-		}	    	
-		/** User Navigation Fillings **/
-		post.headshot();
-		if($('#article_user h3').eq(0).text() === "") {
-			$('#article_user h3').eq(0).text('Guest');
-		}
-		return memberObj;
+			if(!script.found) {
+				$('#notification').fadeIn('slow');
+				script.found = false;
+			} else {
+				$('#notification').hide();
+				script.found = true;
+			}	    	
+			/** User Navigation Fillings **/
+			post.headshot();
+			if($('#article_user h3').eq(0).text() === "") {
+				$('#article_user h3').eq(0).text('Guest');
+			}
+			return memberObj;
+		},
+
+		_uploadFile: function(data, successFn) {
+			$.ajax({
+				url: '/sandbox/services/set/fileUpload.php',
+				dataType: 'text',
+				cache: false,
+				contentType: false,
+				processData: false,
+				data: data,                         
+				type: 'post',
+				async: false,
+				success: function(msg){
+					script.tempFileName = msg;
+				},
+				error: function(e) {
+					console.log(e);
+				}
+			});
+		},
+
+		_getSpecificDates: function(dayOfWeek, freq, mos, period) {
+			var mName=["January","February","March","April","May","June", "July",
+				"August","September","October","November","December"];
+			now=new Date();
+			now.setMonth(now.getMonth() - mos);
+			now.setDate(1);
+			var month=now.getMonth();
+			var year=now.getFullYear();
+			var arr = {
+				'first': [],
+				'third': []
+			};
+			for(var i=0;i<period;i++){
+				var firstDay=now.getDay();
+				var firstMon=1+(1-firstDay+7)%7;
+				var thirdMon=firstMon+freq;
+				var monthName=mName[now.getMonth()];
+
+				var f = monthName + " " + firstMon + ", " + year,
+					t = monthName + " " + thirdMon + ", " + year;
+				arr.first.push(f);
+				arr.third.push(t);
+
+				month++;
+
+				if(month==12){
+					month=0;
+					year++;
+				}
+				now=new Date(year,month,1);
+			}
+			return arr;
 		}
 	}
 }

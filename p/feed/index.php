@@ -24,7 +24,7 @@
               <div class="previousComments">
                   <div class="user_comment" style="display:none;">
                     <div class="tfa_headshot" style="background: url('') 0% 0% / cover no-repeat;"></div>
-                    <h4 class="user_comment_name"><span class="hname"></span></h4>
+                    <h4 class="user_comment_name"><a href="javascript:;"><span class="hname"></span></a></h4>
                     <p class="user_comment_text">
                       <span class="htext"></span>
                       <span class="byline"></span>

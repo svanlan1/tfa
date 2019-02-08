@@ -4,12 +4,7 @@
 	require('../../layout/commonHead.php');
 ?>
   <body>
-    <?php if($user->is_logged_in()) { 
-        require('../../layout/postNav.php');
-      } else {
-        require ('../../layout/preNav.php');
-      } 
-    ?>
+    <?php require('../../layout/adminNav.php'); ?>
     <link rel="stylesheet" href="aboutus.css" />
     <main>
       <div class="r75">
@@ -21,9 +16,10 @@
               <p>
                 The text that you enter here will display on both the pre and post login homepage.  Please double check that the text you enter is <strong>exactly</strong> what you want it to say.
               </p>
+              <p>As you type, watch the ticker at the top of the screen.  It will be a live preview of what everyone will see once you click "Update".</p>
               <div class="row">
                 <label for="ticker">New ticker text</label>
-                <textarea id="ticker" maxlength="140" placeholder="This exact text will display in the ticker"></textarea>
+                <textarea id="ticker" maxlength="78" placeholder="This exact text will display in the ticker"></textarea>
               </div>
               <div class="row">
                 <button class="add" id="updateTicker">
