@@ -32,6 +32,9 @@
 					<li><a href="/sandbox/a/minutes/">Minutes</a></li>
 				</ul>	        	
 	        </li>
+			<li>
+				<a href="/sandbox/a/events/">Events</a>
+			</li>
 	        <!-- <li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">Slingshot <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>
 	        	<ul class="submenu">

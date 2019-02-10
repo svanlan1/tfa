@@ -10,6 +10,14 @@
 		$members[] = array('memberID'=>$rows['memberID'], 'isAdmin'=>$rows['admin'], 'username'=>$rows['username'], 'email'=>$rows['email'], 'isActive'=>$rows['active'], 'isBanned'=>$rows['banned']);
 	}
 
-    $retdata['members'] = $members;
+    $minlist = $db->prepare('SELECT * FROM minutes order by dateAdded asc');
+    $minlist->execute();
+    $minutes = array();
+    while ( $rows = $minlist->fetch(PDO::FETCH_ASSOC) ) {
+        $minutes[] = array('id'=>$rows['id'], 'memberID'=>$rows['memberID'], 'dateAdded'=>$rows['dateAdded'], 'file'=>$rows['file'], 'dateMet'=>$rows['dateMet'], 'link'=>$rows['link']);
+    }	
+
+	$retdata['members'] = $members;
+	$retdata['minutes'] = $minutes;
     echo json_encode($retdata);
 ?>

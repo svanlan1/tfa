@@ -1,3 +1,7 @@
+.showHide {
+	display: none;
+}
+
 .execMember {
 	width: 100%;
     display: block;

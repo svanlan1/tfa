@@ -1,0 +1,76 @@
+body {
+	
+}
+
+.container {
+    padding: 5px;
+}
+
+.container p {
+    font-size: .8rem;
+}
+
+#prevevents li {
+    padding: 5px;
+    border: solid 1px #eee;
+    margin-bottom: 5px;
+}
+
+#prevevents li h4 {
+    margin: 3px 2px;
+    font-family: 'Staatliches';
+}
+
+#prevevents li p {
+    margin: 2px 0;
+}
+
+.textspan {
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.datespan {
+    font-size: .8rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 25px;
+    color: #555;
+}
+
+.datedeets {
+    padding-left: 40px;
+    width: 40%;
+}
+
+input[data-toggle=datepicker], .datedeets input {
+    width: 200px;
+    display: block;
+}
+
+.full textarea {
+    height: 200px;
+}
+
+.row h3 {
+    border-bottom: solid 2px #eee;
+    font-weight: 300;
+    display: block;
+
+}
+
+.other_rd_fld {
+    display: none;
+    margin: 5px 15px;
+}
+
+.evdate {
+    font-size: .8rem;
+    font-weight: 500;
+    color: #666;
+    margin-left: 10px;
+}
+
+h4 span.evdate {
+    font-style: italic;
+}

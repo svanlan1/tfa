@@ -22,28 +22,17 @@
 
         <section class="homepage" id="Executives">
           <h2><img src="../images/executive.svg" alt="" /> Executives</h2>
-          <div class="sectionContent" style="flex-flow: column;"></div>
+          <div class="loader"></div>
+          <div class="sectionContent showHide" style="flex-flow: column;"></div>
         </section>
       </div>
 
       <div class="r20">
         <section>
           <h2><img src="../images/paper.svg" alt="" /> Previous minutes</h2>
-          <div class="sectionContent">
-            <ul class="eventList">
-              <li>
-                <h3>January 21st, 2019</h3>
-                <a href="https://drive.google.com/open?id=17ImfT0icMR4CdAuVYsNXTb_5bsW-OxSicsx48Vmaif0" target="_blank">Link to minutes</a>
-              </li>
-              <li>
-                <h3>January 7th, 2019</h3>
-                <a href="https://drive.google.com/open?id=1jXq932lEbyQysg63Jmkyzr4R5M3RLdzmpfB7TzZNn70" target="_blank">Link to minutes</a>
-              </li>
-              <li>
-                <h3>December 3rd, 2018</h3>
-                <a href="https://drive.google.com/open?id=1qqg1W1sYxmNQNa1p5NxkpTmKK97TapZDn6EbK8DqfKk" target="_blank">Link to minutes</a>
-              </li>
-            </ul>
+          <div class="loader"></div>
+          <div class="sectionContent showHide">
+            <ul class="eventList"></ul>
           </div>
         </section>
       </div>

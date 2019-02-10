@@ -1,11 +1,15 @@
 var script = {
 	execArr:  [],
+	execCount: 0,
 	run: function() {
 		$.ajax({
 	        url: '/sandbox/services/get/getAllExecInfo.php',
 	        method: 'GET',
 	        success: function(msg) {
-				script.execs = $.parseJSON(msg).members;
+				script.data = $.parseJSON(msg);
+				script.execs = script.data.members;
+				global.util._sortObject(script.execs, "username");
+				script.minutes = script.data.minutes;
 				$(script.execs).each(function(i,v) {
 					$.ajax({
 						url: '/sandbox/services/get/getUser.php',
@@ -13,12 +17,32 @@ var script = {
 						data: {"id": v.memberID},
 						success: function(msg) {
 							script.drawExec($.parseJSON(msg));
+							script.execCount++;
+							if(script.execCount === script.execs.length) {
+								$('.r80 .loader').hide();
+								$('.r80 .showHide').fadeIn();
+							}							
 						},
 						error: function(e) {
 							console.log(e);
 						}
 					});
 				});
+				$(script.minutes).each(function(i,v) {
+					var ul = $('.eventList'),
+						li = $('<li />').appendTo(ul),
+						h3 = $('<h3 />').text(v.dateMet).appendTo(li),
+						a = $('<a />').text('Link to minutes').appendTo(li);
+					if(v.file !== "") {
+						$(a).attr("href", "/sandbox/uploads/scripts/" + v.file);
+					} else {
+						$(a).attr("href", v.link);
+					}
+					$(a).attr('target', '_blank');
+					$('<span />').addClass('screen-reader-only').text(', opens in a new window').appendTo(a);
+				});
+				$('.r20 .loader').hide();
+				$('.r80 .showHide').fadeIn();
 				console.log(script.execArr);
 			},
 			error: function(e) {

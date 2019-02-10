@@ -39,7 +39,7 @@
 	        		<li><a href="/sandbox/p/wam/">WAM</a></li>
 					<?php
 						if( $user->isAdmin($_SESSION['admin']) ) {
-							echo "<li><a href='../../a/'>Admin panel</a></li>";
+							echo "<li><a href='/sandbox/a/'>Admin panel</a></li>";
 						}	
 					?>	        		
 	        	</ul>
@@ -49,7 +49,7 @@
 	        </li>
 	        <li><a href="/sandbox/events/">Events</a></li>
 	        <li><a href="/sandbox/p/reviews/">Reviews</a></li>
-	        <li><a href="forum/">Forum</a></li>
+	        <li><a href="http://www.tacomafilmalliance.com/forum/">Forum</a></li>
 	        <li>
 				<a href="https://www.facebook.com/groups/TacomaFilmAlliance/" target="_blank">
 					<img class="i24" src="/sandbox/images/facebook-logo-orange.png" alt="Facebook, opens in a new window" />
@@ -72,7 +72,7 @@
 	        </li>
 			<?php
 				if( $user->isAdmin($_SESSION['admin']) ) {
-					echo "<li class='bordered' style='text-align: center; margin-right: 0;'><a title='Administrator panel' href='../../a/'><img class='i24' src='/sandbox/images/admin.svg' alt='Administrators only' /></a></li>";
+					echo "<li class='bordered' style='text-align: center; margin-right: 0;'><a title='Administrator panel' href='/sandbox/a/'><img class='i24' src='/sandbox/images/admin.svg' alt='Administrators only' /></a></li>";
 				}	
 			?>	        
 	        <li class="bordered"><a href="/sandbox/logout/">Logout</a></li>

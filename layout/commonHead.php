@@ -22,6 +22,8 @@
     <link href="/sandbox/css/tfa.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="style.css" />
 
+    <link  href="/sandbox/css/datepicker.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/sandbox/css/loading-bar.css"/>
-    <script type="text/javascript" src="/sandbox/js/loading-bar.js"></script>       
+           
   </head>

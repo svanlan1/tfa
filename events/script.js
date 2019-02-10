@@ -17,8 +17,12 @@ var script = {
 		console.log('Past events: ' + pastEvents);
 		$(futureEvents).each(function(i,v) {
 			var clone = $('#upcomingEvents .sectionContent').eq(0).clone();
+			var photo = v.photo;
+			if(photo.indexOf('http://') === -1) {
+				photo = '/sandbox/uploads/' + v.photo;
+			}
 			$(clone).find('h3').text(v.startDate + ' - ' + v.title);
-			$(clone).find('div.banner img').attr('src', v.photo);
+			$(clone).find('div.banner img').attr('src', photo);
 			$(clone).find('p').text(v.details);
 			$(clone).find('.byline').text('@' + v.location);
 			if(v.gmaps !== "") {

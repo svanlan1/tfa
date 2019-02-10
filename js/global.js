@@ -32,6 +32,9 @@ var global = {
 	},
 
 	setEvents: function() {
+		$('[data-toggle="datepicker"]').datepicker({
+			'autoHide': true
+		});
 		$('.hasSubmenu').bind('click', function(e) {
 			if($(this).find('a').eq(0).attr('aria-expanded')) {
 				$('ul.submenu').slideUp('fast');
@@ -267,9 +270,15 @@ var global = {
 			    contentType: false,
 			    processData: false,
 			    data: form_data,                         
-			    type: 'post',
+				type: 'post',
+				asnyc: false,
 			    success: function(msg){
-			    	successFn(msg);
+					if(script) {
+						script.tempImage = msg;
+					}
+					
+					successFn(msg);
+					
 			    	return msg;
 			    },
 			    error: function(e) {
@@ -810,6 +819,13 @@ var global = {
 				now=new Date(year,month,1);
 			}
 			return arr;
+		},
+
+		_sortObject(array, key) {
+			return array.sort(function(a, b) {
+        var x = a[key]; var y = b[key];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+    	});
 		}
 	}
 }
