@@ -23,7 +23,7 @@
             </h3>
             <ul class="postLinks" style="margin: 15px 0 0 0;">
               <li><a href="/sandbox/a/homepage/add.php"><img src="/sandbox/images/write-letter.svg" alt="" /> Add homepage post</a></li>
-              <li><a href="/sandbox/a/events/"><img src="/sandbox/images/calendar.svg" alt="" /> Add event</a></li>
+              <li><a href="/sandbox/a/events/"><img src="/sandbox/images/calendar-black.svg" alt="" /> Add event</a></li>
               <li><a href="/sandbox/a/reviews/add.php"><img src="/sandbox/images/filmcourt.svg" alt="" /> Add film review</a></li>
               <li><a href="/sandbox/a/minutes/"><img src="/sandbox/images/binders.svg" alt="" />Add meeting minutes</a></li>
               <li><a href="/sandbox/a/ticker/"><img src="/sandbox/images/ticker-black.svg" alt="" /> Update ticker</a></li>

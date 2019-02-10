@@ -823,9 +823,22 @@ var global = {
 
 		_sortObject(array, key) {
 			return array.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-    	});
+				var x = a[key]; var y = b[key];
+				return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+			});
+		},
+
+		_validate() {
+			var bool = true;
+			$('*[aria-required=true]:visible').each(function(i,v) {
+				if($(v).val() === "") {
+					bool = false;
+					$(v).attr('aria-invalid', 'true');
+				} else {
+					$(v).removeAttr('aria-invalid');
+				}
+			});
+			return bool;
 		}
 	}
 }

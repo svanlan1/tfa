@@ -21,33 +21,24 @@ var script = {
 				console.log(e);
 			}
 		});
+
+		$('#bannerUpload').bind('change', function(e) {
+			var text = $(this).val().split('\\'),
+				disp = text[text.length -1];
+			$('.fileUpload span').text(disp);
+		});
 		
 
 		$('#addEvent').bind('click', function(e) {
-			getData = function() {
-				var file = $('#bannerUpload');
-				var file_data = file[0].files[0];   
-				var form_data = new FormData();                  
-				form_data.append('file', file_data);
-				form_data.append('title', $('#eventName').val()); 
-				var options = {
-					"category": "event"
-				}
-				form_data.append('category', JSON.stringify(options));
-				if(file_data) {
-					return form_data;
-				} else {
-					return "ERROR";
-				}			
-			}
-
 			successFn = function(msg) {
 				console.log(msg);
 				script.addEvent(msg);
 			}
-			global.uploadImage($('#bannerUpload'), "event", successFn, $('#eventName').val());
-			
-
+			if(global.util._validate()) {
+				global.uploadImage($('#bannerUpload'), "event", successFn, $('#eventName').val());
+			} else {
+				$('*[aria-invalid=true]').eq(0).focus();
+			}
 		});
 	},
 

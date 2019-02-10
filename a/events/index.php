@@ -16,17 +16,17 @@
               </div>
               <div class="half">
                 <label for="eventName">Event name</label>
-                <textarea style="height: 135px;" id="eventName" placeholder="Event name"></textarea>
+                <textarea style="height: 135px;" id="eventName" placeholder="Event name" aria-required="true"></textarea>
               </div>
               <div class="half datedeets">
                 <label for="eventDate">Event date</label>
-                <input type="text" id="eventDate" data-toggle="datepicker" placeholder="Date" />
-                <input id="startTime" style="margin: 10px 0;" type="text" aria-label="Start time" placeholder="Start time, xx:xx pm" />
-                <input id="endTime" style="margin: 10px 0;" type="text" aria-label="End time" placeholder="End time, xx:xx pm" />
+                <input type="text" id="eventDate" data-toggle="datepicker" placeholder="Date" aria-required="true" />
+                <input id="startTime" style="margin: 10px 0;" type="text" aria-label="Start time" placeholder="Start time, xx:xx pm" aria-required="true" />
+                <input id="endTime" style="margin: 10px 0;" type="text" aria-label="End time" placeholder="End time, xx:xx pm" aria-required="true" />
               </div>
               <div class="full">
                 <label class="screen-reader-only" for="bannerUpload">Upload your file</label>
-                <input type="file" id="bannerUpload" class="screen-reader-only" data-name="bannerUpload" />
+                <input type="file" id="bannerUpload" class="screen-reader-only" data-name="bannerUpload" aria-required="true" />
                 <button class="fileUpload">
                   <img src="/sandbox/images/upload.svg" alt="">
                   <span>Select an event photo</span>

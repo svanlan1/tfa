@@ -218,7 +218,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], t
     font-size: .8rem;
 }
 
-input[aria-invalid=true] {
+input[aria-invalid=true], select[aria-invalid=true], textarea[aria-invalid=true] {
     box-shadow: #c00 0 0 2px 1px;
     border: solid 1px #c00;
 }
