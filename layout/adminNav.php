@@ -1,3 +1,4 @@
+<?php require('dialogs.php'); ?>
 <header>
 	<div role="presentation" id="socialMedia">
 		<span>

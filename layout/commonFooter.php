@@ -18,6 +18,7 @@
 		<ul>
 			<li><a href="/sandbox/help/">Help &amp; Feedback</a></li>
 			<li><a href="/sandbox/contact/">Contact us</a></li>
+			<li><a href="/sandbox/accessibility/">Accessibility</a></li>
 			<li><hr /></li>
 			<li><a href="https://www.celtx.com/index.html">CeltX - Screenwriting software</a></li>
 			<!-- <li><a href="http://tacomafilmalliance.com/TSEidiot's%20Crazy%20Short%20Film%20of%20Formatting%20Goodness.pdf">TSEdiots short film formating</a></li> -->

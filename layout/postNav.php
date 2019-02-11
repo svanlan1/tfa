@@ -48,7 +48,7 @@
 	        	<a href="/sandbox/p/account/">Account</a>
 	        </li>
 	        <li><a href="/sandbox/events/">Events</a></li>
-	        <li><a href="/sandbox/p/reviews/">Reviews</a></li>
+	        <li><a href="/sandbox/reviews/">Reviews</a></li>
 	        <li><a href="http://www.tacomafilmalliance.com/forum/">Forum</a></li>
 	        <li>
 				<a href="https://www.facebook.com/groups/TacomaFilmAlliance/" target="_blank">

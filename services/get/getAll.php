@@ -77,6 +77,20 @@
 		$comments[] = array("memberID"=>$rows['memberID'], "postID"=>$rows["postID"], "approved"=>$rows["approved"], "comment"=>$rows["comment"], id=>$rows["id"], "commentTime"=>$rows["commentTime"], "category"=>$rows["category"], "children"=>$rows["children"], "childOf"=>$rows["childOf"]);
 	}	
 
+	$msglist = $db->prepare('SELECT * FROM member_messages');
+	$msglist->execute();
+	$membermessages = array();
+	while ( $rows = $msglist->fetch(PDO::FETCH_ASSOC) ) {
+		$membermessages[] = array('id'=>$rows['id'], 'memberID'=>$rows['memberID'], 'sentTo'=>$rows['sentTo'], 'senton'=>$rows['senton'], 'messagetext'=>$rows['messagetext'], 'fromread'=>$rows['fromread'], 'toread'=>$rows['toread']);
+	}	
+	
+	$cntlist = $db->prepare('SELECT * FROM counter');
+	$cntlist->execute();
+	$counter = array();
+	while ( $rows = $cntlist->fetch(PDO::FETCH_ASSOC) ) {
+		$counter[] = array('id'=>$rows['id'], 'memberID'=>$rows['memberID'], 'dateVisited'=>$rows['dateVisited'], 'pagev'=>$rows['pagev'], 'urlv'=>$rows['urlv']);
+    }	
+
 	$retdata = array();
 	$retdata['members'] = $members;
 	$retdata['meminfo'] = $meminfo;
@@ -89,6 +103,8 @@
 	$retdata['events'] = $events;
 	$retdata['uploads'] = $uploads;
 	$retdata['comments'] = $comments;
+	$retdata['member_messages'] = $membermessages;
+	$retdata['counter'] = $counter;
 	$retdata['currentMember'] = $_SESSION['memberID'];
 	echo json_encode($retdata);	
 ?>

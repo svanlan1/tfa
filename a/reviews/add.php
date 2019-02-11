@@ -16,19 +16,19 @@
                 <span class="exclamation">
                   <i class="material-icons">error_outline</i>
                 </span>
-                <span class="errorText"></span>
+                <span class="errorText">Please correct the outlined errors below</span>
               </div>
               <h3>The basics</h3>
               <div class="half">
                 <label for="title">The Film</label>
-                <input type="text" id="title" data-name="title" />
+                <input type="text" id="title" data-name="title" aria-required="true" />
               </div>
               <div class="half preUpload">
                 <label for="banner">Banner image</label>
-                <input type="file" id="banner" class="screen-reader-only" data-name="banner" />
+                <input aria-required="true" type="file" id="banner" class="screen-reader-only" data-name="banner" />
                 <button class="fileUpload">
                 <img src="../../images/upload.svg" alt="" />
-                Upload a file
+                <span>Upload a file</span>
                 </button>
                 <img class="bannerDisplay" src="" alt="" />
               </div>
@@ -47,7 +47,7 @@
                   <li>
                     <label for="charge_1">Charge 1</label>
                     <!-- <input type="text" id="charge_1" data-count="1" /> -->
-                    <textarea id="charge_1" data-count="1" class="editor" data-name="charge_1" name="charge_1" aria-label="Charge 1" placeholder="Charge 1"></textarea>
+                    <textarea id="charge_1" data-count="1" class="editor" data-name="charge_1" name="charge_1" aria-label="Charge 1" data-type="charge" placeholder="Charge 1"></textarea>
                   </li>
                 </ol>
               </div>
@@ -56,13 +56,13 @@
                 <ol>
                   <li>
                     <label for="defense_1">Defense 1</label>
-                    <textarea id="defense_1" data-count="1" class="editor" data-name="defense_1" name="defense_1" aria-label="Defense 1" placeholder="Defense 1"></textarea>
+                    <textarea id="defense_1" data-count="1" class="editor" data-name="defense_1" name="defense_1" data-type="defense" aria-label="Defense 1" placeholder="Defense 1"></textarea>
                   </li>
                 </ol>                
               </div>
               <div class="full" style="margin-top: 25px; border-top: solid 1px #c9c9c9; padding-top: 25px;">
                 <h3 id="closingArgumentsHead">Closing Arguments</h3>
-                <textarea id="closingArguments" aria-labelledby="closingArgumentsHead" data-count="1" class="editor" data-name="closingArguments" name="closingArguments" placeholder="Closing Arguments"></textarea>
+                <textarea aria-required="true" id="closingArguments" aria-labelledby="closingArgumentsHead" data-count="1" class="editor" data-name="closingArguments" name="closingArguments" placeholder="Closing Arguments"></textarea>
               </div>
               <div class="full" style="margin-top: 25px; border-top: solid 1px #c9c9c9; padding-top: 25px;">
                 <button class="submit">

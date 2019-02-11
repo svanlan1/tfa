@@ -5,6 +5,7 @@ var script = {
 			method: 'GET',
 			success: function(msg){
 				var res = $.parseJSON(msg);
+				global.util._sortObject(res, 'endDate');
 				$(res).each(function(i,v) {
 					var ul = $('#prevevents'),
 						li = $('<li />').appendTo(ul),

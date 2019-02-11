@@ -3,3 +3,119 @@
 	display: block;
 	border-bottom: solid 1px #ccc;
 }
+
+.sectionContent {
+    flex-flow: column !important;
+}
+
+.sectionContent h3.filmdetailh3 {
+    display: inline;
+    position: absolute;
+    margin-left: 18%;
+    width: 57%;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: .9rem;
+    border-bottom: solid 1px #c9c9c9;
+    display: block;
+}
+
+.filmposter {
+
+}
+
+.filmposter img {
+    border-radius: 3px;
+    box-shadow: #333 0 0 3px 1px;
+    margin-left: 1%;
+    width: 22%;
+}
+
+.filmdetails {
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 35px;
+    width:57%;
+}
+
+.filmdetails ul {
+    display: block;
+    width: 100%;
+}
+
+.filmdetails ul li {
+    display: block;
+    width: 100%;
+}
+
+.filmdetails ul li strong {
+    width: 25%;
+    display: inline-block;
+    font-size: .89rem;
+}
+
+.filmdetails ul li span {
+    font-size: .89rem;
+}
+
+.charges {
+
+}
+
+.charges h1, .charges h2, .charges h3, .charges h4, .charges h5, .charges h6 {
+    font-family: 'Open sans', sans-serif;
+    color: #666;
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    margin: 0;
+    padding: 0;   
+    box-shadow: none;
+    border-bottom: 0 !important; 
+}
+.charges h1 {
+    font-size: 1.4rem;
+}
+
+.charges h2 {
+    font-size: 1.2rem;
+}
+
+.charges h3 {
+    font-size: 1rem;
+
+
+}
+
+.charges dl {
+
+}
+
+dt {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-bottom: solid 1px #eee;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Steelface';
+    text-transform: uppercase;
+}
+
+.defenses {
+
+}
+
+.defenses dl {
+
+}
+
+.closingarguments {
+
+}
+
+.closingarguments p {
+
+}

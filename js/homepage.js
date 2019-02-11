@@ -1,20 +1,27 @@
 var homepage = {
+	evcount: 0,
 	getEvents: function() {
 		$(homepage.events).each(function(i,v) {
-			if(i < 2) {
+			var now = new Date(),
+				evdate = new Date(v.startDate);
+			if(evdate > now) {
 	    		var clone = $('.eventList').eq(0).find('li').eq(0).clone(),
 	    			eventDate = v.startDate.split(' ')[0],
 	    			startTime = v.startDate.split(' ')[1],
 	    			endTime = v.endDate.split(' ')[1];
-
 	    		$(clone).find('.eventTimes span').eq(0).text(eventDate);
 	    		$(clone).find('h3 a').text(v['title']);
 	    		$(clone).find('.eventTimes span').eq(1).find('strong').eq(0).text(startTime);
-	    		$(clone).find('.eventTimes span').eq(1).find('strong').eq(1).text(endTime);
+				$(clone).find('.eventTimes span').eq(1).find('strong').eq(1).text(endTime);
+				if(v.details.length > 120) {
+					v.details = v.details.substring(0,120) + '...';
+				}
 	    		$(clone).find('.eventLocation').text(v.details);
-	    		$(clone).appendTo($('.eventList').eq(0));
-			} else {
-				return false;
+				$(clone).appendTo($('.eventList').eq(0));
+				homepage.evcount++;
+				if(homepage.evcount > 1) {
+					return false;
+				}
 			}
 		});
 		$('.eventList').eq(0).find('li').eq(0).remove();

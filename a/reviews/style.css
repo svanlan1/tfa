@@ -35,3 +35,12 @@ ol:nth-child(2) {
 div.half {
     width: 42% !important;
 }
+
+.showHide {
+    display: none;
+}
+
+.errorText {
+    display: inline;
+    box-shadow: none;
+}
