@@ -9,7 +9,7 @@
     <main>
       <div class="r75">
         <section class="homepage" id="adminAddHomepagePost">
-          <h2><img src="../../images/gavel.svg" alt="" /> Film Court - New Review</h2>
+          <h2><img src="../../images/gavel.svg" alt="" /> Film Court - Edit Review</h2>
           <div class="sectionContent form">
             <div class="container">
               <div role="alert" class="alert error" tabindex="-1">
@@ -69,9 +69,9 @@
                 <textarea aria-required="true" id="closingArguments" aria-labelledby="closingArgumentsHead" data-count="1" class="editor" data-name="closingArguments" name="closingArguments" placeholder="Closing Arguments"></textarea>
               </div>
               <div class="full" style="margin-top: 25px; border-top: solid 1px #c9c9c9; padding-top: 25px;">
-                <button class="submit">
+                <button class="update">
                   <i style="vertical-align: baseline" class="material-icons">send</i>
-                  Submit
+                  Update
                 </button>
                 <button class="cancel">
                   <i style="vertical-align: baseline" class="material-icons">delete</i>

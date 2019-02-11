@@ -62,7 +62,7 @@
 	        </li>
 	        <li>
 				<a href="https://www.meetup.com/TacomaFilmAlliance/" target="_blank">
-					<img class="i24" src="/sandbox/images/meetup-logo-orange.png" alt="Meetup, opens in a new window" />
+					<img class="i30" src="/sandbox/images/meetup-logo-orange.png" alt="Meetup, opens in a new window" />
 				</a>
 	        </li>
 	        <li class="bordered"><a href="/sandbox/login/">Login</a></li>

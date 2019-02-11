@@ -79,18 +79,7 @@
       <div class="r25">
         <?php
           require('../../layout/userNav.php');
-        ?>        
-        <article>
-          <h2><img src="/sandbox/images/calendar.svg" alt="" /> Links</h2>
-          <ul class="postLinks">
-            <li>
-              <a href="../../help/"><img src="/sandbox/images/help-black.svg" alt="" /> Help</a>
-            </li> 
-            <li>
-              <a href="../feedback/"><img src="/sandbox/images/write-letter.svg" alt="" /> Send feedback</a>
-            </li> 
-          </ul>
-        </article>
+        ?>
       </div>
     </main>
 

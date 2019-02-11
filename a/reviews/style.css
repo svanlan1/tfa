@@ -44,3 +44,45 @@ div.half {
     display: inline;
     box-shadow: none;
 }
+
+.preUpload img {
+    max-width: 200px;
+    box-shadow: #000 0 0 2px 1px;
+    border-radius: 3px;
+}
+
+.currentReviews li {
+    padding: 3px 5px;
+    margin: 10px 0;
+    border-bottom: solid 2px #eee;
+}
+
+.currentReviews li a {
+    margin-right: 15px;
+    font-size: .9rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.currentReviews li a:hover, .currentReviews li a:focus {
+    outline: dotted 1px #000;
+    outline-offset: 2px;
+}
+
+.dispImg {
+    display: inline-block;
+    width: 11%;
+    height: 150px;
+}
+
+.dispContent {
+    width: 80%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.dispContent h3 {
+    border-bottom: solid 1px #ccc;
+    font-weight: 400;
+}

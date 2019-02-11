@@ -246,7 +246,7 @@
 		<span class="screen-reader-only">Close film review dialog</span>
 	</a>	
 	<div class="loader"></div>
-	<div role="document showHide" style="display: none;">
+	<div role="document" class="showHide" style="display: none;">
 		<h2 id="dialogh2">Success!</h2>
 		<p>Your review has been submitted.  You should be able to view upon closure of this dialog.</p>
 	</div>

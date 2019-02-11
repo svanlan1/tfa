@@ -59,22 +59,24 @@
                 <li><a href="/sandbox/p/account/?tab=myFilms"><img src="/sandbox/images/script.svg" alt="" /> Your films</a></li>
                 <li><a href="/sandbox/p/account/?tab=myBinder"><img src="/sandbox/images/binders.svg" alt="" /> Your binder</a></li>
                 <li><a href="/sandbox/p/account/?tab=myResources"><img src="/sandbox/images/swiss-knife.svg" alt="" /> Your resources</a></li>
-                <li>
+                <!-- <li>
                   <a href="../favorites/"><img src="/sandbox/images/star.svg" alt="" /> Your favorites</a>
-                </li>
+                </li> -->
                 <li>
                   <hr />
-                </li>
-                <?php if($user->isAdmin($_SESSION['admin']) ) { 
-                    echo "<li><a href='/sandbox/a/homepage/add.php'><img src='/sandbox/images/write-letter.svg' alt='' /> Add homepage post</a></li>";
-                  }; 
-                ?>                
+                </li>  
                 <li>
+                  <a href="../../help/"><img src="/sandbox/images/help-black.svg" alt="" /> Help</a>
+                </li> 
+                <li>
+                  <a href="../feedback/"><img src="/sandbox/images/write-letter.svg" alt="" /> Send feedback</a>
+                </li>                             
+                <!-- <li>
                   <a href="../films/post.php"><img src="/sandbox/images/clapperboard.svg" alt="" /> Share your film</a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                   <a href="../reviews/"><img src="/sandbox/images/gavel.svg" alt="" /> Write a film review</a>
-                </li>                    
+                </li>                     -->
               </ul>
             </div>
             <div style="display:none;">

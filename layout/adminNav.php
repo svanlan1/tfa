@@ -21,7 +21,10 @@
 	        	</ul>
 			</li> -->
 			<li>
-				<a href="/sandbox/a/">Home</a>
+				<a href="/sandbox/">Home</a>
+			</li>
+			<li>
+				<a href="/sandbox/a/">Admin home</a>
 			</li>
 	        <li class="hasSubmenu">
 	        	<a aria-expanded="false" href="javascript:;">Content <img src="/sandbox/images/down-arrow.svg" alt="Submenu, collapsed" /></a>

@@ -8,7 +8,7 @@
 		<ul>
 			<li><a href="https://whitehorse-et.com/">White Horse Entertainment</a></li>
 			<li><a href="https://gobbumproductions.com/">Gobbum Productions</a></li>
-			<li><a href="http://www.hooliganstreet.com/">Hooligan Pictures</a></li>		
+			<li><a href="http://www.hooliganstreet.com/">Hooligan Street Pictures</a></li>		
 			<li><a href="http://www.endoflineproductions.com/">End of Line Productions</a></li>
 			<li><a href="http://www.60secondscifi.com/">60 Second SciFi</a></li>
 		</ul>    	

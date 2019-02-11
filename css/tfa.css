@@ -30,7 +30,7 @@ main {
    display: flex; 
    justify-content: center;
    padding: 35px 0 0 15px;
-   border: solid 1px #ff9c06;
+   /* border: solid 1px #ff9c06; */
 }
 
 fieldset {
@@ -1011,6 +1011,11 @@ li.spacer {
 
 img.i24 {
     width: 24px;
+    vertical-align: baseline;
+}
+
+img.i30 {
+    width: 30px;
     vertical-align: baseline;
 }
 

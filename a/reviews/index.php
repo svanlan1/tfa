@@ -11,7 +11,7 @@
         <section class="homepage" id="filmSpotlight">
           <h2><img src="../../images/gavel.svg" alt="" /> Film Court Administration</h2>
           <div class="sectionContent">
-            Lorem ipsum bullshit
+            <ul class="currentReviews"></ul>
           </div>
         </section>
 
@@ -36,6 +36,5 @@
         require('../../layout/commonFooter.php');
         require('../../includes/commonScripts.php');
     ?>
-    <script src="script.js"></script>
   </body>
 </html>
