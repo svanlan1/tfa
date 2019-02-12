@@ -14,6 +14,7 @@ var r = {
 
     drawReview: function() {
         console.log(r.thisReview);
+        //$('#by').text('by ' + script.userData[r.thisReview.memberID].plainname);
         $('.filmposter img').attr('src', '/sandbox/uploads/' + r.thisReview.image);
         $('.sectionContent h3').text(r.thisReview.title);
         $('#director span').text(r.thisReview.director);
@@ -22,6 +23,7 @@ var r = {
             'target': '_blank'
         }).text(r.thisReview.trailer).appendTo($('#trailer span'));
         $('#updated span').text(global.util._formatJSDate(r.thisReview.updated));
+        $('#summary span').text(r.thisReview.summary);
         var charges = $.parseJSON(r.thisReview.charges);
         var defenses = $.parseJSON(r.thisReview.defenses);
         $(charges).each(function(i,v) {
@@ -33,6 +35,8 @@ var r = {
             $('<dd />').html(v).appendTo('.defenses dl');
         });
         $('.closingarguments p').html(r.thisReview.closingarguments);
+        $('.loader').hide();
+        $('.sectionContent').fadeIn();
     }
 }
 $(document).ready(function(e){

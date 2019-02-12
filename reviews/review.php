@@ -15,16 +15,19 @@
 
         <section class="homepage" id="ourMission">
           <h2><img src="../images/gavel.svg" alt="" /> Film Court <span class="instructions">Fiat justitia ruat caelum</span></h2>
-          <div class="sectionContent">
+          <div class="loader"></div>
+          <div class="sectionContent" style="display: none;">
             <div class="filmposter">
                 <img src="" alt="" />
             </div>
             <h3 class="filmdetailh3"></h3>
+            <div class="byline" id="by"></div>
             <div class="filmdetails">
                 <ul>
                     <li id="director"><strong>Director</strong><span></span></li>
                     <li id="trailer"><strong>Trailer</strong><span></span></li>
                     <li id="updated"><strong>Submitted</strong><span></span></li>
+                    <li id="summary"><strong>Summary</strong><span></span></li>
                 </ul>
             </div>
             <div class="charges">

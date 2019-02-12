@@ -15,7 +15,8 @@ var script = {
 							}).appendTo(li),
 							contentDiv = $('<div />').addClass('dispContent').appendTo(li);
 	
-						$('<h3 />').text(v.title).appendTo(contentDiv);
+						var h3 = $('<h3 />').appendTo(contentDiv);
+						$('<a />').attr('href', '/sandbox/reviews/review.php?id=' + v.id).text(v.title).appendTo(h3);
 						var summaryDiv = $('<div />').addClass('dispSummary').html(v.summary).appendTo(contentDiv);
 						$('<a />').attr({
 							'href': '/sandbox/reviews/review.php?id=' + v.id,
