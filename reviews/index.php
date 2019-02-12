@@ -17,14 +17,17 @@
           <h2><img src="../images/gavel.svg" alt="" /> Film Court <span class="instructions">Fiat justitia ruat caelum</span></h2>
           <div class="sectionContent">
             <h3>Most recent reviews</h3>
-            <ul></ul>
+            <ul class="currentReviews"></ul>
           </div>
         </section>
       </div>
 
       <div class="r20">
-        <?php
-          require('../layout/userNav.php');
+       <?php if($user->is_logged_in()) { 
+            require('../layout/userNav.php');
+          } else {
+            require('../layout/genericArticle.php');
+          }
         ?>
       </div>
 

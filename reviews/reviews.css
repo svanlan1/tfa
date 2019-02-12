@@ -1,0 +1,16 @@
+body {
+	
+}
+
+.sectionContent {
+    flex-flow: column !important;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: 500;
+    /* font-style: italic; */
+    font-size: .9rem;
+    border-bottom: solid 1px #c9c9c9;
+    display: block;
+}

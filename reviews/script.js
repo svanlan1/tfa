@@ -9,10 +9,18 @@ var script = {
 				console.log(script.filmcourt);
 				$(script.filmcourt).each(function(i,v) {
 					if(window.location.href.indexOf('review.php') === -1) {
-						var li = $('<li />').appendTo('.sectionContent ul'),
-							a = $('<a />').attr({
-								'href': '/sandbox/reviews/review.php?id=' + v.id
-							}).text(v.title).appendTo(li);
+						var li = $('<li />').appendTo('.currentReviews');
+						var imgdiv = $('<div />').addClass('dispImg').css({
+								'background': 'url("/sandbox/uploads/' + v.image + '")  0% 40% / cover no-repeat'
+							}).appendTo(li),
+							contentDiv = $('<div />').addClass('dispContent').appendTo(li);
+	
+						$('<h3 />').text(v.title).appendTo(contentDiv);
+						var summaryDiv = $('<div />').addClass('dispSummary').html(v.summary).appendTo(contentDiv);
+						$('<a />').attr({
+							'href': '/sandbox/reviews/review.php?id=' + v.id,
+							'aria-label': 'Read review of ' + v.title
+						}).text("Read more").appendTo(contentDiv);
 					}
 				});
 				if(window.location.href.indexOf('review.php') > -1) {

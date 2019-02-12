@@ -119,3 +119,51 @@ dt {
 .closingarguments p {
 
 }
+
+.currentReviews li {
+    padding: 3px 5px;
+    margin: 10px 0;
+    border-bottom: solid 2px #eee;
+}
+
+.currentReviews li a {
+    margin-right: 15px;
+    font-size: .9rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.currentReviews li a:hover, .currentReviews li a:focus {
+    outline: dotted 1px #000;
+    outline-offset: 2px;
+}
+
+.dispImg {
+    display: inline-block;
+    width: 25%;
+    min-height: 268px;
+    border-radius: 3px;
+    box-shadow: #999 0 0 1px 1px;
+}
+
+.dispContent {
+    width: 73%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.dispContent h3 {
+    border-bottom: solid 1px #ccc;
+    font-weight: 400;
+}
+
+.dispSummary {
+    font-weight: 300 !important;
+    font-size: .85rem !important;
+}
+
+.dispSummary strong {
+    font-weight: 300 !important;
+    font-size: .8rem;
+}
