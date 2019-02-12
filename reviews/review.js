@@ -14,27 +14,26 @@ var r = {
 
     drawReview: function() {
         console.log(r.thisReview);
-        //$('#by').text('by ' + script.userData[r.thisReview.memberID].plainname);
-        $('.filmposter img').attr('src', '/sandbox/uploads/' + r.thisReview.image);
-        $('.sectionContent h3').text(r.thisReview.title);
-        $('#director span').text(r.thisReview.director);
+        $('#title').text(r.thisReview.title);
+        $('#director').text(r.thisReview.director);
         $('<a />').attr({
             'href': r.thisReview.trailer,
-            'target': '_blank'
-        }).text(r.thisReview.trailer).appendTo($('#trailer span'));
-        $('#updated span').text(global.util._formatJSDate(r.thisReview.updated));
-        $('#summary span').text(r.thisReview.summary);
+            'target': '_blank',
+            'aria-label': "Link to trailer for " + r.thisReview.title            
+        }).text("Link").appendTo($('#trailer'));
+        $('#updated').text(global.util._formatJSDate(r.thisReview.updated));
+        $('#image').css({
+            'background': "url('/sandbox/uploads/" + r.thisReview.image + "') 0% 0% / cover no-repeat"
+        });
+        $('#summary').text($(r.thisReview.summary).text());
         var charges = $.parseJSON(r.thisReview.charges);
         var defenses = $.parseJSON(r.thisReview.defenses);
         $(charges).each(function(i,v) {
-            $('<dt />').text('Charge ' + parseFloat(i+1)).appendTo('.charges dl');
-            $('<dd />').html(v).appendTo('.charges dl');
+            var li = $('<li />').appendTo('#charges'),
+                h3 = $('<h3 />').text("Charge " + parseFloat(i+1) + ":  " + $(v).text()).appendTo(li),
+                div = $('<div />').text($(defenses[i]).text()).appendTo(li);
         });
-        $(defenses).each(function(i,v) {
-            $('<dt />').text('Defense ' + parseFloat(i+1)).appendTo('.defenses dl');
-            $('<dd />').html(v).appendTo('.defenses dl');
-        });
-        $('.closingarguments p').html(r.thisReview.closingarguments);
+        $('#closingarguments').html(r.thisReview.closingarguments);
         $('.loader').hide();
         $('.sectionContent').fadeIn();
     }
