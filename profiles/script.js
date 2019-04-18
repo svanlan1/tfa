@@ -56,17 +56,17 @@ var script = {
 	},
 
 	drawOtherProfileThings: function() {
-		$('.headshotName span').text(thisUser.firstname + " " + thisUser.lastname);
-		global.util._addBadgesToUser(script.profile.meminfo[0], script.profile.members[0], $('.headshotName div'));
+		$('.headshotName span').eq(0).text(thisUser.firstname + " " + thisUser.lastname);
+		$('.headshotName span').eq(1).text(thisUser.role + '/' + thisUser.secondaryrole);
+		//global.util._addBadgesToUser(script.profile.meminfo[0], script.profile.members[0], $('.headshotName div'));
 		$('#location').text(thisUser.city);
-		$('#primaryRole').text(thisUser.role);
-		$('#secondaryRole').text(thisUser.secondaryrole);
-		$('#bio').text(thisUser.bio);
+		$('#contact').text(thisUser.email);
+		$('.memberBiography').text(thisUser.bio);
 		var ps = thisUser.personalsite;
 		if(ps.indexOf('http://') === -1 || ps.indexOf('https://') === -1) {
 			ps = "http://" + thisUser.personalsite;
 		}
-		$('#personalSite').append('<a href="' + ps + '" target="_blank">' + ps + '</a>');
+		$('#website').append('<a href="' + ps + '" target="_blank">' + ps + '</a>');
 	}
 }
 $(document).ready(function(e){

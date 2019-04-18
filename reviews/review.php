@@ -18,9 +18,9 @@
           <div class="loader"></div>
           <div class="sectionContent" style="display: none;">
             <div class="reviewBanner">
-              <h3 id="title"></h3>
               <!-- <div class="userByLine">by Mike West</div> -->
             </div>
+            <h3 id="title"></h3>
             <div class="row fdeets">
               <div>
                 <strong>directed by</strong>

@@ -1,3 +1,50 @@
-body {
-	
+ul.benefits li p {
+    font-family: "Steelface";
+    font-size: 1.5rem;
+    color: #fff;
+    position: relative;
 }
+
+ul.benefits li:nth-child(1) p {
+    left: 200px;
+    top: 300px;
+}
+
+ul.benefits li:nth-child(1) img {
+    position: absolute;
+    left: 50%;
+    margin-top: 7%;
+}
+
+ul.benefits li:nth-child(2) p {
+    left: 65%;
+    top: 70px;
+}
+
+ul.benefits li:nth-child(2) img {
+    position: absolute;
+    margin-top: -120px;
+    left: 120px;
+}
+
+ul.benefits li:nth-child(3) p {
+    left: 25px;
+    top: 25px;
+}
+
+ul.benefits li:nth-child(3) img {
+    position: absolute;
+    left: 50%;
+    margin-top: -120px;
+}
+
+ul.benefits li:nth-child(4) p {
+    text-align: center;
+    top: 0;
+}
+
+ul.benefits li img {
+    width: auto !important;
+}
+
+

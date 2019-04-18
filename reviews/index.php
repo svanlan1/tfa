@@ -12,10 +12,11 @@
     ?>
     <main>
       <div class="r80">
-
         <section class="homepage" id="ourMission">
-          <h2><img src="../images/gavel.svg" alt="" /> Film Court <span class="instructions">Fiat justitia ruat caelum</span></h2>
+        <h2><img src="../images/gavel.svg" alt="" /> Film Court <span class="instructions">Fiat justitia ruat caelum</span></h2>
+          <!-- <div class="loader"></div> -->
           <div class="sectionContent">
+            <div class="reviewBanner"></div>
             <p>
               <span style="font-weight:400;">Movies, like all forms of art have good and bad entries. There are some that are widely loved by most people who view them and others that are just as well known for being hated. That being said, even the worst movies will still have fans in most cases. It may be that only a very small percentage of the film&rsquo;s audience &ldquo;gets the picture&rdquo;, or it could be that some people just have unique tastes that the film can satisfy. </span>
             </p>

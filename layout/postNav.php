@@ -72,7 +72,7 @@
 	        </li>
 			<?php
 				if( $user->isAdmin($_SESSION['admin']) ) {
-					echo "<li class='bordered' style='text-align: center; margin-right: 0;'><a title='Administrator panel' href='/sandbox/a/'><img class='i24' src='/sandbox/images/admin.svg' alt='Administrators only' /></a></li>";
+					echo "<li class='bordered' style='text-align: center; margin-right: 0;'><a title='Administrator panel' href='/sandbox/a/'><img class='i24' src='/sandbox/images/admin_panel.png' alt='Administrators only' /></a></li>";
 				}	
 			?>	        
 	        <li class="bordered"><a href="/sandbox/logout/">Logout</a></li>
