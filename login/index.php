@@ -5,7 +5,6 @@
 ?>
   <body>
     <?php require('../layout/preNav.php'); ?>
-    <link rel="stylesheet" href="aboutus.css" />
     <main>
       <div class="r70">
         <section class="homepage" id="memberBenefits">
