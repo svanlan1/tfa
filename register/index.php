@@ -7,27 +7,33 @@
     <?php require('../layout/preNav.php'); ?>
     <link rel="stylesheet" href="aboutus.css" />
     <main>
-      <div class="r70">
+    <div class="r70">
         <section class="homepage" id="memberBenefits">
-          <h2><img src="../../images/graph.svg" alt="" /> Why sign up?</h2>
-          <div class="sectionContent">
+          <h2 class="header" style="position: absolute;">
+            <img src="../images/member_benefits.png" alt="Member benefits" />
+          </h2>
+          <div class="sectionContent" style="margin: 0;">
             <ul class="benefits">
-              <li>
-                <img src="/sandbox/images/computer.svg" alt="" /> Get access to our Talent database and find your cast and crew for your next project!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+              <li style="background: url(../images/some_background_3.png) no-repeat;background-size: cover; height: 400px;padding: 0;width: 100%;border: 0;margin: 0;">
+                <p>Access a growing talent database to find your cast and crew for your next project!</p>
+                <img src="../images/slingshot_logo.png" alt="Slingshot" />
               </li>
-              <li>
-                <img src="/sandbox/images/business-meeting.svg" alt="" /> Meet other local artists interested in all aspects of filmmaking and grow your production company!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+              <li style="background: url(../images/some_background_1.jpg) no-repeat;background-size: cover; height: 400px;padding: 0;width: 100%;border: 0;margin: 0;">
+                <p>Be the first to know about our upcoming film contests!</p>
+                <img src="../images/wam_login.png" alt="Wait A Minute Film Festival" />
               </li>
-              <li>
-                <img src="/sandbox/images/movie-projector.svg" alt="" /> Proudly share your films with other members and get feedback!
-                <p class="instructions">Lorem ipsum there is more text in here</p>
+              <li style="background: url(../images/some_background_2.jpg) no-repeat;background-size: cover; height: 400px;padding: 0;width: 100%;border: 0;margin: 0;">
+                <p>Meet other local artists interested in all aspects of filmmaking!</p>
+                <p>We're a great group and want to film with you!</p>
+                <img src="../images/local_productions.png" alt="Local productions" />
+              </li>
+              <li style="background: url(../images/some_background_4.jpg) no-repeat;background-size: cover; height: 400px;padding: 0;width: 100%;border: 0;margin: 0;">
+                <p>Proudly share your films with other members of the film community and get feedback!</p>
               </li>
             </ul>
           </div>
         </section>
-      </div>  
+      </div> 
 
       <div class="r25" style="margin-right: 1%;">
         <section class="homepage" id="loginPanel" style="padding: 0 10px 0 0;">

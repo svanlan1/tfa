@@ -1,3 +1,9 @@
 [20-Dec-2018 14:49:56 UTC] PHP Warning:  require(../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/p/reviews/index.php on line 1
 [20-Dec-2018 14:49:56 UTC] PHP Warning:  require(../core/config.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/p/reviews/index.php on line 1
 [20-Dec-2018 14:49:56 UTC] PHP Fatal error:  require(): Failed opening required '../core/config.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/p/reviews/index.php on line 1
+[01-Feb-2019 12:02:16 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56
+[01-Feb-2019 12:02:22 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56
+[04-Feb-2019 18:29:45 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56
+[05-Feb-2019 14:45:59 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56
+[05-Feb-2019 22:44:56 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56
+[05-Feb-2019 22:45:27 America/Los_Angeles] PHP Notice:  Undefined index: admin in /home/hooligan13/public_html/tacomafilmalliance.com/sandbox/layout/userNav.php on line 56

@@ -41,11 +41,13 @@
 }
 
 .headshotWrap {
-    padding: 15px 7px 0 7px;
-    background-color: #fff;
-    box-shadow: #333 0 0 11px 2px;
+    padding: 10px 0;
+    background-color: #091921;
     position: absolute;
-    margin: 3px 0 5px 15px;
+    margin: 0;
+    color: #fff;
+    font-family: "Steelface";
+    font-size: 1.5rem;
 }
 
 .tfa_profile_headshot {
@@ -54,6 +56,7 @@
     /* margin: 3px 0 5px 15px; */
     background-color: #fff;
     border: solid 1px #555;
+    margin: 24px;
 }
 
 .headshotName {
@@ -61,6 +64,19 @@
     padding: 5px 5px 5px 5px;
     font-weight: 400;
     margin-top: 5px;
+}
+
+.headshotName span {
+    display: block;
+    text-transform: capitalize;
+}
+
+.headshotName span:nth-child(1) {
+    font-size: 1.8rem;
+}
+
+.headshotName span:nth-child(2) {
+    font-size: 1.5rem;
 }
 
 .headshotName img {
@@ -72,6 +88,11 @@
     padding: 10px 5px 10px 240px;
     font-size: .9rem;
     min-height: 210px;
+    background-color: #CADFF6;
+}
+
+.profile div {
+    padding-left: 25px; 
 }
 
 h3.abs {
@@ -93,6 +114,25 @@ h3.abs img {
     width: 20px;
     vertical-align: text-top;
     margin-right: 5px;
+}
+
+h3.new {
+    background-color: #b9d27f;
+    color: #000;
+    padding: 5px 5px 5px 0;
+    width: 100%;
+    display: block;
+    font-family: "Steelface";
+    font-size: 1.5rem;
+    /* margin-left: 10px; */
+    text-indent: 30px;
+}
+
+h4.sub {
+    color: #ACCF5E;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    margin: 5px 0;
 }
 
 .profile .photoGallery {
@@ -195,7 +235,6 @@ div.filmography {
     margin-left: 10px;
     padding-top: 20px;
     border-radius: 3px;
-    box-shadow: #c9c9c9 0 0 2px 1px;
 }
 
 div.filmography ul {
@@ -288,16 +327,11 @@ div.filmography .filmDetails span {
 }
 
 .sidePhotoGallery {
-display: flex;
+    display: flex;
     flex-flow: row;
     justify-content: center;
     flex-wrap: wrap;
     padding: 5px 5px 0 5px;
-    background-color: #fff;
-    /* box-shadow: #333 0 0 11px 2px; */
-    position: absolute;
-    margin: 310px 0 5px 15px;
-    width: 203px;
     border: solid 1px #c9c9c9;
     border-radius: 2px;
 }
@@ -308,7 +342,7 @@ display: flex;
 }
 
 .sidePhotoGallery div img {
-    height: 50px;
+    height: 150px;
     /* width: 48px; */
     border: solid 1px #999;
     border-radius: 2px;
@@ -316,4 +350,9 @@ display: flex;
 
 #primaryRole, #secondaryRole {
     text-transform: capitalize;
+}
+
+.subinfo {
+    font-size: 1.1rem;
+    padding-left: 10px;
 }
