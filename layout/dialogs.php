@@ -200,6 +200,10 @@
 			Add your film
 		</h2>
 	</div>
+	<div>
+		<label for="filmTitle">Title</label>
+		<input type="text" id="filmTitle" placeholder="Enter your film title" />
+	</div>
 </div>
 
 <div class="dialog" role="dialog" aria-labelledby="readmessageh2" data-dialog-id="readmessage">

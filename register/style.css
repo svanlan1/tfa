@@ -14,17 +14,19 @@ ul.benefits li:nth-child(1) img {
     position: absolute;
     left: 50%;
     margin-top: 7%;
+    width: 13%;
 }
 
 ul.benefits li:nth-child(2) p {
-    left: 65%;
+    /* left: 65%; */
     top: 70px;
 }
 
 ul.benefits li:nth-child(2) img {
     position: absolute;
-    margin-top: -120px;
+    margin-top: -150px;
     left: 120px;
+    width: 13%;
 }
 
 ul.benefits li:nth-child(3) p {
@@ -36,6 +38,7 @@ ul.benefits li:nth-child(3) img {
     position: absolute;
     left: 50%;
     margin-top: -120px;
+    width: 13%;
 }
 
 ul.benefits li:nth-child(4) p {
@@ -44,7 +47,7 @@ ul.benefits li:nth-child(4) p {
 }
 
 ul.benefits li img {
-    width: auto !important;
+    /* width: auto !important; */
 }
 
 

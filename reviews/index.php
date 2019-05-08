@@ -17,15 +17,15 @@
           <!-- <div class="loader"></div> -->
           <div class="sectionContent">
             <div class="reviewBanner"></div>
-            <p>
-              <span style="font-weight:400;">Movies, like all forms of art have good and bad entries. There are some that are widely loved by most people who view them and others that are just as well known for being hated. That being said, even the worst movies will still have fans in most cases. It may be that only a very small percentage of the film&rsquo;s audience &ldquo;gets the picture&rdquo;, or it could be that some people just have unique tastes that the film can satisfy. </span>
+            <p class="light">
+              Movies, like all forms of art have good and bad entries. There are some that are widely loved by most people who view them and others that are just as well known for being hated. That being said, even the worst movies will still have fans in most cases. It may be that only a very small percentage of the film&rsquo;s audience &ldquo;gets the picture&rdquo;, or it could be that some people just have unique tastes that the film can satisfy.
             </p>
 
-            <p>
-              <span style="font-weight: 400;">Whatever the reason, we all have our guilty pleasures. Here, these &ldquo;bad&rdquo; movies will have their case defended by the most qualified fan we could find for each one. Will these reviews change the wide spread hate of these films into pure love? Doubtful. But if you are so inclined, give the review a read, and if you are intrigued, give the film another chance with a more open mind. Maybe, just maybe, you might find a gem among the &ldquo;bad movies&rdquo;&hellip;</span>
+            <p class="light">
+              Whatever the reason, we all have our guilty pleasures. Here, these &ldquo;bad&rdquo; movies will have their case defended by the most qualified fan we could find for each one. Will these reviews change the wide spread hate of these films into pure love? Doubtful. But if you are so inclined, give the review a read, and if you are intrigued, give the film another chance with a more open mind. Maybe, just maybe, you might find a gem among the &ldquo;bad movies&rdquo;&hellip;
             </p>
 
-            <h3>Most recent reviews</h3>
+            <h3 class="filmCourtH3">Most recent reviews</h3>
             <ul class="currentReviews"></ul>
           </div>
         </section>

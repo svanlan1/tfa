@@ -81,7 +81,7 @@
 }
 
 #image {
-    height: 150px;
+    height: 175px;
     box-shadow: #444 0 0 1px 1px;
     border-radius: 3px;
 }
@@ -216,4 +216,54 @@ textarea {
     font-style: italic;
     font-weight: 500;
     font-size: .85rem;
+}
+
+.filmCourtH3 {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-bottom: solid 1px #ccc;
+}
+
+.filmCourtTitleH3 {
+    font-size: .93rem;
+    padding: 5px 15px;
+    border-bottom: dotted 1px #ddd;
+    margin: 0;
+}
+
+.dispSummary {
+    font-size: .87rem;
+    color: #444;
+    padding: 5px 15px;
+}
+
+.dispSummary p {
+    margin: 0;
+}
+
+p.light {
+    font-weight: 400;
+    font-size: .86rem;
+    line-height: 13px;
+    line-height: 30px;
+}
+
+.dispSummary a {
+    margin: 0 0 0 15px;
+}
+
+.dispImg {
+    display: inline-block;
+    width: 10%;
+    height: 150px;
+    box-shadow: #444 0 0 1px 1px;
+    border-radius: 3px;
+    margin-left: 1%;
+}
+
+.dispContent {
+    display: inline-block;
+    width: 88%;
+    vertical-align: top;
+    margin-left: 1%;
 }

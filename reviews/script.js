@@ -15,13 +15,13 @@ var script = {
 							}).appendTo(li),
 							contentDiv = $('<div />').addClass('dispContent').appendTo(li);
 	
-						var h3 = $('<h3 />').appendTo(contentDiv);
+						var h3 = $('<h3 />').addClass('filmCourtTitleH3').appendTo(contentDiv);
 						$('<a />').attr('href', '/sandbox/reviews/review.php?id=' + v.id).text(v.title).appendTo(h3);
 						var summaryDiv = $('<div />').addClass('dispSummary').html(v.summary).appendTo(contentDiv);
 						$('<a />').attr({
 							'href': '/sandbox/reviews/review.php?id=' + v.id,
 							'aria-label': 'Read review of ' + v.title
-						}).text("Read more").appendTo(contentDiv);
+						}).text("Read more").appendTo(summaryDiv);
 					}
 				});
 				if(window.location.href.indexOf('review.php') > -1) {

@@ -36,7 +36,7 @@
 
       <div class="r25" style="margin-right: 1%;">
         <section class="homepage" id="loginPanel" style="padding: 0 10px 0 0;">
-          <h2 class="header"><img src="../images/login_header.png" alt="Login" /></h2>
+          <h2 class="header"><img style="width:100px;" src="../images/login_header.png" alt="Login" /></h2>
           <div class="sectionContent" style="flex-direction: column;">
             <div class="row">
               <label for="username">Username<span class="instructions red required">*</span></label>
