@@ -65,7 +65,7 @@ fieldset label {
 main article {
     width: 97%;
     /* background-color: #b9d27f; */
-    background-color: #eff4e3;
+    background-color: #f2f4eb;
     border: solid 1px #444;
     border-radius: 3px;
     margin-bottom: 45px;
@@ -394,6 +394,20 @@ html body div[data-dialog-id] .results ul li {
     padding: 5px;
 }
 
+div[data-dialog-id=addFilm] {
+    width: 50%;
+    left: 25%;
+
+}
+
+div[data-dialog-id=addFilm] div.formFields {
+    padding: 15px;
+}
+
+div[data-dialog-id=addFilm] div.formFields div {
+    margin: 10px 0;
+}
+
 html body section, html body article {
 
 }
@@ -530,7 +544,7 @@ header span.adminDisplay img {
     background-size: cover;
     background-position: top center;
     margin-top: -10px;
-    box-shadow: #000 0 0 3px 2px;
+    border: solid 1px #666;
     background-color: #fff;
     outline: 0;
 }

@@ -200,9 +200,78 @@
 			Add your film
 		</h2>
 	</div>
-	<div>
-		<label for="filmTitle">Title</label>
-		<input type="text" id="filmTitle" placeholder="Enter your film title" />
+	<div class="formFields">
+		<div>
+			<label for="filmTitle">Film title</label>
+			<input type="text" id="filmTitle" placeholder="Enter your film title" data-field="name" />
+		</div>
+		<div>
+			<label for="filmLink">Link to film</label>
+			<input type="text" id="filmLink" placeholder="https://www.youtube.com/watch?v=_JLAmQjDiRM" data-field="link" />
+		</div>		
+		<div>
+			<label for="filmSynopsis">Synopsis</label>
+			<textarea id="filmSynopsis" placeholder="A brief description of the film" data-field="descrip"></textarea>
+		</div>
+		<div>
+			<fieldset>
+				<legend>Select your role(s)</legend>	
+				<span>
+					<input id="director" type="checkbox" />
+					<label for="director">Director</label>
+				</span>
+				<span>
+					<input id="writer" type="checkbox" />
+					<label for="writer">Writer</label>
+				</span>
+				<span>
+					<input id="producer" type="checkbox" />
+					<label for="producer">Producer</label>
+				</span>
+				<span>
+					<input id="executiveProducer" type="checkbox" />
+					<label for="executiveProducer">Executive producer</label>
+				</span>
+				<span>
+					<input id="leadActor" type="checkbox" />
+					<label for="leadActor">Lead actor</label>
+				</span>
+				<span>
+					<input id="supportingActor" type="checkbox" />
+					<label for="supportingActor">Supporting actor</label>
+				</span>						
+				<span>
+					<input id="cinematographer" type="checkbox" />
+					<label for="cinematographer">Cinematographer</label>
+				</span>
+				<span>
+					<input id="audioEngineer" type="checkbox" />
+					<label for="audioEngineer">Sound</label>
+				</span>
+				<span>
+					<input id="editor" type="checkbox" />
+					<label for="editor">Editor</label>
+				</span>
+				<span>
+					<input id="vfx" type="checkbox" />
+					<label for="vfx">Visual effects</label>
+				</span>
+			</fieldset>
+		</div>
+		<div>
+			<label for="budget">Budget</label>
+			<select id="budget" data-field="budget">
+				<option value=""></option>
+				<option value="under10k">Under 10k</option>
+				<option value="under100k">Under 100k</option>
+				<option value="under1mil">Under 1 million</option>
+				<option value="over1mil">Over 1 million</option>
+			</select>
+		</div>
+		<div>
+			<label for="releaseDate">Release date</label>
+			<input type="text" id="releaseDate" data-toggle="datepicker" placeholder="Select a date" aria-required="true">
+		</div>
 	</div>
 </div>
 

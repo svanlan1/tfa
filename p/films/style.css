@@ -104,3 +104,27 @@ div.thisInfo .half span {
 button.rounded {
     margin-top: -27px !important;
 }
+
+fieldset {
+    display: block !important;
+}
+
+fieldset span {
+    display: inline-block;
+    width: 19%;
+    margin: 5px 0;
+}
+
+fieldset input[type=checkbox] {
+    display: inline-block;
+    width: 14px !important;
+}
+
+div[data-dialog-id=addFilm] {
+    width: 50% !important;
+    left: 25% !important;
+}
+
+.datepicker-container {
+    z-index: 2355456 !important;
+}

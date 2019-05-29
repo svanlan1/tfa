@@ -8,10 +8,6 @@ var global = {
 			case 'aboutus':
 				break;
 			case 'films':
-				if(window.location.href.indexOf('/p/films') === -1) {
-					global.films._events();
-					global.films._get();
-				}
 				break;
 			case 'wam':
 				break;
@@ -501,7 +497,18 @@ var global = {
 				url: '/sandbox/services/get/getTicker.php',
 				method: 'GET',
 				success: function(msg) {
-					global.ticker.text = $.parseJSON(msg)[0]['text'];
+					var options = { month: 'numeric', day: 'numeric', year: 'numeric' };
+					
+					function _sortObject(array, key, options) {
+						return array.sort(function(a, b) {
+							var x = new Date(a[key]).toLocaleDateString('en-US', options); 
+							var y = new Date(b[key]).toLocaleDateString('en-US', options);
+							console.log(x);
+							return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+						});						
+					}
+					let messages = _sortObject($.parseJSON(msg), 'dateAdded', options);
+					global.ticker.text = messages[0]['text'];
 					$('#socialMedia span').text(global.ticker.text);
 				},
 				error: function(e) {
