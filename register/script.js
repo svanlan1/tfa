@@ -10,12 +10,12 @@ var script = {
 			};
 			$.ajax({
 			    data: data,
-			    url: '/sandbox/services/core/register.php',
+			    url: '/services/core/register.php',
 			    method: 'POST',
 			    success: function(msg) {
 					console.log(msg);
 					alert('You have succesfully registered.  You cannot login until you confirm your email address.  Please check your email from a registration email from TFA.')
-					window.location.href = "/sandbox/";
+					window.location.href = "/index.php";
 			    },
 			    error: function(e) {
 			    	alert('failure');

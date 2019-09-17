@@ -45,7 +45,7 @@
 
     } else {   
         $filename = $newfilename;  
-        $filepath = $_SERVER['DOCUMENT_ROOT'] . "/sandbox/uploads/"; 
+        $filepath = $_SERVER['DOCUMENT_ROOT'] . "/uploads/"; 
         if (move_uploaded_file($_FILES['file']['tmp_name'], $filepath . $filename)) {
             $user = $_SESSION['memberID'];
             $stmt = $db->prepare('INSERT INTO uploads (filepath,memberID,filename,category,title) VALUES (:filepath,:memberID,:filename,:category,:title)');

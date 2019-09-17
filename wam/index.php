@@ -12,30 +12,15 @@
     ?>
     <link rel="stylesheet" href="aboutus.css" />
     <main>
-      <div class="r80">
+      <div class="r100">
 
         <section class="homepage" id="ourMission">
-          <h2><img src="../../images/alarm.svg" alt="" /> [MAIN HEAD]</h2>
+          <h2><img src="../../images/wam_login.svg" alt="" /> Wait a Minute!</h2>
           <div class="sectionContent">
-            To Support and Promote Greater Puget Sound Motion Picture Artists via Resources, Networking, and Education in a Mutually Supportive Alliance.
+            
           </div>
         </section>
       </div>
-
-      <div class="r20">
-        <section>
-          <h2><img src="../../images/notepad.svg" alt="" /> [ARTICLE HEAD]</h2>
-          <div class="sectionContent">
-            <ul class="eventList">
-              <li>
-                <h3>[LI HEAD]</h3>
-                <a href="javascript:;">[LINK TEXT]</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
-
     </main>
     <!-- JS -->
     <?php 

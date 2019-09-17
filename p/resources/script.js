@@ -2,7 +2,7 @@ var script = {
 	runStart: function() {
 		$('.addResource').bind('click', function(e) {
 			//global.dialog._open('addResource');
-			window.location.href = '/sandbox/p/resources/add/'
+			window.location.href = '/p/resources/add/'
 		});
 
 		$('div[data-dialog-id=addResource] .dialog .add').bind('click', function(e) {
@@ -29,7 +29,7 @@ var script = {
 		}
 		$.ajax({
 		    data: data,
-		    url: '/sandbox/services/set/addResource.php',
+		    url: '/services/set/addResource.php',
 		    method: 'POST',
 		    success: function(msg) {
 				$('div[data-dialog-id=addResource] div.loader').hide();
@@ -66,7 +66,7 @@ var script = {
 	getResourceByType: function() {
 		$.ajax({
 		    data: {type: script['type']},
-		    url: '/sandbox/services/get/getResourceByType.php',
+		    url: '/services/get/getResourceByType.php',
 		    method: 'GET',
 		    success: function(msg) {
 		    	script.resources = $.parseJSON(msg).resources;
@@ -80,7 +80,7 @@ var script = {
 		    		}
 		    		$(clone).find('.binderLink').attr('data-image-path', photos.name);
 		    		$(clone).find('.binderLink').bind('click', function(e) {
-						$('div[data-dialog-id=photos]').find('div.showHide div img').attr('src', '/sandbox/uploads/' + photos.name);
+						$('div[data-dialog-id=photos]').find('div.showHide div img').attr('src', '/uploads/' + photos.name);
 						global.dialog._open('photos');
 						global.dialog._closeAction = function() {
 							$('div[data-dialog-id=photos] div img').attr('src', '');

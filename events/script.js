@@ -19,7 +19,7 @@ var script = {
 			var clone = $('#upcomingEvents .sectionContent').eq(0).clone();
 			var photo = v.photo;
 			if(photo.indexOf('http://') === -1) {
-				photo = '/sandbox/uploads/' + v.photo;
+				photo = '/uploads/' + v.photo;
 			}
 			$(clone).find('h3').text(v.startDate + ' - ' + v.title);
 			$(clone).find('div.banner img').attr('src', photo);
@@ -61,7 +61,7 @@ var script = {
 	getEvents: function() {
 		console.log('the user is not logged in');
 	    $.ajax({
-	        url: '/sandbox/services/get/getEvents.php',
+	        url: '/services/get/getEvents.php',
 	        method: 'GET',
 	        success: function(msg) {
 	        	script.events = $.parseJSON(msg);

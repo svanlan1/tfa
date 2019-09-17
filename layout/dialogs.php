@@ -56,7 +56,7 @@
           <label for="banner"><span class="screen-reader-only">Upload a photo to change your headshot</span></label>
           <input type="file" id="headshot" class="screen-reader-only" data-name="headshot" />
           <button class="fileUpload">
-            <img src="/sandbox/images/upload.svg" alt="" />
+            <img src="/images/upload.svg" alt="" />
             <span>Upload a new headshot</span>
           </button>
           <img class="bannerDisplay" src="" alt="" />
@@ -92,7 +92,7 @@
           <label for="scriptUpload"><span class="screen-reader-only">Upload a new script</span></label>
           <input type="file" id="scriptUpload" class="screen-reader-only" data-name="scriptUpload" />
           <button class="fileUpload">
-            <img src="/sandbox/images/upload.svg" alt="" />
+            <img src="/images/upload.svg" alt="" />
             <span>Select your script to upload</span>
           </button>
           <span class="fileDisplay instructions"></span>

@@ -33,7 +33,7 @@
                 <label class="screen-reader-only" for="minuteUpload">Upload your file</label>
                 <input type="file" id="minuteUpload" class="screen-reader-only" data-name="minutesUpload" />
                 <button class="fileUpload">
-                  <img src="/sandbox/images/upload.svg" alt="">
+                  <img src="images/upload.svg" alt="">
                   <span>Select the file to upload</span>
                 </button>
               </div>

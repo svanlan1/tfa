@@ -1,7 +1,7 @@
         <article id="notification">
           <h3><i class="material-icons red" style="vertical-align: sub;">error_outline</i> Ruh roh!</h3>
           <p>
-            You haven't filled out your information yet.  You can do so by going to <a href="/sandbox/p/account/index.php?tab=myInfo">this link</a>.
+            You haven't filled out your information yet.  You can do so by going to <a href="/p/account/index.php?tab=myInfo">this link</a>.
           </p>
         </article>
         <article id="article_user">
@@ -30,20 +30,20 @@
                 <input type="search" id="searchSite" placeholder="Search site" style="width: 93%; margin: 5px;" />
               </li> -->
               <li>
-                <a href="/sandbox/p/feed/"><img src="/sandbox/images/rss-black.svg" alt="" /> Newsfeed</a>
+                <a href="/p/feed/"><img src="/images/rss-black.svg" alt="" /> Newsfeed</a>
               </li>
               <li>
-                <a href="/sandbox/p/messages/" id="myMessages">
-                  <img src="/sandbox/images/mail.svg" alt="" /> 
+                <a href="/p/messages/" id="myMessages">
+                  <img src="/images/mail.svg" alt="" /> 
                   <span></span> 
                   Messages
                 </a>
               </li>
               <li>
-                <a href="/sandbox/p/account/index.php?tab=myInfo"><img src="/sandbox/images/information.svg" alt="" /> Account info</a>
+                <a href="/p/account/index.php?tab=myInfo"><img src="/images/information.svg" alt="" /> Account info</a>
               </li>
               <li class="none publicProfile">
-                <a href="/sandbox/profiles/"><img src="/sandbox/images/resume.svg" alt="" /> Profile</a>
+                <a href="/profiles/"><img src="/images/resume.svg" alt="" /> Profile</a>
               </li> 
             </ul>
             <h3>
@@ -54,29 +54,20 @@
             </h3>
             <div id="userLinksList" class="none">
               <ul class="postLinks">
-                <li><a href="/sandbox/p/account/?tab=myPhotos"><img src="/sandbox/images/picture.svg" alt="" /> Your photo gallery</a></li>
-                <li><a href="/sandbox/p/account/?tab=myPosts"><img src="/sandbox/images/write-letter.svg" alt="" /> Your posts</a></li>
-                <li><a href="/sandbox/p/account/?tab=myFilms"><img src="/sandbox/images/script.svg" alt="" /> Your films</a></li>
-                <li><a href="/sandbox/p/account/?tab=myBinder"><img src="/sandbox/images/binders.svg" alt="" /> Your binder</a></li>
-                <li><a href="/sandbox/p/account/?tab=myResources"><img src="/sandbox/images/swiss-knife.svg" alt="" /> Your resources</a></li>
-                <!-- <li>
-                  <a href="../favorites/"><img src="/sandbox/images/star.svg" alt="" /> Your favorites</a>
-                </li> -->
+                <li><a href="/p/account/?tab=myPhotos"><img src="/images/picture.svg" alt="" /> Your photo gallery</a></li>
+                <li><a href="/p/account/?tab=myPosts"><img src="/images/write-letter.svg" alt="" /> Your posts</a></li>
+                <li><a href="/p/account/?tab=myFilms"><img src="/images/script.svg" alt="" /> Your films</a></li>
+                <li><a href="/p/account/?tab=myBinder"><img src="/images/binders.svg" alt="" /> Your binder</a></li>
+                <li><a href="/p/account/?tab=myResources"><img src="/images/swiss-knife.svg" alt="" /> Your resources</a></li>
                 <li>
                   <hr />
                 </li>  
                 <li>
-                  <a href="../../help/"><img src="/sandbox/images/help-black.svg" alt="" /> Help</a>
+                  <a href="../../help/"><img src="/images/help-black.svg" alt="" /> Help</a>
                 </li> 
                 <li>
-                  <a href="../feedback/"><img src="/sandbox/images/write-letter.svg" alt="" /> Send feedback</a>
+                  <a href="../feedback/"><img src="/images/write-letter.svg" alt="" /> Send feedback</a>
                 </li>                             
-                <!-- <li>
-                  <a href="../films/post.php"><img src="/sandbox/images/clapperboard.svg" alt="" /> Share your film</a>
-                </li> -->
-                <!-- <li>
-                  <a href="../reviews/"><img src="/sandbox/images/gavel.svg" alt="" /> Write a film review</a>
-                </li>                     -->
               </ul>
             </div>
             <div style="display:none;">

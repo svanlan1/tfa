@@ -26,7 +26,7 @@ var script = {
 						'data-pn': v.plainname
 					}).addClass('msgSearchResultLi').appendTo('.msgSearchResults ul');
 					var hs = $('<span />').addClass('searchHeadshot').css({
-						'background': 'url("/sandbox/uploads/' + v.headshot + '") 0% 0% / cover no-repeat'
+						'background': 'url("/uploads/' + v.headshot + '") 0% 0% / cover no-repeat'
 					}).appendTo(li);
 					var pnspan = $('<span />').text(v.plainname).appendTo(li);
 					var badgespan = $('<span />').appendTo(li);
@@ -132,7 +132,7 @@ var script = {
 							}
 						}
 						$('div[data-dialog-id=readmessage] .fromheadshot').css({
-							'background': 'url("/sandbox/uploads/' + script.userData[v.memberID].headshot + '")  0% 0% / cover no-repeat'
+							'background': 'url("/uploads/' + script.userData[v.memberID].headshot + '")  0% 0% / cover no-repeat'
 						});
 						$('div[data-dialog-id=readmessage] .fromname').text(script.userData[v.memberID].plainname);
 						$('div[data-dialog-id=readmessage] .msgdetails').text(global.util._formatJSDate(v.senton, true));

@@ -23,7 +23,7 @@ var r = {
         }).text("Link").appendTo($('#trailer'));
         $('#updated').text(global.util._formatJSDate(r.thisReview.updated));
         $('#image').css({
-            'background': "url('/sandbox/uploads/" + r.thisReview.image + "') 0% 0% / cover no-repeat"
+            'background': "url('/uploads/" + r.thisReview.image + "') 0% 0% / cover no-repeat"
         });
         $('#summary').text($(r.thisReview.summary).text());
         var charges = $.parseJSON(r.thisReview.charges);

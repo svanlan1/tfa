@@ -10,7 +10,7 @@ var script = {
 		}
 		$.ajax({
 			data: options,
-			url: '/sandbox/services/get/getUser.php',
+			url: '/services/get/getUser.php',
 			method: 'GET',
 			success: function(msg) {
 				script.profile = $.parseJSON(msg);
@@ -26,7 +26,7 @@ var script = {
 	drawProfilePics: function() {
 		var headshot = thisUser.headshot;
 		$('.tfa_profile_headshot').css({
-			'background': 'url("/sandbox/uploads/' + headshot + '") no-repeat',
+			'background': 'url("/uploads/' + headshot + '") no-repeat',
 			'background-size': 'cover'
 		});
 
@@ -34,15 +34,15 @@ var script = {
 			var cat = $.parseJSON(v.category);
 			if(cat.category === "headshot" && v.filename !== headshot) {
 				var clone = $('.profile .photoGallery div').eq(0).clone();
-				$(clone).find('img').attr('src', '/sandbox/uploads/' + v.filename);
+				$(clone).find('img').attr('src', '/uploads/' + v.filename);
 				$(clone).removeClass('none').appendTo('.profile .photoGallery');
 
 				var side = $('.sidePhotoGallery div').eq(0).clone();
-				$(side).find('img').attr('src', '/sandbox/uploads/' + v.filename);
+				$(side).find('img').attr('src', '/uploads/' + v.filename);
 				$(side).removeClass('none').appendTo('.sidePhotoGallery');
 			} else if (v.filename === headshot) {
 				var side = $('.sidePhotoGallery div').eq(0).clone();
-				$(side).find('img').attr('src', '/sandbox/uploads/' + v.filename);
+				$(side).find('img').attr('src', '/uploads/' + v.filename);
 				$(side).removeClass('none').appendTo('.sidePhotoGallery');				
 			}
 			$(side).find('img').bind('click', function(e) {

@@ -11,7 +11,7 @@ var script = {
 				method: 'POST',
 				data: data,
 				success: function(msg) {
-					window.location.href = '/sandbox/a/'
+					window.location.href = '/a/'
 				},
 				error: function(e) {
 					console.log(e);

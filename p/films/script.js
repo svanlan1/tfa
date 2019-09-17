@@ -11,9 +11,9 @@ var script = {
 
 	_get: function() {
 		$.ajax({
-			url: '/sandbox/services/get/getFilms.php',
+			url: '/services/get/getFilms.php',
 			method: 'GET',
-			async: 'true',
+			async: false,
 			success: function(msg) {
 				script.results = $.parseJSON(msg);
 				console.log(script.results);

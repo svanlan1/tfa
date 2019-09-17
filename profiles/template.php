@@ -14,7 +14,7 @@
       <div class="r80">
 
         <section class="homepage" id="ourMission">
-          <h2><img src="/sandbox/images/user.svg" alt="" /> Tacoma Film Alliance</h2>
+          <h2><img src="/images/user.svg" alt="" /> Tacoma Film Alliance</h2>
           <div class="sectionContent" style="flex-flow: column;">
             <div class="headshotWrap">
               <div class="tfa_profile_headshot"></div>
@@ -48,7 +48,7 @@
                 <li class="links">
                   <span>
                     <a href="javascript:;" class="imdb">
-                      <img src="/sandbox/images/imdb.svg" alt="IMDB" />
+                      <img src="/images/imdb.svg" alt="IMDB" />
                     </a>
                   </span>
                 </li>

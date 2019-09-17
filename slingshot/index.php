@@ -13,76 +13,83 @@
     <main>
       <div class="r80">
         <section class="homepage" id="ourMission">
-          <h2><img src="../images/slingshot.svg" alt="" /> Slingshot</h2>
+        <h2 class="header"><img src="../images/slingshot_header.png" alt="Film spotlight" title="" style=""></h2>
           <div class="sectionContent" style="flex-flow: column;">
-            <div class="storyBanner" style="background: url('/sandbox/images/slingshot_film.jpg') 0px center / cover no-repeat;"></div>
+            <div class="storyBanner" style="background: url('/images/slingshot_film.jpg') 0px center / cover no-repeat;"></div>
             <div class="storySetup">
-              <span class="byline">by Slingshot Committee on Jan 25, 2018 at 11:59am</span>
+              <span class="byline">by Slingshot Committee on September 12th, 2019</span>
               <div class="lede">What is Slingshot?</div>
             </div>
             <div class="storyContent">
               <p>
-                Slingshot is a sub-group of members from the Tacoma Film Alliance who are dedicated to producing one short film per month.  Each  month, Slingshot writers will
-                submit a script (up to 2), which will be voted upon by said members.  That film is given a 2 month window for pre-production, and we then film on the last Sunday of
-                the month.
+                Slingshot is a monthly project produced by the Tacoma Film Alliance.  The goal of Slingshot is to produce at least 1 short film per month, with the goal of building your confidence and experience in filmmaking.
               </p>
-              <p>
-                <h3>Slingshot Monthly Film:  Guidelines for Success</h3>
-                <dl>
+              <div>
+                <h3>Be a part of the new Slingshot!</h3>
+                <div class="inputs">
+                  <label for="fullname">Full name<span class="red required">*</span></label>
+                  <input type="text" aria-required="true" id="fullname" style="width: 95%;" />
+                </div>
 
-                  <dt>Purpose</dt>
-                  <dd>to write, produce, and exhibit a short film together each month, for the mutual improvement of our filmmaking skills and for making beneficial connections.</dd>
+                <div class="inputs">
+                  <label for="email">Email address<span class="red required">*</span></label>
+                  <input type="email" aria-required="true" id="email" style="width: 95%;" />
+                </div>
 
-                  <dt>Emphasis</dt>
-                  <dd>strong emphasis and preference is given to making films by writer-directors. strong emphasis is given to writing original short scripts (because a great film starts with a great script) and then having that writer direct that script. our emphasis is making films, not just talking about making films.</dd>
+                <fieldset style="margin-top: 25px;">
+                  <legend>What roles are you most interested in?<span style="width: auto;" class="red required">*</span></legend>
+                  <span><input type="checkbox" id="writer" /><label for="writer">Writer</label></span>
+                  <span><input type="checkbox" id="directing" /><label for="directing">Director</label></span>
+                  <span><input type="checkbox" id="editing" /><label for="editing">Editor</label></span>
+                  <span><input type="checkbox" id="acting" /><label for="acting">Acting</label></span>
+                  <span><input type="checkbox" id="camera" /><label for="camera">Camera person</label></span>
+                  <span><input type="checkbox" id="sound" /><label for="sound">Sound engineer</label></span>
+                  <span><input type="checkbox" id="lighting" /><label for="lighting">Lighting</label></span>
+                  <span><input type="checkbox" id="producing" /><label for="producing">Producer</label></span>
+                  <span><input type="checkbox" id="productionAssistant" /><label for="productionAssistant">Production assistant</label></span>
+                  <span><input type="checkbox" id="makeup" /><label for="makeup">Makeup</label></span>
+                  <span><input type="checkbox" id="other" /><label for="other">Other</label></span>
+                  <span class="otherFieldDisplay">
+                    <label for="otherField">Other</label>
+                    <input type="text" id="otherField" />
+                  </span>
+                </fieldset>
 
-                  <dt>Voting</dt>
-                  <dd>voting is always done in secret and by approval voting. if there is a tie, then a run-off vote is held.</dd>
-
-                  <dt>Teams</dt>
-                  <dd>each slingshot team is composed of a steering committee plus a selection committee. the steering committee directs all activities of the slingshot team.  the selection committee selects the scripts to be made into short films.</dd>
-
-                  <dt>Steering</dt>
-                  <dd>the steering committee consists of between three and five members of the Tacoma Film Alliance who agree to meet the ongoing writing requirements, and are accepted to the steering committee. joining the steering committee requires applying and being confirmed by a unanimous secret vote of the current steering committee. for simplicity, a person may only be on one steering committee at a time.</dd>
-
-                  <dt>Selection</dt>
-                  <dd>the selection committee consists of all persons on the steering committee, plus any number of Tacoma Film Alliance members, who have successfully worked on at least two slingshot films, and who are voted to join the selection committee by a simple majority vote of the steering committee. All persons on the selection committee may submit up to two original short scripts each month, by the deadline, for voting upon by the selection committee.</dd>
-
-                  <dt>Splitting</dt>
-                  <dd>if the steering committee exceeds 5 persons the whole slingshot team divides into two separate teams, so that each team again has a steering committee of between 3 and 5 persons plus a selection team. teams are called “slingshot alpha team”, “slingshot bravo team”,  “slingshot charlie team”, etc. a slingshot team with less than 3 persons on the steering committee disbands.</dd>
-
-                  <dt>Meetings</dt>
-                  <dd>meetings of the steering and selection committees are held together in person every first and third tuesday of the month, with an additional meeting the fifth tuesday if agreed by the steering committee.</dd>
-
-                  <dt>Removal</dt>
-                  <dd>any person may be removed from a committee and/or slingshot team by a simple majority vote of the steering committee.</dd>
-
-                  <dt>Writing</dt>
-                  <dd>each person on the steering committee agrees to submit in writing at least one original short film idea per month to a common forum of that committee, but weekly idea submitting is encouraged. each person on the steering committee also agrees to submit in writing at least one completed original short film script each month to the same forum. The due date for ideas and scripts is by midnight on the 3rd Sunday of each month.</dd>
-
-                  <dt>Filming</dt>
-                  <dd>each month, the selection committee votes on which short film script the team produces two months following e.g. voting in january determines the film shot in march. this vote is held during the three days following the third sunday of each month. the writer of the selected script has first right-of-refusal to direct and edit that film. if the writer declines to direct and/or edit, voting determines a willing director and/or editor.</dd>
-
-                  <dt>Releases</dt>
-                  <dd>the director of each short is responsible for obtaining and retaining all necessary releases required.</dd>
-
-                  <dt>Editing</dt>
-                  <dd>final editing of each short is completed within 60 calendar days of the last day of shooting, and exhibited in person or online to the participants within 30 days after.</dd>
-
-                  <dt>Credits</dt>
-                  <dd>each completed short film must include, as part of the credits, the logo of the Tacoma Film Alliance, its website address, and the production number assigned to it.</dd>
-
-                  <dt>Copyright</dt>
-                  <dd>scripts remain copyright of the author. each completed short film is copyright of the director and/or their designated production company.</dd>
-
-                  <dt>Advice</dt>
-                  <dd>these are only guidelines for success and each steering committee can vote to change them as they see fit.</dd>
-
-                </dl>
-              </p>
+                <div>
+                  <label for="equipment">What equipment do you have?<span class="red required">*</span></label>
+                  <textarea aria-required="true" id="equipment"></textarea>
+                </div>
+                <div>
+                  <label for="shortbio">Tell us a little bit about yourself<span class="red required">*</span></label>
+                  <textarea aria-required="true" id="shortbio"></textarea>
+                </div>
+              </div>
+              <button class="register">
+                <i class="material-icons">
+                    send
+                </i>
+                 Sign up!
+              </button>              
             </div>
           </div>
         </section>
+        <!-- <section class="homepage" id="previousSlingshotFilms">
+          <h2 class="header"><img src="../images/slingshot_header.png" alt="Film spotlight" title="" style=""></h2>
+          <div class="storyContent">
+            <h3>Previous Slingshot films</h3>
+              <div class="slingshotFilm">
+                <div>
+                  <a href="https://www.youtube.com/watch?v=w-C8FjatCrw&list=PLRAvO_vjT7KvGDiemZ5BEnHIcN6uKe6Pp"><img src="images/nightGuest.jpg" alt="Night Guest" /></a>
+                </div>
+                <div>
+                  <h3>Night Guest</h3>
+                  <div class="instructions"> by Mike West</div>
+                </div>
+                
+                
+              </div>
+          </div>          
+        </section> -->
       </div>
 
       <div class="r20">

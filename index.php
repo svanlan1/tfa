@@ -9,7 +9,6 @@
     <main>
       <div class="r75">
         <section class="homepage" id="filmSpotlight">
-          <!-- <h2><img src="/sandbox/images/spotlight.svg" alt="" /> Spotlight</h2> -->
           <h2 class="header"><img src="images/spotlight_header.png" alt="Spotlight" /></h2>
           <div class="loader"></div>
           <div class="showHide">
@@ -32,7 +31,7 @@
                   </span>
                   <span style="padding-top: 5px;">
                     <button class="twitter">
-                      <img src="/sandbox/images/twitter.svg" alt="" /> Tweet</button>
+                      <img src="images/twitter.svg" alt="" /> Tweet</button>
                   </span>
                 </div>
                 <p></p>
@@ -42,7 +41,6 @@
         </section>
 
         <section class="homepage" id="latestNews">
-          <!-- <h2><img src="/sandbox/images/alarm.svg" alt="" /> Latest news</h2> -->
           <h2 class="header"><img src="images/latest_news_header.png" alt="Latest news" /></h2>
           <div class="loader"></div>
           <div class="showHide">
@@ -60,7 +58,7 @@
                   </span>
                   <span>
                     <button class="twitter">
-                      <img src="/sandbox/images/twitter.svg" alt="" /> Tweet</button>
+                      <img src="images/twitter.svg" alt="" /> Tweet</button>
                   </span>
                 </div>
                 <p>
@@ -77,7 +75,6 @@
       </div>
       <div class="r25">
         <article>
-          <!-- <h2><img src="/sandbox/images/calendar.svg" alt="" /> Events</h2> -->
           <h2 class="header"><img src="images/events_header.png" alt="Events" /></h2>
           <ul class="eventList">
             <li>
@@ -88,7 +85,6 @@
           </ul>
         </article>
         <article id="2018WamWinners">
-          <!-- <h2><img src="/sandbox/images/trophy.svg" alt="" /> 2018 WAM Winners!</h2> -->
           <h2 class="header"><img src="images/wam_winners_header.png" alt="WAM Winners" /></h2>
           <ul class="eventList">
             <li style="display:none;">
@@ -110,6 +106,6 @@
         require('layout/commonFooter.php');
         require('includes/commonScripts.php');
     ?>
-    <script src="/sandbox/js/homepage.js"></script>
+    <script src="js/homepage.js"></script>
   </body>
 </html>

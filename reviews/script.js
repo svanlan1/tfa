@@ -11,15 +11,15 @@ var script = {
 					if(window.location.href.indexOf('review.php') === -1) {
 						var li = $('<li />').appendTo('.currentReviews');
 						var imgdiv = $('<div />').addClass('dispImg').css({
-								'background': 'url("/sandbox/uploads/' + v.image + '")  0% 40% / cover no-repeat'
+								'background': 'url("/uploads/' + v.image + '")  0% 40% / cover no-repeat'
 							}).appendTo(li),
 							contentDiv = $('<div />').addClass('dispContent').appendTo(li);
 	
 						var h3 = $('<h3 />').addClass('filmCourtTitleH3').appendTo(contentDiv);
-						$('<a />').attr('href', '/sandbox/reviews/review.php?id=' + v.id).text(v.title).appendTo(h3);
+						$('<a />').attr('href', '/reviews/review.php?id=' + v.id).text(v.title).appendTo(h3);
 						var summaryDiv = $('<div />').addClass('dispSummary').html(v.summary).appendTo(contentDiv);
 						$('<a />').attr({
-							'href': '/sandbox/reviews/review.php?id=' + v.id,
+							'href': '/reviews/review.php?id=' + v.id,
 							'aria-label': 'Read review of ' + v.title
 						}).text("Read more").appendTo(summaryDiv);
 					}

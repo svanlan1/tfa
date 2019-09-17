@@ -7,7 +7,7 @@ var script = {
 
 	getFilms: function() {
 		$.ajax({
-			url: '/sandbox/services/get/getFilms.php',
+			url: '../services/get/getFilms.php',
 			method: 'GET',
 			success: function(msg) {
 				script.films = $.parseJSON(msg);

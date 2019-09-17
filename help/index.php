@@ -52,7 +52,7 @@
             <div class="row" id="findMe" tabindex="-1">
               <h3>How can people find me for their next project?</h3>
               <p>
-                In order for you to be searchable in our database, you must fill out your information located on the <a href="http://tacomafilmalliance.com/sandbox/p/profile.php?tab=myInfo">My info page</a>.  Once you fill in your information and update your headshot, you'll be listed in our talent database.  <br /><strong>Note:</strong> You will not show up in this list until you fill in your information.  It is important to do so!
+                In order for you to be searchable in our database, you must fill out your information located on the <a href="http://tacomafilmalliance.com/p/profile.php?tab=myInfo">My info page</a>.  Once you fill in your information and update your headshot, you'll be listed in our talent database.  <br /><strong>Note:</strong> You will not show up in this list until you fill in your information.  It is important to do so!
               </p>
             </div>
             <div class="row" id="slingshot" tabindex="-1">

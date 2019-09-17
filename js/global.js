@@ -164,7 +164,7 @@ var global = {
 				form_data.append('category', JSON.stringify(options));
 				if(file_data) {
 					$.ajax({
-					    url: '/sandbox/services/set/imageUploadProfilePic.php', // point to server-side PHP script 
+					    url: '/services/set/imageUploadProfilePic.php', // point to server-side PHP script 
 					    dataType: 'text',  // what to expect back from the PHP script, if anything
 					    cache: false,
 					    contentType: false,
@@ -183,7 +183,7 @@ var global = {
 					    	} catch(e) {
 					    		localStorage.setItem('tfa_headshot', msg);
 								$('#article_user .tfa_headshot, .addComment .tfa_headshot').css({
-									'background': 'url("/sandbox/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
+									'background': 'url("/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
 									'background-size': 'cover'
 								});	
 								post.getCurrentUserUploads();
@@ -230,7 +230,7 @@ var global = {
 
 	    $.ajax({
 	        data: data,
-	        url: '/sandbox/services/set/updateHeadshot.php',
+	        url: '/services/set/updateHeadshot.php',
 	        method: 'POST',
 	        success: function(msg) {
 				global.dialog._closeAction = function() {
@@ -238,7 +238,7 @@ var global = {
 				}
 	    		localStorage.setItem('tfa_headshot', fn);
 				$('#article_user .tfa_headshot, .addComment .tfa_headshot').css({
-					'background': 'url("/sandbox/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
+					'background': 'url("/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
 					'background-size': 'cover'
 				});					
 				global.dialog._close();
@@ -260,7 +260,7 @@ var global = {
 		form_data.append('category', JSON.stringify(options));
 		if(file_data) {
 			$.ajax({
-			    url: '/sandbox/services/set/imageUpload.php',
+			    url: '/services/set/imageUpload.php',
 			    dataType: 'text',
 			    cache: false,
 			    contentType: false,
@@ -328,7 +328,7 @@ var global = {
 
 		_get: function() {
 		    $.ajax({
-		        url: '/sandbox/services/get/getFilms.php',
+		        url: '/services/get/getFilms.php',
 		        method: 'GET',
 		        success: function(msg) {
 		        	global.films.results = $.parseJSON(msg);
@@ -416,10 +416,10 @@ var global = {
 					    	'username': $('#username').val(),
 					    	'password': $('#password').val()
 					    },
-					    url: '/sandbox/services/core/login.php',
+					    url: '/services/core/login.php',
 					    method: 'POST',
 					    success: function(msg) {
-							window.location.href = "/sandbox/p/home/";
+							window.location.href = "/p/home/";
 					    },
 					    error: function(e) {
 					    	alert('failure');
@@ -448,7 +448,7 @@ var global = {
 	search: {
 		_get: function(searchValue) {
 		    $.ajax({
-		        url: '/sandbox/services/get/searchAll.php',
+		        url: '/services/get/searchAll.php',
 		        data: {
 		        	'search': searchValue
 		        },
@@ -494,7 +494,7 @@ var global = {
 	ticker: {
 		_getTickerData: function() {
 			$.ajax({
-				url: '/sandbox/services/get/getTicker.php',
+				url: '/services/get/getTicker.php',
 				method: 'GET',
 				success: function(msg) {
 					var options = { month: 'numeric', day: 'numeric', year: 'numeric' };
@@ -526,7 +526,7 @@ var global = {
 				'moreinfo': "{}"
 			};
 			$.ajax({
-				url: '/sandbox/services/set/addCounter.php',
+				url: '/services/set/addCounter.php',
 				method: 'POST',
 				data: counterData,
 				success: function(msg) {
@@ -596,7 +596,7 @@ var global = {
 			
 			if(member.isAdmin === 'Y') {
 				$('<img />').attr({
-					'src': '/sandbox/images/exec.svg',
+					'src': '/images/exec.svg',
 					'alt': 'Film Alliance Executive',
 					'title': 'Film Alliance Executive'
 				}).appendTo(element);
@@ -604,7 +604,7 @@ var global = {
 
 			if(member.isReviewer === 'Y') {
 				$('<img />').attr({
-					'src': '/sandbox/images/law.svg',
+					'src': '/images/law.svg',
 					'alt': 'Film Court Associate',
 					'title': 'Film Court Associate'
 				}).appendTo(element);
@@ -612,7 +612,7 @@ var global = {
 
 			if(meminfo.role === "director" || meminfo.secondaryrole === "director") {
 				$('<img />').attr({
-					'src': '/sandbox/images/director.svg',
+					'src': '/images/director.svg',
 					'alt': 'Director',
 					'title': 'Director'
 				}).appendTo(element);
@@ -620,7 +620,7 @@ var global = {
 
 			if(meminfo.slingshot === "Y") {
 				$('<img />').attr({
-					'src': '/sandbox/images/slingshot-badge.svg',
+					'src': '/images/slingshot-badge.svg',
 					'alt': 'Slingshot',
 					'title': 'Slingshot'
 				}).appendTo(element);
@@ -628,7 +628,7 @@ var global = {
 
 			if(meminfo.role === 'actor' || meminfo.secondaryrole === 'actor' || meminfo.role === 'actress' || meminfo.secondaryrole === 'actress') {
 				$('<img />').attr({
-					'src': '/sandbox/images/theatre.svg',
+					'src': '/images/theatre.svg',
 					'alt': 'Thespian',
 					'title': 'Thespian'
 				}).appendTo(element);		    					
@@ -636,7 +636,7 @@ var global = {
 
 			if(meminfo.role === "writer" || meminfo.secondaryrole === "writer") {
 				$('<img />').attr({
-					'src': '/sandbox/images/writer.svg',
+					'src': '/images/writer.svg',
 					'alt': 'Writer',
 					'title': 'Writer'
 				}).appendTo(element);		    					
@@ -644,7 +644,7 @@ var global = {
 
 			if(meminfo.role === "editor" || meminfo.secondaryrole === "editor") {
 				$('<img />').attr({
-					'src': '/sandbox/images/editor.svg',
+					'src': '/images/editor.svg',
 					'alt': 'Editor',
 					'title': 'Editor'
 				}).appendTo(element);		    					
@@ -652,7 +652,7 @@ var global = {
 
 			if(meminfo.role === "sound" || meminfo.secondaryrole === "sound" || meminfo.role === "music" || meminfo.secondaryrole === "music") {
 				$('<img />').attr({
-					'src': '/sandbox/images/sound.svg',
+					'src': '/images/sound.svg',
 					'alt': 'Musician',
 					'title': 'Musician'
 				}).appendTo(element);		    					
@@ -660,7 +660,7 @@ var global = {
 
 			if(meminfo.role === "producer" || meminfo.secondaryrole === "producer") {
 				$('<img />').attr({
-					'src': '/sandbox/images/producer.svg',
+					'src': '/images/producer.svg',
 					'alt': 'Producer',
 					'title': 'Producer'
 				}).appendTo(element);		    					
@@ -777,7 +777,7 @@ var global = {
 
 		_uploadFile: function(data, successFn) {
 			$.ajax({
-				url: '/sandbox/services/set/fileUpload.php',
+				url: '/services/set/fileUpload.php',
 				dataType: 'text',
 				cache: false,
 				contentType: false,

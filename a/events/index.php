@@ -28,7 +28,7 @@
                 <label class="screen-reader-only" for="bannerUpload">Upload your file</label>
                 <input type="file" id="bannerUpload" class="screen-reader-only" data-name="bannerUpload" aria-required="true" />
                 <button class="fileUpload">
-                  <img src="/sandbox/images/upload.svg" alt="">
+                  <img src="images/upload.svg" alt="">
                   <span>Select an event photo</span>
                 </button>
               </div>

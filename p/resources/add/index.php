@@ -25,7 +25,7 @@
             <label for="resourcePhotoUpload"><span class="screen-reader-only">Upload a photo of your resource</span></label>
             <input type="file" id="resourcePhotoUpload" class="screen-reader-only" data-name="resourcePhotoUpload" />
             <button class="fileUpload">
-              <img src="/sandbox/images/upload.svg" alt="" />
+              <img src="/images/upload.svg" alt="" />
               <span>Add a photo</span>
             </button>
             <span class="fileDisplay instructions"></span>

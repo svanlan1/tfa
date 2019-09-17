@@ -47,7 +47,7 @@ var homepage = {
 				$(cont).find('h3 a').text(v.title);
 				$(cont).find('h3 a').attr('href', 'story/index.php?id=' + v.id);
 				$(cont).find('.byline').text('by ' + v.byline + ' on ' + postedDate);
-				$(cont).find('.banner img').attr('src', '/sandbox/uploads/' + v.banner);
+				$(cont).find('.banner img').attr('src', '/uploads/' + v.banner);
 				$(cont).find('p').text(v.lead);
 				$(cont).find('.commentsDisplay_number').text(commentsNumber);
 				$('#filmSpotlight .loader').hide();
@@ -72,7 +72,7 @@ var homepage = {
 	    				$(clone).find('iframe').attr('src', v.banner);
 	    				$(clone).find('div.banner img').remove();	
 	    			} else {
-	    				$(clone).find('div.banner img').attr('src', '/sandbox/uploads/' + v.banner).attr('alt', '');
+	    				$(clone).find('div.banner img').attr('src', '/uploads/' + v.banner).attr('alt', '');
 	    				$(clone).find('iframe').remove();
 					}
 					$(clone).find('.commentsDisplay_number').text(commentsNumber);
@@ -94,12 +94,12 @@ var homepage = {
 				$(clone).find('h3 a').text(v.name);
 				$(clone).find('.description').text(v.descrip);
 				$(clone).show().prependTo('#2018WamWinners ul');
-				$(clone).find('h3 span img').attr('src', '/sandbox/images/first.svg').attr('title', '2018 Official Winner!');
+				$(clone).find('h3 span img').attr('src', '/images/first.svg').attr('title', '2018 Official Winner!');
 			} else if (v.tfa_category === "wam_sel_2018" && v.wam_prize === "fanWinner") {
 				$(clone).find('h3 a').text(v.name);
 				$(clone).find('.description').text(v.descrip);
 				$(clone).show().appendTo('#2018WamWinners ul');
-				$(clone).find('h3 span img').attr('src', '/sandbox/images/first.svg').attr('title', '2018 WAM Fan Winner!');
+				$(clone).find('h3 span img').attr('src', '/images/first.svg').attr('title', '2018 WAM Fan Winner!');
 			}
 		});
 

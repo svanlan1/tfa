@@ -17,7 +17,7 @@ var script = {
 		$(script.data.homepage).each(function(i,v) {
 			var clone = $('.clone_me').eq(0).clone();
 			$(clone).find('.background_banner').css({
-				'background': 'url("/sandbox/uploads/' + v.banner + '") no-repeat',
+				'background': 'url("/uploads/' + v.banner + '") no-repeat',
 				'background-size': 'cover',
 				'opacity': '.3',
 				'background-position': '0 -160px'
@@ -158,7 +158,7 @@ var script = {
 						});
 						$.ajax({
 							data: dobj,
-							url: '/sandbox/services/set/updateHomepageFeatured.php',
+							url: '/services/set/updateHomepageFeatured.php',
 							method: 'POST',
 							success: function(msg) {
 								if($.parseJSON(msg).msg === "Success") {
@@ -186,7 +186,7 @@ var script = {
 		console.log(f);
 		$.ajax({
 		    data: data,
-		    url: '/sandbox/services/set/addHomepagePost.php',
+		    url: '/services/set/addHomepagePost.php',
 		    method: 'POST',
 		    success: function(msg) {
 		    	$('input textarea select').val('');

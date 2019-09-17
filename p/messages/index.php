@@ -1,5 +1,5 @@
 <?php require('../../core/config.php'); 
-	if(!$user->is_logged_in()){ header('Location: /sandbox/'); exit(); }
+	if(!$user->is_logged_in()){ header('Location: /index.php'); exit(); }
 	$title = 'Tacoma Film Alliance - Messages';
 	require('../../layout/commonHead.php');
 ?>

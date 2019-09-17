@@ -30,7 +30,7 @@ $(document).ready(function(e) {
 
     $('.test').bind('click', function(e) {
         $.ajax({
-            url: '/sandbox/services/' + $('#type').val() + '/' + $('#address').val(),
+            url: '/services/' + $('#type').val() + '/' + $('#address').val(),
             method: $('#type').val().toUpperCase(),
             data: getData,
             success: function(msg) {

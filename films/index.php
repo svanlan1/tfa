@@ -18,7 +18,7 @@
         <section class="homepage" id="filmSpotlight">
           <h2 class="header"><img src="../images/film_spotlight_banner.png" alt="Film spotlight"></h2>
           <div class="sectionContent">
-
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/?listType=playlist&list=PLRAvO_vjT7KvGDiemZ5BEnHIcN6uKe6Pp" frameborder="0" allowfullscreen></iframe>
           </div>
         </section>
       </div>

@@ -54,7 +54,7 @@ var script = {
 			if(global.util._validate()) {
 				global.dialog._open('filmreviewsubmission');
 				global.dialog._closeAction = function() {
-					window.location.href = "/sandbox/a/";
+					window.location.href = "/a/";
 				}
 				if(!script.edit) {
 					global.uploadImage($('#banner'), "filmreview", successFn, $('#title').val());
@@ -162,20 +162,20 @@ var script = {
 
 	getReviews: function() {
 		$.ajax({
-			url: '/sandbox/services/get/getFilmReviews.php',
+			url: '/services/get/getFilmReviews.php',
 			method: 'GET',
 			success: function(msg) {
 				script.reviews = $.parseJSON(msg);
 				$(script.reviews).each(function(i,v) {
 					var li = $('<li />').appendTo('.currentReviews');
 					var imgdiv = $('<div />').addClass('dispImg').css({
-							'background': 'url("/sandbox/uploads/' + v.image + '")  0% 0% / cover no-repeat'
+							'background': 'url("/uploads/' + v.image + '")  0% 0% / cover no-repeat'
 						}).appendTo(li),
 						contentDiv = $('<div />').addClass('dispContent').appendTo(li);
 
 					$('<h3 />').text(v.title).appendTo(contentDiv);
 					$('<a />').attr({
-						'href': '/sandbox/reviews/review.php?id=' + v.id,
+						'href': '/reviews/review.php?id=' + v.id,
 						'target': '_block'
 					}).text("View review").appendTo(contentDiv);
 					$('<a />').attr('href', 'edit.php?id=' + v.id).text("Edit review").appendTo(contentDiv);
@@ -191,7 +191,7 @@ var script = {
 	getReview: function(id) {
 		script.thisId = id;
 		$.ajax({
-			url: '/sandbox/services/get/getFilmReview.php',
+			url: '/services/get/getFilmReview.php',
 			data: {
 				"id": id
 			},
@@ -199,7 +199,7 @@ var script = {
 			success: function(msg) {
 				script.thisReview = $.parseJSON(msg)[0];
 				console.log(script.thisReview);
-				$('.preUpload').html('<img src="/sandbox/uploads/' + script.thisReview.image + '" data-image="'+script.thisReview.image+'" alt="" />');
+				$('.preUpload').html('<img src="/uploads/' + script.thisReview.image + '" data-image="'+script.thisReview.image+'" alt="" />');
 				$('#title').val(script.thisReview.title);
 				$('#trailer').val(script.thisReview.trailer);
 				$('#director').val(script.thisReview.director);

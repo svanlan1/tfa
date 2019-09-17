@@ -1,0 +1,5 @@
+@media only screen and (max-width: 900px) {
+    nav.desktop { display: none; }
+    div.mobileNav { display: block; }
+    footer { flex-direction: column; }
+}

@@ -9,7 +9,7 @@ var script = {
 		}
 	    $.ajax({
 			data: options,
-	        url: '/sandbox/services/get/getHomepageStory.php',
+	        url: '/services/get/getHomepageStory.php',
 	        method: 'GET',
 	        success: function(msg) {
 				var story = $.parseJSON(msg).homepage[0];
@@ -17,7 +17,7 @@ var script = {
 				$('#currentStory h2 span').text(story.title);
 				$('#currentStory .sectionContent div.storyContent').html(story.post);
 				$('.storyBanner').css({
-					'background': 'url("/sandbox/uploads/' + story.banner + '") no-repeat',
+					'background': 'url("/uploads/' + story.banner + '") no-repeat',
 					'background-size': 'cover',
 					'background-position': '0'
 				});
@@ -31,7 +31,7 @@ var script = {
 		});
 
 		$('.register').bind('click', function(e) {
-			window.location.href = '/sandbox/register/';
+			window.location.href = '/register/';
 		});	
 
 		$('.actionAddComment').bind('click', function(e) {
@@ -65,7 +65,7 @@ var script = {
 			comment = $('<p />').addClass('user_comment_text').text(options.comment).appendTo(div);
 		if(script.userData[user].headshot) {
 			$(headshot).css({
-				'background': 'url("/sandbox/uploads/' + script.userData[user].headshot + '") no-repeat',
+				'background': 'url("/uploads/' + script.userData[user].headshot + '") no-repeat',
 				'background-size': 'cover'
 			});
 		}
@@ -89,7 +89,7 @@ $(document).ready(function(e){
 				}
 				$.ajax({
 					data: options,
-					url: '/sandbox/services/set/addCommentToPost.php',
+					url: '/services/set/addCommentToPost.php',
 					method: 'POST',
 					success: function(msg) {
 						$('.addComment').hide();

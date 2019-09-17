@@ -19,7 +19,7 @@ if(is_numeric($memberID) && !empty($active)){
 	if($stmt->rowCount() == 1){
 
 		//redirect to login page
-		header('Location: /sandbox/login/');
+		header('Location: /login/');
 		exit;
 
 	} else {

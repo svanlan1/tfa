@@ -19,7 +19,7 @@ var script = {
 					$('input textarea').html('');
 					global.dialog._open('messagesent');
 					global.dialog._closeAction = function() {
-						window.location.href = "/sandbox/";
+						window.location.href = "/";
 					}
 				},
 				error: function(e) {

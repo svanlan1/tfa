@@ -2,7 +2,7 @@
 
     $temp = explode(".", $_FILES["file"]["name"]);
     $newfilename = round(microtime(true)) . '.' . end($temp);
-    $target_dir = "/sandbox/uploads/";
+    $target_dir = "/uploads/";
     $target_file = $target_dir . basename($_FILES["file"]["name"] . $newfilename);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -38,7 +38,7 @@
         //echo json_encode(array('Error'=>'Whoops', 'longDesc'=>'Sorry, your file was not uploaded.'));
     } else {   
         $filename = $newfilename;  
-        $filepath = $_SERVER['DOCUMENT_ROOT'] . "/sandbox/uploads/scripts/"; 
+        $filepath = $_SERVER['DOCUMENT_ROOT'] . "/uploads/scripts/"; 
      
         if (move_uploaded_file($_FILES['file']['tmp_name'], $filepath . $filename)) {
             $user = $_SESSION['memberID'];

@@ -12,3 +12,14 @@ main {
     font-family: 'Steelface';
     line-height: 38px;
 }
+
+iframe {
+    width: 85% !important;
+    height: auto !important;
+    min-height: 480px;
+}
+
+.sectionContent {
+    padding: 10px !important;
+    justify-content: center !important;
+}

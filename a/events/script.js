@@ -62,7 +62,7 @@ var script = {
 			success: function(m) {
 				console.log(m);
 				if(m === "Success") {
-					window.location.href = "/sandbox/events/";
+					window.location.href = "/events/";
 				}
 			},
 			error: function(e) {

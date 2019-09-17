@@ -1,0 +1,14 @@
+[30-Jun-2019 10:08:57 America/Los_Angeles] PHP Warning:  include(/home/hooligan13/public_html/tacomafilmalliance.comclasses/user.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 39
+
+[30-Jun-2019 10:08:57 America/Los_Angeles] PHP Warning:  include(): Failed opening '/home/hooligan13/public_html/tacomafilmalliance.comclasses/user.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 39
+[30-Jun-2019 10:08:57 America/Los_Angeles] PHP Warning:  include(/home/hooligan13/public_html/tacomafilmalliance.comclasses/phpmailer/mail.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 40
+
+[30-Jun-2019 10:08:57 America/Los_Angeles] PHP Warning:  include(): Failed opening '/home/hooligan13/public_html/tacomafilmalliance.comclasses/phpmailer/mail.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 40
+[30-Jun-2019 10:08:57 America/Los_Angeles] PHP Fatal error:  Class 'User' not found in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 41
+[30-Jun-2019 10:09:54 America/Los_Angeles] PHP Warning:  include(/home/hooligan13/public_html/tacomafilmalliance.com../classes/user.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 39
+
+[30-Jun-2019 10:09:54 America/Los_Angeles] PHP Warning:  include(): Failed opening '/home/hooligan13/public_html/tacomafilmalliance.com../classes/user.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 39
+[30-Jun-2019 10:09:54 America/Los_Angeles] PHP Warning:  include(/home/hooligan13/public_html/tacomafilmalliance.com../classes/phpmailer/mail.php): failed to open stream: No such file or directory in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 40
+
+[30-Jun-2019 10:09:54 America/Los_Angeles] PHP Warning:  include(): Failed opening '/home/hooligan13/public_html/tacomafilmalliance.com../classes/phpmailer/mail.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 40
+[30-Jun-2019 10:09:54 America/Los_Angeles] PHP Fatal error:  Class 'User' not found in /home/hooligan13/public_html/tacomafilmalliance.com/core/config.php on line 41

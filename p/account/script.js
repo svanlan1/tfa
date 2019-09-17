@@ -37,14 +37,16 @@ var script = {
         	function validate(els) {
         		var bool = true;
         		$(els).each(function(i,v) {
-        			if($(v).attr('aria-required') === 'true' && $(v).val() === "") {
-        				bool = false;
-        				$(v).attr('aria-invalid', 'true');
-        				$('#' + $(v).attr('aria-describedby')).show();
-        			} else {
-        				$(v).attr('aria-invalid', 'false');
-        				$('#' + $(v).attr('aria-describedby')).hide();
-        			}
+					if($(v).is('visible')) {
+						if($(v).attr('aria-required') === 'true' && $(v).val() === "") {
+							bool = false;
+							$(v).attr('aria-invalid', 'true');
+							$('#' + $(v).attr('aria-describedby')).show();
+						} else {
+							$(v).attr('aria-invalid', 'false');
+							$('#' + $(v).attr('aria-describedby')).hide();
+						}
+					}
         		});
         		if(!bool) {
         			$('*[aria-invalid=true]').eq(0).focus();
@@ -83,9 +85,9 @@ var script = {
 			    };
 			if(validated) {
 				if(script.found) {
-					script.updateProfile(dataObj, '/sandbox/services/set/updateMemberInfo.php');
+					script.updateProfile(dataObj, '/services/set/updateMemberInfo.php');
 				} else {
-					script.updateProfile(dataObj, '/sandbox/services/set/addMemberInfo.php');
+					script.updateProfile(dataObj, '/services/set/addMemberInfo.php');
 				}
 			}
         });
@@ -137,7 +139,7 @@ var script = {
 					if(cat.category !== "headshot" && cat.category !== "resource" && filetype === 'pdf') {
 						var clone = $('#myBinderDiv .papers').eq(0).clone();
 						$(clone).find('.title a span').text(v.title);
-						$(clone).find('.title a').attr('href', '/sandbox/uploads/scripts/' + v.filename).attr('target', '_blank');
+						$(clone).find('.title a').attr('href', '/uploads/scripts/' + v.filename).attr('target', '_blank');
 						$(clone).find('.byline').text(v.filename.split('.')[1]);
 						$(clone).removeClass('none').appendTo('#myBinderDiv')
 					}
@@ -168,7 +170,7 @@ var script = {
 				var photo = $.parseJSON(v.photos),
 					photoName = photo.name,
 					filetype = photo.name.split('.')[1],
-					href = '/sandbox/uploads/' + photoName;
+					href = '/uploads/' + photoName;
 				if(v.type === "location") {
 					var iText = "landscape";
 				} else {
@@ -192,7 +194,7 @@ var script = {
 				}
 			}
 			var div = $('<div />').appendTo('.myPhotoGallery'),
-			img = $('<img />').attr('src', '/sandbox/uploads/' + v.filename).appendTo(div);
+			img = $('<img />').attr('src', '/uploads/' + v.filename).appendTo(div);
 		}
 	},
 
@@ -206,7 +208,7 @@ var script = {
 
 	getCurrentUser: function() {
 	    $.ajax({
-	        url: '/sandbox/services/get/getCurrentUser.php',
+	        url: '/services/get/getCurrentUser.php',
 	        method: 'GET',
 	        success: function(msg) {
 	        	script.allUserData = $.parseJSON(msg);

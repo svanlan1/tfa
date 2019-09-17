@@ -3,7 +3,7 @@ var script = {
 	execCount: 0,
 	run: function() {
 		$.ajax({
-	        url: '/sandbox/services/get/getAllExecInfo.php',
+	        url: '/services/get/getAllExecInfo.php',
 	        method: 'GET',
 	        success: function(msg) {
 				script.data = $.parseJSON(msg);
@@ -12,7 +12,7 @@ var script = {
 				script.minutes = script.data.minutes;
 				$(script.execs).each(function(i,v) {
 					$.ajax({
-						url: '/sandbox/services/get/getUser.php',
+						url: '/services/get/getUser.php',
 						method: 'GET',
 						data: {"id": v.memberID},
 						success: function(msg) {
@@ -34,7 +34,7 @@ var script = {
 						h3 = $('<h3 />').text(v.dateMet).appendTo(li),
 						a = $('<a />').text('Link to minutes').appendTo(li);
 					if(v.file !== "") {
-						$(a).attr("href", "/sandbox/uploads/scripts/" + v.file);
+						$(a).attr("href", "/uploads/scripts/" + v.file);
 					} else {
 						$(a).attr("href", v.link);
 					}
@@ -56,7 +56,7 @@ var script = {
 			var $div = $('<div />').addClass('execMember').appendTo('#Executives .sectionContent');
 			if(info.meminfo[0].headshot !== "") {
 				var $avatar = $('<div />').addClass('avatar').css({
-					'background': 'url("/sandbox/uploads/' + info.meminfo[0].headshot + '") no-repeat',
+					'background': 'url("/uploads/' + info.meminfo[0].headshot + '") no-repeat',
 					'background-position': 'top center',
 					'background-size': 'cover'
 				}).appendTo($div)

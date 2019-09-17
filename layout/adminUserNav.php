@@ -1,7 +1,7 @@
         <article id="notification">
           <h3><i class="material-icons red" style="vertical-align: sub;">error_outline</i> Ruh roh!</h3>
           <p>
-            You haven't filled out your information yet.  You can do so by going to <a href="/sandbox/p/account/index.php?tab=myInfo">this link</a>.
+            You haven't filled out your information yet.  You can do so by going to <a href="/p/account/index.php?tab=myInfo">this link</a>.
           </p>
         </article>
         <article id="article_user">
@@ -22,11 +22,11 @@
               <span></span>
             </h3>
             <ul class="postLinks" style="margin: 15px 0 0 0;">
-              <li><a href="/sandbox/a/homepage/add.php"><img src="/sandbox/images/write-letter.svg" alt="" /> Add homepage post</a></li>
-              <li><a href="/sandbox/a/events/"><img src="/sandbox/images/calendar-black.svg" alt="" /> Add event</a></li>
-              <li><a href="/sandbox/a/reviews/add.php"><img src="/sandbox/images/filmcourt.svg" alt="" /> Add film review</a></li>
-              <li><a href="/sandbox/a/minutes/"><img src="/sandbox/images/binders.svg" alt="" />Add meeting minutes</a></li>
-              <li><a href="/sandbox/a/ticker/"><img src="/sandbox/images/ticker-black.svg" alt="" /> Update ticker</a></li>
+              <li><a href="/a/homepage/add.php"><img src="/images/write-letter.svg" alt="" /> Add homepage post</a></li>
+              <li><a href="/a/events/"><img src="/images/calendar-black.svg" alt="" /> Add event</a></li>
+              <li><a href="/a/reviews/add.php"><img src="/images/filmcourt.svg" alt="" /> Add film review</a></li>
+              <li><a href="/a/minutes/"><img src="/images/binders.svg" alt="" />Add meeting minutes</a></li>
+              <li><a href="/a/ticker/"><img src="/images/ticker-black.svg" alt="" /> Update ticker</a></li>
             </ul>
           </div>
         </article>

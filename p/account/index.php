@@ -8,7 +8,7 @@
     <main>
       <div class="r75">
         <section class="account" id="myAccount">
-          <h2><img src="/sandbox/images/avatar.svg" alt="" /> My Account</h2>
+          <h2><img src="/images/avatar.svg" alt="" /> My Account</h2>
           <div class="sectionContent" style="flex-flow: column;">
             <ul role="tabset">
               <li>

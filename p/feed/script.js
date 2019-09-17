@@ -53,10 +53,10 @@ var script = {
 		$(script.data.feed).each(function(i,v) {
 			var user = script.userData[v.memberID];
 			var clone = $('.user_comment').eq(0).clone();
-			$(clone).find('.tfa_headshot').css('background', 'url("/sandbox/uploads/' + user.headshot + '") 0% 0% / cover no-repeat');
+			$(clone).find('.tfa_headshot').css('background', 'url("/uploads/' + user.headshot + '") 0% 0% / cover no-repeat');
 			$(clone).find('.user_comment_name span.hname').text(user.plainname);
 			$(clone).find('.user_comment_name a').attr({
-				'href': '/sandbox/profiles/?id=' + v.memberID
+				'href': '/profiles/?id=' + v.memberID
 			});
 			global.util._addBadgesToUser(user, user, $(clone).find('.user_comment_name span.hname'));
 			$(clone).find('.user_comment_text span.htext').text(v.posttext);

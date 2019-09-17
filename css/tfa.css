@@ -1,7 +1,7 @@
 /** FONTS **/
 @font-face {
   font-family: 'Steelface';
-  src: url('/sandbox/fonts/steelfish/steelfish_rg.ttf')  format('truetype');
+  src: url('../fonts/steelfish/steelfish_rg.ttf')  format('truetype');
 }
 
 /** COMMON STYLES **/
@@ -16,7 +16,7 @@ html, body {
     margin: 0 auto;
     padding: 0;
     background-color: #222;
-    background: url('/sandbox/images/blueprintbg_new.jpg') repeat;
+    background: url('../images/blueprintbg_new.jpg') repeat;
     font-family: 'Open Sans', sans-serif;;
     font-weight: 300;    
     font-size: 1rem;
@@ -485,7 +485,7 @@ a:focus {
 
 html body header div[role=presentation] {
     background-color: #ffa600;
-    display: flex;
+    display: none;
     flex-flow: row;
     justify-content: flex-end;
     height: 35px;
@@ -511,7 +511,7 @@ html body header div[role=presentation] span {
 
 header div[role=banner] {
     height: 260px;
-    background: url('/sandbox/images/tfa_head_bg_res.jpg') no-repeat;
+    background: url('../images/tfa_head_bg_res.jpg') no-repeat;
     display: block;
     background-size: cover;
 }
@@ -1067,7 +1067,7 @@ hr {
 }
 
 .loader {
-    background: url(/sandbox/images/loading_indicator.gif) no-repeat;
+    background: url("../images/loading_indicator.gif") no-repeat;
     display: block;
     background-position: center;
     height: 100px;
@@ -1582,3 +1582,5 @@ h4.user_comment_name {
     margin-left: 10px;
     font-weight: 400;
 }
+
+nav.mobile { display: none; }

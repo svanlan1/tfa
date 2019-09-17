@@ -2,7 +2,7 @@ var post = {
 	headshot: function() {
 		if(localStorage.getItem('tfa_headshot') && localStorage.getItem('tfa_headshot') !== "") {
 			$('#article_user .tfa_headshot, .addComment .tfa_headshot').css({
-				'background': 'url("/sandbox/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
+				'background': 'url("/uploads/' + localStorage.getItem('tfa_headshot') + '") no-repeat',
 				'background-size': 'cover'
 			});
 		} else if (!localStorage.getItem('tfa_headshot')) {
@@ -19,7 +19,7 @@ var post = {
 	    	return global.util._buildCompleteUserObject(script.data);
 	    }
 	    $.ajax({
-	        url: '/sandbox/services/get/getCurrentUserAll.php',
+	        url: '/services/get/getCurrentUserAll.php',
 	        method: 'GET',
 	        success: function(msg) {
 	        	localStorage.setItem('tfa_headshot', '');
@@ -34,7 +34,7 @@ var post = {
 				script.member_messages = script.data.member_messages;
     			if(script.found) {
 					$('.publicProfile').show();
-					$('.publicProfile a').attr('href', '/sandbox/profiles/?id=' + script.userData[script.currentUser].id);
+					$('.publicProfile a').attr('href', '/profiles/?id=' + script.userData[script.currentUser].id);
 				}
 				
 				$(script.member_messages).each(function(j,k) {
@@ -58,7 +58,7 @@ var post = {
 
 	getCurrentUserUploads: function() {
 		$.ajax({
-			url: '/sandbox/services/get/getCurrentUserUploads.php',
+			url: '/services/get/getCurrentUserUploads.php',
 			method: 'GET',
 			success: function(msg) {
 				try{
@@ -82,7 +82,7 @@ var post = {
 				category = $.parseJSON(v.category).category;
 			if(fnlc.indexOf('.jpg') > -1 || fnlc.indexOf('.png') > -1 || fnlc.indexOf('.gif') > -1 || fnlc.indexOf('.jpeg') > -1) {
 				if(category === "headshot") {
-					var div = $('<div />').addClass('photo-bg').css({'background': 'url("/sandbox/uploads/' + v.filename + '") no-repeat'}).attr({
+					var div = $('<div />').addClass('photo-bg').css({'background': 'url("/uploads/' + v.filename + '") no-repeat'}).attr({
 						'tabindex': '0',
 						'role': 'button'
 					}).appendTo('.photoSection'),
@@ -90,9 +90,9 @@ var post = {
 							'href': 'javascript:;',
 							'class': 'indiPhoto'
 						}).appendTo(div),
-						img = $('<img />').addClass('screen-reader-only').attr('src', '/sandbox/uploads/' + v.filename).attr('alt', '').appendTo(a);
+						img = $('<img />').addClass('screen-reader-only').attr('src', '/uploads/' + v.filename).attr('alt', '').appendTo(a);
 
-					var photoDiv = $('<div />').addClass('photo-bg').css({'background': 'url("/sandbox/uploads/' + v.filename + '") no-repeat'}).attr({
+					var photoDiv = $('<div />').addClass('photo-bg').css({'background': 'url("/uploads/' + v.filename + '") no-repeat'}).attr({
 						'tabindex': '0',
 						'role': 'button',
 						'data-filename': fn
@@ -101,10 +101,10 @@ var post = {
 							'href': 'javascript:;',
 							'class': 'indiPhoto'
 						}).appendTo(photoDiv),
-						photoImg = $('<img />').addClass('screen-reader-only').attr('src', '/sandbox/uploads/' + v.filename).attr('alt', '').appendTo(photoA);
+						photoImg = $('<img />').addClass('screen-reader-only').attr('src', '/uploads/' + v.filename).attr('alt', '').appendTo(photoA);
 
 					$(div).bind('click', function(e) {
-						$('div[data-dialog-id=photos]').find('div.showHide div img').attr('src', '/sandbox/uploads/' + v.filename);
+						$('div[data-dialog-id=photos]').find('div.showHide div img').attr('src', '/uploads/' + v.filename);
 						global.dialog._open('photos');
 						global.dialog._closeAction = function() {
 							$('div[data-dialog-id=photos] div img').attr('src', '');

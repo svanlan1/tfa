@@ -28,12 +28,12 @@
                       <span class="commentsDisplay_number">0</span><br>comment(s)</span>
                     <span>
                       <a href="" class="maps">
-                        <img src="/sandbox/images/google.svg" alt="" />
+                        <img src="../images/google.svg" alt="" />
                       </a>
                     </span>
                     <span>
                       <a href="" class="meetup">
-                        <img src="/sandbox/images/meetup.svg" alt="" />
+                        <img src="../images/meetup.svg" alt="" />
                       </a>
                     </span>
                   </div>

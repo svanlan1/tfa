@@ -14,10 +14,9 @@ define('DBPASS','Hardcore1@');
 define('DBNAME','tacomafilmalliance');
 
 //application address
-define('DIR','tacomafilmalliance.com/sandbox/');
+define('DIR','tacomafilmalliance.com/');
 define('SITEEMAIL','registration@tacomafilmalliance.com');
 define('SITETITLE', 'Tacoma Film Alliance');
-// define('FOLDERPATH', '/sandbox');
 define('FOLDERPATH', '/');
 
 try {
@@ -36,7 +35,7 @@ try {
 
 //include the user class, pass in the database connection
 // include('../classes/user.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/sandbox/classes/user.php');
-include($_SERVER['DOCUMENT_ROOT'] . '/sandbox/classes/phpmailer/mail.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/classes/user.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/classes/phpmailer/mail.php');
 $user = new User($db);
 ?>

@@ -46,3 +46,43 @@ h3, .lede {
 textarea {
     min-height: 200px;
 }
+
+
+.slingshotFilm div:nth-child(1) {
+    display: inline-block;
+    width: auto;
+}
+
+.slingshotFilm div:nth-child(1) img {
+    border-radius: 3px;
+    box-shadow: #000 0 0 2px 1px;
+}
+
+.slingshotFilm div:nth-child(2) {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+fieldset span { display: inline-block; width: 49%; }
+.inputs {display: inline-block; width: 49%;}
+.otherFieldDisplay {display: none; }
+
+@media only screen and (max-width: 800px) {
+    nav {display: none; }
+    div.r20 { display: none; }
+    div.r80 { flex-basis: 97% !important; }
+    main { margin: 0; width: 100%; padding: 0; }
+    .inputs { display: block; width: 100%; margin-top: 10px; }
+    .inputs input { width: 97%; }
+
+    main section { width: 101%; }
+
+    button {
+        width: 100%;
+        margin-left: 4px;
+        height: 65px;    
+    }
+
+    textarea { width: 98%;}
+  }

@@ -14,16 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title><?php echo $title ?></title>
     <!-- CSS  -->
-    <link rel="icon" href="/sandbox/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Limelight|Bellefair|Fredericka+the+Great|Telex|Righteous|Dosis:200,300,400,500,600,700,800|Inconsolata:400,700|Bangers|Roboto:300,400,500,600,700,900|Open+Sans:300,400,600,700,800|Staatliches" rel="stylesheet">
-    <link href="/sandbox/css/buttons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="/sandbox/css/tables.css" type="text/css" rel="stylesheet" media="screen, projections" />
-    <link href="/sandbox/css/tfa.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/buttons.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/tables.css" type="text/css" rel="stylesheet" media="screen, projections" />
+    <link href="/css/tfa.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/css/responsive.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="style.css" />
 
-    <link  href="/sandbox/css/datepicker.css" rel="stylesheet">
+    <link  href="/css/datepicker.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/sandbox/css/loading-bar.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/loading-bar.css"/>
            
   </head>

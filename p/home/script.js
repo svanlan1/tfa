@@ -22,9 +22,9 @@ var script = {
 					return commentsCount;
 				}
 				$(cont).find('h3 a').text(v.title);
-				$(cont).find('h3 a').attr('href', '/sandbox/story/index.php?id=' + v.id);
+				$(cont).find('h3 a').attr('href', '/story/index.php?id=' + v.id);
 				$(cont).find('.byline').text('by ' + v.byline + ' on ' + postedDate);
-				$(cont).find('.banner img').attr('src', '/sandbox/uploads/' + v.banner);
+				$(cont).find('.banner img').attr('src', '/uploads/' + v.banner);
 				$(cont).find('p').text(v.lead);
 				$(cont).find('.commentsDisplay_number').text(commentsNumber);
 				$('#filmSpotlight .loader').hide();
@@ -41,14 +41,14 @@ var script = {
 					return commentsCount;
 				}					
 				var clone = $('#latestNews .sectionContent').eq(0).clone();
-				$(clone).find('h3 a').attr('href', '/sandbox/story/index.php?id=' + v.id).text(v.title);
+				$(clone).find('h3 a').attr('href', '/story/index.php?id=' + v.id).text(v.title);
 				$(clone).find('.byline').text('by ' + v.byline + ' on ' + postedDate);
 				$(clone).find('p').html(v.lead);
 				if(v.banner.indexOf('youtube') > -1) {
 					$(clone).find('iframe').attr('src', v.banner);
 					$(clone).find('div.banner img').remove();	
 				} else {
-					$(clone).find('div.banner img').attr('src', '/sandbox/uploads/' + v.banner).attr('alt', '');
+					$(clone).find('div.banner img').attr('src', '/uploads/' + v.banner).attr('alt', '');
 					$(clone).find('iframe').remove();
 				}
 				$(clone).find('.commentsDisplay_number').text(commentsNumber);

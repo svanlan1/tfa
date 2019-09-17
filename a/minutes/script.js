@@ -79,7 +79,7 @@ var script = {
 			data: mdata,
 			success: function(msg) {
 				if(msg === "Success") {
-					window.location.href = "/sandbox/a/";
+					window.location.href = "/a/";
 				}
 			},
 			error: function(e) {
